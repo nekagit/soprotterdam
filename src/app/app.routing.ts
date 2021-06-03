@@ -15,7 +15,7 @@ const routes: Routes =[
     { path: 'aktivnosti',          component: LandingComponent },
     { path: 'kontakt',          component: KontaktComponent },
     { path: 'skola',          component: SkolaComponent },
-    { path: 'pocetna', redirectTo: 'pocetna', pathMatch: 'full' }
+    { path: '', redirectTo: 'pocetna', pathMatch: 'full' }
 ];
 
 @NgModule({
