@@ -3,7 +3,7 @@
     <a class="navbar-brand mr-lg-5" [routerLink]="['/pocetna']">
       <img class="logo" src="	http://soprotterdam.com/images/logo-stich-sop-rotterdam.gif?crc=134920669">
     </a>
-    <span style="color: rgb(250, 103, 103); font-size: large;" id="naslov">Dobro Dosao!</span>
+    <span style="color: rgb(250, 103, 103); font-size: x-large;" id="naslov">Dobro Dosao!</span>
     <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
           [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
       <span class="navbar-toggler-icon"></span>
@@ -25,18 +25,18 @@
           </div>
         </div>
       </div>
-      <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+      <ul class="navbar-nav align-items-lg-center ml-lg-auto" style="font-size: x-large;">
         <li class="nav-item">
-          <a style="color: rgb(142, 201, 250);" [routerLink]="['/aktivnosti']" class="nav-link nav-link-icon">Aktivnosti</a>
+          <a id="navlink" [routerLink]="['/aktivnosti']" class="nav-link nav-link-icon">Aktivnosti</a>
         </li>
         <li class="nav-item">
-          <a  style="color: rgb(142, 201, 250);;"[routerLink]="['/galerija']" class="nav-link nav-link-icon">Galerija</a>
+          <a id="navlink" [routerLink]="['/galerija']" class="nav-link nav-link-icon">Galerija</a>
         </li>
         <li class="nav-item">
-          <a style="color: rgb(142, 201, 250);;" [routerLink]="['/kontakt']" class="nav-link nav-link-icon">Kontakt</a>
+          <a id="navlink" [routerLink]="['/kontakt']" class="nav-link nav-link-icon">Kontakt</a>
         </li>
         <li class="nav-item">
-          <a style="color: rgb(142, 201, 250);;" [routerLink]="['/skola']" class="nav-link nav-link-icon">Skola</a>
+          <a id="navlink" [routerLink]="['/skola']" class="nav-link nav-link-icon">Skola</a>
         </li>
 
         <li class="nav-item">
