@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavbarService } from '../navbar.service';
 
 @Component({
     selector: 'app-landing',
@@ -10,8 +11,8 @@ export class LandingComponent implements OnInit {
   focus: any;
   focus1: any;
 
-  constructor() { }
+  constructor(public nav: NavbarService) { }
 
-  ngOnInit() {}
+  ngOnInit() {this.nav.show();}
 
 }

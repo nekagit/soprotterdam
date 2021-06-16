@@ -8,6 +8,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { LandingComponent } from './landing/landing.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { SkolaComponent } from './skola/skola.component';
+import { PrvaComponent } from './prva/prva.component';
 
 const routes: Routes =[
     { path: 'pocetna',             component: HomeComponent },
@@ -15,7 +16,8 @@ const routes: Routes =[
     { path: 'aktivnosti',          component: LandingComponent },
     { path: 'kontakt',          component: KontaktComponent },
     { path: 'skola',          component: SkolaComponent },
-    { path: '', redirectTo: 'pocetna', pathMatch: 'full' }
+    { path: 'prva',          component: PrvaComponent },
+    { path: '', redirectTo: 'prva', pathMatch: 'full' }
 ];
 
 @NgModule({

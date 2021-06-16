@@ -15,6 +15,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HomeModule } from './home/home.module';
 import { SkolaComponent } from './skola/skola.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
+import { PrvaComponent } from './prva/prva.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { KontaktComponent } from './kontakt/kontakt.component';
     FooterComponent,
     SkolaComponent,
     KontaktComponent,
+    PrvaComponent,
   ],
   imports: [
     BrowserModule,

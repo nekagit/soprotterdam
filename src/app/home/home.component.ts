@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavbarService } from '../navbar.service';
 
 @Component({
     selector: 'app-home',
@@ -15,7 +16,10 @@ export class HomeComponent implements OnInit {
 
     focus;
     focus1;
-    constructor() { }
+    constructor(public nav: NavbarService) { }
 
-    ngOnInit() {}
+    ngOnInit() {
+        this.nav.show();
+
+    }
 }

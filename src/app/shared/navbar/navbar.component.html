@@ -1,4 +1,4 @@
-<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
+<nav *ngIf="nav.visible" id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
   <div class="container">
     <a class="navbar-brand mr-lg-5" [routerLink]="['/pocetna']">
       <img class="logo" src="	http://soprotterdam.com/images/logo-stich-sop-rotterdam.gif?crc=134920669">
@@ -36,7 +36,7 @@
           <a id="navlink" [routerLink]="['/kontakt']" class="nav-link nav-link-icon">Kontakt</a>
         </li>
         <li class="nav-item">
-          <a id="navlink" [routerLink]="['/skola']" class="nav-link nav-link-icon">Skola</a>
+          <a id="navlink" [routerLink]="['/prva']" class="nav-link nav-link-icon">Pocetna</a>
         </li>
 
         <li class="nav-item">
