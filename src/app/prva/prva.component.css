@@ -22,7 +22,7 @@
 .right {
   color: white;
   right: 0;
-  background-image: url(../../assets/img/split2.jpg);
+  background-image: url(../../assets/img/Mihajlo-Pupin-Michael-I-Pupin-Oil-on-Canvas-by-Darko-Topalski.jpg);
   background-size: cover;
   border-left: 3px solid gold;
 
@@ -39,7 +39,6 @@
 
 
 @media screen and (max-width: 767px) {
-
 
 /* Split the screen in half */
 .split {
@@ -59,7 +58,7 @@
   left: 0;
   background-size: cover;
   border-right: none;
-  border-bottom: 3px solid gold;
+  border-bottom: 3px solid rgb(151, 128, 0);
 }
 
 /* Control the right side */
@@ -67,10 +66,10 @@
   color: white;
   right: none;
   bottom: 0;
-  background-image: url(../../assets/img/split2.jpg);
+  background-image: url(../../assets/img/Mihajlo-Pupin-Michael-I-Pupin-Oil-on-Canvas-by-Darko-Topalski.jpg);
   background-size: cover;
   border-left: none;
-  border-top: 3px solid gold;
+  border-top: 3px solid rgb(151, 128, 0);
 
 }
 

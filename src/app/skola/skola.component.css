@@ -1,22 +1,53 @@
 .logo {
     width: 100px;
     height: 70px;
+    border-radius: 32px;
 }
 
 #dropLogo {
     width: 100px;
+    border-radius: 32px;
     height: 70px;
 }
-
+.navbar-main{
+    padding-bottom: 100px;  
+    background-image: linear-gradient(antiquewhite,white );
+}
 
 #naslov {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 #navlink {
-    color: rgb(159, 212, 255);
+    color: rgba(82, 44, 219, 0.836)!important;
+    font-size: 15px;
+
 }
 
 #navlink:hover {
-    color: rgb(0, 107, 194);
+    font-size: 18px;
+
+}
+
+.nav-link {
+    color: rgba(39, 39, 39, 0.849)!important;
+    font-size: 18px;
+
+}
+
+.nav-link:hover {
+    font-size: 26px;
+}
+
+#more {display: none;}
+
+@media screen and (max-width: 767px) {
+
+    .logo {
+        width: 100px;
+        height: 70px;
+        border-radius: 32px;
+        margin: auto;
+
+    }
 }

@@ -11392,7 +11392,7 @@ button.bg-lighter:hover {
 }
 
 .bg-gradient-success {
-    background: linear-gradient(87deg, #2dce89 0, #2dcecc 100%)!important
+    background: linear-gradient(87deg, #cebe2d 0, antiquewhite 100%)
 }
 
 .bg-gradient-info {
