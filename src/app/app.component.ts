@@ -57,7 +57,7 @@ export class AppComponent implements OnInit {
       this._router = this.router.events.filter(event => event instanceof NavigationEnd).subscribe((event: NavigationEnd) => {
           if (window.outerWidth > 991) {
               window.document.children[0].scrollTop = 0;
-          }else{
+          }else{ 
               window.document.activeElement.scrollTop = 0;
           }
           this.renderer.listen('window', 'scroll', (event) => {
