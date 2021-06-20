@@ -1,21 +1,23 @@
-31.05	22.00 do 24.00	2 sata Namestanje servera i domajn ime i skidanje teme
+31.05	2	22.00 do 24.00	 sata Namestanje servera i domajn ime i skidanje teme		
 
-01.06	01.06	08.00 do 11.00	3 sata Namestanje Header i Footer  01.06	
+01.06	3	08.00 do 11.00	 sata Namestanje Header i Footer  				
 
-02.06	07.00 do 13.00	6 sata Namestanje Header i Footer i pripremanje prebacivanja od stranice do stranice (Routing) i objavjlenje sajta	 
+02.06	6	07.00 do 13.00	 sata Namestanje Header i Footer i pripremanje prebacivanja od stranice do stranice (Routing) i objavjlenje sajta	 
 
-03.06	11.00 do 12.00 dodao na glavnoj prve stvari 14.30 do 16 i 17 do 18 zavrsavanje homepage 
+03.06	3.30	11.00 do 12.00 dodao na glavnoj prve stvari 14.30 do 16 i 17 do 18 zavrsavanje homepage 
 
-05.06	08.00 do 11.30 aktivnosti i ostale od glavne straanice
+05.06	3.30	08.00 do 11.30 aktivnosti i ostale od glavne straanice
 
-09.06	10.00 do 12.00 namestanje kontnakt sajta i podaesavanje fonta i boje
+09.06	1	10.00 do 12.00 namestanje kontnakt sajta i podaesavanje fonta i boje
 
-11.06	18.00 do 21.00 namestanje glavne stranic dodavanje styling od kontakt stranice
+11.06	3	18.00 do 21.00 namestanje glavne stranic dodavanje styling od kontakt stranice
 
-14.06	14.00 do 15.00 organizacija 
+14.06	1	14.00 do 15.00 organizacija 
 
-16.06	19.00 do 23.00 zavsetak glavne stranice
+16.06	3	19.00 do 23.00 zavsetak glavne stranice
 
-17.06	17 do 19.00 nastavak sa skolom,,,, 22.00 do 24.00 zavsetak prve stranice
+17.06	4	17 do 19.00 nastavak sa skolom,,,, 22.00 do 24.00 zavsetak prve stranice
 
-18.06	10 do 14
+18.06	8 (38)	10 do 14 nastavak sa skolom  15.00 do 17 nastavak sa skolom 18 do 19 nastavak sa skolom
+
+19.06		14 до 17
