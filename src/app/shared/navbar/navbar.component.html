@@ -3,11 +3,13 @@
     <a class="navbar-brand mr-lg-5" [routerLink]="['/pocetna']">
       <img class="logo" src="	http://soprotterdam.com/images/logo-stich-sop-rotterdam.gif?crc=134920669">
     </a>
-    <span style="color: rgb(250, 103, 103); font-size: x-large;" id="naslov">Добро Дошли!</span>
+    <span style="color: rgb(250, 103, 103); font-size: x-large;" id="naslov">{{ 'title' | translate }}</span>
     <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
           [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <a (click)="switchLang('nl')" style="padding: 12px 12px 12px 18px;" ><img  src="../../../assets/img/flag_of_the_netherlands.jpg" width="30" height="20"/></a>
+    <a (click)="switchLang('rs')" style="padding: 12px;"  ><img  src="../../../assets/img/srpska zastava.jpg" width="29" height="20"/></a>
     <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed">
       <div class="navbar-collapse-header">
         <div class="row">
@@ -27,16 +29,16 @@
       </div>
       <ul class="navbar-nav align-items-lg-center ml-lg-auto" style="font-size: x-large;">
         <li class="nav-item">
-          <a id="navlink" [routerLink]="['/aktivnosti']" class="nav-link nav-link-icon">Активности</a>
+          <a id="navlink" [routerLink]="['/aktivnosti']" class="nav-link nav-link-icon">{{ 'aktivnosti' | translate }}</a>
         </li>
         <li class="nav-item">
-          <a id="navlink" [routerLink]="['/galerija']" class="nav-link nav-link-icon">Галерија</a>
+          <a id="navlink" [routerLink]="['/galerija']" class="nav-link nav-link-icon">{{ 'galerija' | translate }}</a>
         </li>
         <li class="nav-item">
-          <a id="navlink" [routerLink]="['/kontakt']" class="nav-link nav-link-icon">Контакт</a>
+          <a id="navlink" [routerLink]="['/kontakt']" class="nav-link nav-link-icon">{{ 'kontakt' | translate }}</a>
         </li>
         <li class="nav-item">
-          <a id="navlink" [routerLink]="['/prva']" class="nav-link nav-link-icon">Почетна</a>
+          <a id="navlink" [routerLink]="['/prva']" class="nav-link nav-link-icon">{{ 'pocetna' | translate }}</a>
         </li>
 
         <li class="nav-item">

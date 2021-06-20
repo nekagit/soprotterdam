@@ -2,8 +2,12 @@
   <div class="container">
     <a class="navbar-brand mr-lg-5" [routerLink]="['/skola']">
       <img class="logo" src="../../assets/img/wg.PNG">
+     
     </a>
-    <span style="color: rgb(250, 103, 103); font-size: x-large;" id="naslov">Српска допунска школа</span>
+    <span style="color: rgb(250, 103, 103); font-size: x-large;" id="naslov">{{'skola' | translate}}</span>
+    <a (click)="switchLang('nl')" style="padding: 12px 12px 12px 18px;" ><img  src="../../../assets/img/flag_of_the_netherlands.jpg" width="30" height="20"/></a>
+    <a (click)="switchLang('rs')" style="padding: 12px;"  ><img  src="../../../assets/img/srpska zastava.jpg" width="29" height="20"/></a>
+    
     <button style=" background-color: rgb(245, 225, 113);padding: 4px; border-radius: 11px;" class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
           [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
       <span class="navbar-toggler-icon"  ></span>
@@ -15,7 +19,7 @@
             <a [routerLink]="['/skola']">
               <img id="dropLogo" class="logo" src="../../assets/img/wg.PNG">
             </a>
-          <span  style="color: rgb(250, 103, 103); font-size: x-large;" id="naslov">Српска допунска школа</span>
+          <span  style="color: rgb(250, 103, 103); font-size: x-large;" id="naslov">{{'skola' | translate}}</span>
           </div>
           <div class="col-6 collapse-close">
             <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed"
@@ -28,7 +32,7 @@
       </div>
       <ul class="navbar-nav align-items-lg-center ml-lg-auto" style="font-size: x-large;">
         <li class="nav-item">
-          <a id="navlink" [routerLink]="['/prva']" class="nav-link nav-link-icon">Почетнa</a>
+          <a id="navlink" [routerLink]="['/prva']" class="nav-link nav-link-icon">{{'pocetna' | translate}}</a>
         </li>
 
         <li class="nav-item">
@@ -60,7 +64,7 @@
           <div class="col px-0">
             <div class="row align-items-center justify-content-center">
               <div class="col-lg-6 text-center">
-                <h1 class="lead pt-lg-5" style="font-size: 30px;">Добро дошли на интернет страницу која вам пружа поглед у допунскоу школи.</h1>
+                <h1 class="lead pt-lg-5" style="font-size: 30px;">{{'skola1' | translate}}</h1>
               </div>
             </div>
           </div>
@@ -69,10 +73,10 @@
       <div class="container" style="margin-bottom: 100px;">
         <div class="row justify-content-center">
           <div class="col-lg-6 p-lg-5 pb-5 justify-content-center">
-            <span  style="font-size: 21px; font-weight: 700;"> Српски језик , културу и историју за ученике основних школа. <br></span>
+            <span  style="font-size: 21px; font-weight: 700;"> {{'skola2' | translate}} <br></span>
             <p style="font-size: 19px;" > 
-              Под покровитрељством Министарства просвете, науке  и технолошког развоја  Републике Србије.
-              <br> <br> Часови су бесплатни.
+              {{'skola3' | translate}}
+              <br> <br> {{'casovi' | translate}}
               </p>
               <img style="width: 100%; height: auto; margin: auto;" src="../../assets/img/Unbenannt.png" alt="">
               <div class="row justify-content-center p-lg-3 pt-lg-5">
@@ -83,23 +87,23 @@
             </div>
           </div>
           <div class="col-lg-6">
-           <p class="text-center" style="font-size: 21px; font-weight: 700;">ДОЂИТЕ  ДА СЕ ДРУЖИМО И КРОЗ ИГРУ УЧИМО !!!     </p>
+           <p class="text-center" style="font-size: 21px; font-weight: 700;">{{'druzimo' | translate}}</p>
               <ngb-tabset [justify]="'center'" class="custom-tab-content flex-column flex-md-row" type="pills">
                   <ngb-tab>
 
                     <ng-template ngbTabTitle>
-                       Pocetak
+                       {{'pocetak' | translate}}
                     </ng-template>
                       <ng-template ngbTabContent>
-                       <p style="font-size: 21px;" class="description">Упис у Српску допунску школу за школску 2021/ 2022.<br><br> годину  је у току и одвија се под покровитељством Министарства просвете, науке и технолошког развоја Републике Србије  и потпомогнута од стране удружења СОП Ротердам.<span id="dots">...</span><br><br><button onclick="myFunction()" id="myBtn">opsirnije</button> <br><br>
-                        <span id="more"> Школа је бесплатна а ученици поред тога што ће учити српски језик, ћирилично писмо, “путоваће”  Србијом , кроз историју, географију, традицију и културу својих предака.<br><br>
-                          Најважније  је да се сви лепо дружимо , учимо и заједно растемо !</span>
+                       <p style="font-size: 21px;" class="description">{{'pocetak1' | translate }}<br><br> {{'pocetak2' | translate}} <span id="dots">...</span><br><br><button onclick="myFunction()" id="myBtn">{{'opsirnije' | translate}}</button> <br><br>
+                        <span id="more"> {{'pocetak3' | translate }}<br><br>
+                          {{'pocetak4' | translate}}</span>
                           </p>
                       </ng-template>
                   </ngb-tab>
                   <ngb-tab>
                     <ng-template ngbTabTitle>
-                      Podaci
+                      Подаци
                     </ng-template>
                       <ng-template ngbTabContent>
                         <p style="font-size: 21px;" class="description">НАШЕ ОДРЕДНИЦЕ :</p>
@@ -116,7 +120,7 @@
                   </ngb-tab>
                   <ngb-tab>
                     <ng-template ngbTabTitle>
-                        Nastava
+                        Настава
                     </ng-template>
                       <ng-template ngbTabContent>
                         <p style="font-size: 21px; font-weight: 700;" class="description">Посебан програм</p>
@@ -132,7 +136,7 @@
                   </ngb-tab> 
                   <ngb-tab>
                     <ng-template ngbTabTitle>
-                        Kalendar
+                        Календар
                     </ng-template>
                       <ng-template  ngbTabContent>
                         <p style="font-size: 21px; font-weight: 700;" class="description">ШКОЛСКИ КЛЕНДАР  ЗА ШКОЛСКУ 2021/2022 ГОДИНУ</p>
@@ -147,7 +151,7 @@
                   </ngb-tab>
                   <ngb-tab>
                     <ng-template ngbTabTitle>
-                        Pribor
+                        Прибор
                     </ng-template>
                       <ng-template  ngbTabContent>
                         <p style="margin-top: 30px;"><span style="font-size: 21px; font-weight: 700;"> Од школског материјала неопходно је да деца имају: <br> </span>

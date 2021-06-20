@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd, NavigationStart } from '@angular/router';
 import { Location, PopStateEvent } from '@angular/common';
 import { NavbarService } from '../../navbar.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-navbar',
@@ -13,7 +14,9 @@ export class NavbarComponent implements OnInit {
     private lastPoppedUrl: string;
     private yScrollStack: number[] = [];
 
-    constructor(public location: Location, private router: Router, public nav: NavbarService ) {
+    constructor(public location: Location, private router: Router, public nav: NavbarService,  public translate: TranslateService ) {
+        translate.addLangs(['rs', 'nl']);  
+        translate.setDefaultLang('rs');  
     }
 
     ngOnInit() {
@@ -54,4 +57,9 @@ export class NavbarComponent implements OnInit {
               return false;
           }
       }
+      switchLang(lang){
+        this.translate.use(lang);
+        console.log(this.translate.currentLang);
+    }
+
 }
