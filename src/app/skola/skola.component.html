@@ -4,9 +4,9 @@
       <img class="logo" src="../../assets/img/wg.PNG">
      
     </a>
-    <span style="color: rgb(250, 103, 103); font-size: x-large;" id="naslov">{{'skola' | translate}}</span>
-    <a (click)="switchLang('nl')" style="padding: 12px 12px 12px 18px;" ><img  src="../../../assets/img/flag_of_the_netherlands.jpg" width="30" height="20"/></a>
-    <a (click)="switchLang('rs')" style="padding: 12px;"  ><img  src="../../../assets/img/srpska zastava.jpg" width="29" height="20"/></a>
+    <span style="color: rgb(250, 103, 103); font-size: x-large; padding: 12px;" id="naslov">{{'skola' | translate}}</span>
+    <a (click)="switchLang('nl')" class="p-lg-4 p-3"  ><img  src="../../../assets/img/flag_of_the_netherlands.jpg" width="30" height="20"/></a>
+    <a (click)="switchLang('rs')" class="p-lg-4 p-3" ><img  src="../../../assets/img/srpska zastava.jpg" width="29" height="20"/></a>
     
     <button style=" background-color: rgb(245, 225, 113);padding: 4px; border-radius: 11px;" class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
           [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
@@ -95,71 +95,70 @@
                        {{'pocetak' | translate}}
                     </ng-template>
                       <ng-template ngbTabContent>
-                       <p style="font-size: 21px;" class="description">{{'pocetak1' | translate }}<br><br> {{'pocetak2' | translate}} <span id="dots">...</span><br><br><button onclick="myFunction()" id="myBtn">{{'opsirnije' | translate}}</button> <br><br>
-                        <span id="more"> {{'pocetak3' | translate }}<br><br>
-                          {{'pocetak4' | translate}}</span>
+                       <p style="font-size: 21px;" class="description">{{'pocetak1' | translate }}<br><br> {{'pocetak2' | translate}} <br><br>
+                          {{'pocetak4' | translate}}
                           </p>
                       </ng-template>
                   </ngb-tab>
                   <ngb-tab>
                     <ng-template ngbTabTitle>
-                      Подаци
+                      {{'podaci' | translate}}
                     </ng-template>
                       <ng-template ngbTabContent>
-                        <p style="font-size: 21px;" class="description">НАШЕ ОДРЕДНИЦЕ :</p>
-                        <p class="description">ОСНОВА -СРЦЕ ЗА  НАШУ ДЕЦУ. ЦИЉ -УЧЕЊЕ И ДРУЖЕЊЕ.   РЕЗУЛТАТИ- СРЕЋНИЈИ, ОБРАЗОВАНИЈИ И БОЉИ. <br> <br>
-                          Контакт  :   СОП Ротердам  admin@soprotterdam.com<br> 
-                          Наставник:  Стана Полачек<br> 
-                          Место:   Melanchthon Schiebroek<br> <br>
-                          Van Bijnkershoekweg 97, 3052 PB Rotterdam<br> <br>
-                          Време: субота <br> <br> 1. млађа група  од 10:00 до 12 :15 асова<br> <br>
-                                                     2.средња група од 12:25 до 14:40 часова<br> <br>
-                                                     3. виша група од 14:45 до 16:45  часова<br> <br>
+                        <p style="font-size: 21px;" class="description">{{'podaci1' | translate}}</p>
+                        <p class="description"> {{'podaci2' | translate}} <br> <br>
+                          {{'podaci3' | translate}}<br> 
+                          {{'podaci4' | translate}}<br> 
+                          {{'podaci5' | translate}}<br> <br>
+                          {{'podaci6'}}<br> <br>
+                          {{'podaci7' | translate}} <br> <br> {{'podaci8' | translate}} <br> <br>
+                                                     {{'podaci9' | translate }}<br> <br>
+                                                     {{'podaci10' | translate}}<br> <br>
                           </p>
                       </ng-template>
                   </ngb-tab>
                   <ngb-tab>
                     <ng-template ngbTabTitle>
-                        Настава
+                      {{'nastava' | translate}}
                     </ng-template>
                       <ng-template ngbTabContent>
-                        <p style="font-size: 21px; font-weight: 700;" class="description">Посебан програм</p>
-                        <p style="font-size: 19px;"  class="description"> основног образовања и васпитања у иностранству реализује се на три узрасна ниво: <br><span style="font-weight: 700;">млађем</span>  ( први, други и трећи разред), <br><span style="font-weight: 700;">средњем </span> ( четврти, пети и шести разред) и <span style="font-weight: 700;"> старијем</span> ( седми и осми разред) из три предемта: Српски језик, Моја отаџбина Србија и  Основи културе српског народа.
-                          <br> <br>  Настав ће се изводити са децом ураста од 6 до 15 година. 
-                         <br> <br> Настав ће се изводити суботом од 10:00  до 17 :00 часова<span id="dots">...</span><br><br><button onclick="myFunction()" id="myBtn">opsirnije</button> <br><br>
-                         <span id="more">   Наставник за наредну школску годину је Стана Полачек, професор српског језика и књижевности из Ротердама<div class="br"></div>
-                     <br>   Уколико сте заинтересовани да Ваше дете похађа наставу српсог језика, да се дружи, игра и пева са осатлом децом, јавите се на : spolacek@gmail.com  или admin@soprotterdam.com
-                     <br>      Увек постоји могућност отварања нових група. </span>
+                        <p style="font-size: 21px; font-weight: 700;" class="description">{{'nastava1' | translate}}</p>
+                        <p style="font-size: 19px;"  class="description"> {{'nastava2' | translate}} <br><span style="font-weight: 700;"> {{'nastava3' | translate}} </span> {{'nastava4' | translate}}  <br><span style="font-weight: 700;"> {{'nastava5' | translate}} </span> {{'nastava6' | translate}} <span style="font-weight: 700;"> {{'nastava7' | translate}} </span> {{'nastava8' | translate}}
+                        <br> <br>   {{'nastava9' | translate}}
+                        <br> <br> {{'nastava10' | translate}} <span id="dots">...</span><br><br><button onclick="myFunction()" id="myBtn"> {{'nastava11' | translate}} </button> <br><br> 
+                        <span id="more"> {{'nastava12' | translate}} <div class="br"></div>
+                        <br> {{'nastava13' | translate}} 
+                      	<br> {{'nastava14' | translate}} </span>
                           
                           </p>
                       </ng-template>
                   </ngb-tab> 
                   <ngb-tab>
                     <ng-template ngbTabTitle>
-                        Календар
+                        {{'kalendar1' | translate}}
                     </ng-template>
                       <ng-template  ngbTabContent>
-                        <p style="font-size: 21px; font-weight: 700;" class="description">ШКОЛСКИ КЛЕНДАР  ЗА ШКОЛСКУ 2021/2022 ГОДИНУ</p>
+                        <p style="font-size: 21px; font-weight: 700;" class="description"> {{'kalendar2' | translate}} </p>
                          <img id="myimage" style="width: 100%; height: auto; margin: auto;" src="../../assets/img/kalend.png" alt="">
-                        <p>ДАН ПРИМИРЈА,  11 новембар <br> <br>
-                          ДАН ДРЖАВНОСТИ РЕПУБЛИКЕ СРБИЈE, 15. фебруар<br> <br>
-                         ИНДИВИДУАЛНИ РОДИТЕЉСКИ САСТАНЦИ : Свакe суботе, када се одржава допунска настава у терминима после наставе , према потреби и жељи родитеља. 
+                        <p> {{'kalendar3' | translate}} <br> <br>
+                         {{'kalendar4' | translate}} <br> <br>
+                         {{'kalendar5' | translate}}
                          <br> <br>
-                         Датуми наведени у календару могу да се промене у зависности од околности. Родитељи ће бити благовремено обавештени.
+                         {{'kalendar6' | translate}}
                          </p>
                       </ng-template>
                   </ngb-tab>
                   <ngb-tab>
                     <ng-template ngbTabTitle>
-                        Прибор
+                        {{'pribor' | translate}}
                     </ng-template>
                       <ng-template  ngbTabContent>
-                        <p style="margin-top: 30px;"><span style="font-size: 21px; font-weight: 700;"> Од школског материјала неопходно је да деца имају: <br> </span>
-                          -	Велику свеску А4  на линије <br>
-                          -	Оловку и гумицу/оштрач<br>
-                          -	Дрвене бојице<br>
-                          -	Мапу/ фациклу<br> <br>
-                          Истовремено је неопходно да  сваке суботе имамо  по два дежурна родитеља чији је задатак да припазе на децу за време паузе и  након часова да сви заједено  поспремимо учионицу и собу за професоре, у којима могу да бораве родитељи, док чекају своју децу. Дежурстава родитеља ћемо  заједно договорити.
+                        <p style="margin-top: 30px;"><span style="font-size: 21px; font-weight: 700;"> {{'pribor1' | translate}} <br> </span>
+                          {{'pribor2' | translate}} <br>
+                          {{'pribor3' | translate}} <br>
+                          {{'pribor4' | translate}} <br>
+                         {{'pribor5' | translate}} <br> <br>
+                          {{'pribor6' | translate}}
                           </p>
                       </ng-template>
                   </ngb-tab>
