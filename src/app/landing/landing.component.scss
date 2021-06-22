@@ -3,3 +3,21 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+@media (min-width:260px) {
+  
+    #titule {
+        padding-top: 100px;
+    }
+    
+}
+    
+@media (min-width:900px) {
+  
+    #titule {
+        font-size: 42px;
+    }
+    
+}
+    

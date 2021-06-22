@@ -1,14 +1,14 @@
-
 <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
   <div class="container">
     <a class="navbar-brand mr-lg-5" [routerLink]="['/skola']">
       <img class="logo" src="../../assets/img/wg.PNG">
      
     </a>
-    <span style="color: rgb(250, 103, 103); font-size: x-large; padding: 12px;" id="naslov">{{'skola' | translate}}</span>
+    <span id="naslov">{{'skola' | translate}}</span>
+    <div>
     <a (click)="switchLang('nl')" class="p-lg-4 p-3"  ><img  src="../../../assets/img/flag_of_the_netherlands.jpg" width="30" height="20"/></a>
     <a (click)="switchLang('rs')" class="p-lg-4 p-3" ><img  src="../../../assets/img/srpska zastava.jpg" width="29" height="20"/></a>
-    
+  </div>
     <button style=" background-color: rgb(245, 225, 113);padding: 4px; border-radius: 11px;" class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
           [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
       <span class="navbar-toggler-icon"  ></span>
@@ -75,7 +75,7 @@
         <div class="card card-profile shadow ">
             <div class="row justify-content-center">
                 <div >
-           <p class="text-center p-lg-4" style="font-size: 21px; font-weight: 700;">{{'druzimo' | translate}}</p>
+           <p class="text-center p-lg-4" style="font-size: 21px; font-weight: 700; padding: 33px;">{{'druzimo' | translate}}</p>
               </div>
             </div>
             <div class=" border-top text-center">

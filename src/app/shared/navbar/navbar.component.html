@@ -1,60 +1,145 @@
-<nav *ngIf="nav.visible" id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
+<nav
+  *ngIf="nav.visible"
+  id="navbar-main"
+  class="
+    navbar navbar-main navbar-expand-lg navbar-transparent navbar-light
+    headroom headroom--top headroom--pinned
+  "
+>
   <div class="container">
-    <a class="navbar-brand mr-0" [routerLink]="['/pocetna']">
-      <img class="logo" src="../../../assets/img/thumbnail_IMG-20210622-WA0001.png">
+    <a style="order: 1" class="navbar-brand mr-0" [routerLink]="['/pocetna']">
+      <img
+        class="logo"
+        src="../../../assets/img/thumbnail_IMG-20210622-WA0001.png"
+      />
     </a>
-    <span class="" style="margin: 21px; color: rgb(255, 255, 255); white-space: nowrap; font-size: x-large;" id="naslov">{{ 'title' | translate }}</span> 
-    <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
-          [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
-      <span class="navbar-toggler-icon"></span>
+    <span id="naslov">{{ "title" | translate }}</span>
+    <button
+      style="order: 5"
+      class="navbar-toggler"
+      type="button"
+      (click)="isCollapsed = !isCollapsed"
+      [attr.aria-expanded]="!isCollapsed"
+      aria-controls="navbar_global"
+    >
+      <span
+        style="background-color: rgb(255, 0, 0); border-radius: 9px"
+        class="navbar-toggler-icon"
+      ></span>
     </button>
-    <a (click)="switchLang('nl')" style="padding: 21px;"  ><img   src="../../../assets/img/flag_of_the_netherlands.jpg" width="40" height="30"/></a>
-    <a (click)="switchLang('rs')"  ><img  src="../../../assets/img/srpska zastava.jpg" width="40" height="30"/></a>
-    <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed">
+    <div style="order: 3;">
+    <a
+      (click)="switchLang('nl')"
+      style="padding: 12px;  cursor: pointer"
+      ><img
+        src="../../../assets/img/flag_of_the_netherlands.jpg"
+        width="40"
+        height="30"
+    /></a>
+    <a (click)="switchLang('rs')" style=" cursor: pointer"
+      ><img src="../../../assets/img/srpska zastava.jpg" width="40" height="30"
+    /></a>
+  </div>
+    <div
+      style="order: 4"
+      class="navbar-collapse collapse"
+      id="navbar_global"
+      [ngbCollapse]="isCollapsed"
+    >
       <div class="navbar-collapse-header">
         <div class="row">
-          <div class="col-6 collapse-brand">
+          <div class="col-9 collapse-brand">
             <a [routerLink]="['/pocetna']">
-              <img class="logo" src="../../../assets/img/thumbnail_IMG-20210622-WA0001.png">
+              <img
+                class="logo"
+                src="../../../assets/img/thumbnail_IMG-20210622-WA0001.png"
+              />
+              <span style="color: black; margin: 15px 0 0 0; font-size: 16px;" id="naslov">{{ "title" | translate }}</span>
             </a>
           </div>
-          <div class="col-6 collapse-close">
-            <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed"
-                  [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+          <div class="col-3 collapse-close">
+            <button
+              type="button"
+              class="navbar-toggler"
+              (click)="isCollapsed = !isCollapsed"
+              [attr.aria-expanded]="!isCollapsed"
+              aria-controls="navbar_global"
+            >
               <span></span>
               <span></span>
             </button>
           </div>
         </div>
       </div>
-      <ul class="navbar-nav align-items-lg-center ml-lg-auto" style="font-size: x-large;">
+      <ul
+        class="navbar-nav align-items-lg-center ml-lg-auto"
+        style="font-size: x-large"
+      >
         <li class="nav-item">
-          <a id="navlink" [routerLink]="['/aktivnosti']" class="nav-link nav-link-icon">{{ 'aktivnosti' | translate }}</a>
+          <a
+            id="navlink"
+            [routerLink]="['/aktivnosti']"
+            class="nav-link nav-link-icon"
+            >{{ "aktivnosti" | translate }}</a
+          >
         </li>
         <li class="nav-item">
-          <a id="navlink" [routerLink]="['/galerija']" class="nav-link nav-link-icon">{{ 'galerija' | translate }}</a>
+          <a
+            id="navlink"
+            [routerLink]="['/galerija']"
+            class="nav-link nav-link-icon"
+            >{{ "galerija" | translate }}</a
+          >
         </li>
         <li class="nav-item">
-          <a id="navlink" [routerLink]="['/kontakt']" class="nav-link nav-link-icon">{{ 'kontakt' | translate }}</a>
+          <a
+            id="navlink"
+            [routerLink]="['/kontakt']"
+            class="nav-link nav-link-icon"
+            >{{ "kontakt" | translate }}</a
+          >
         </li>
         <li class="nav-item">
-          <a id="navlink" [routerLink]="['/prva']" class="nav-link nav-link-icon">{{ 'pocetna' | translate }}</a>
+          <a
+            id="navlink"
+            [routerLink]="['/prva']"
+            class="nav-link nav-link-icon"
+            >{{ "pocetna" | translate }}</a
+          >
         </li>
 
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="https://www.facebook.com/creativetim" target="_blank" data-toggle="tooltip" title="Фацебоок">
+          <a
+            class="nav-link nav-link-icon"
+            href="https://www.facebook.com/creativetim"
+            target="_blank"
+            data-toggle="tooltip"
+            title="Фацебоок"
+          >
             <i class="fa fa-facebook-square"></i>
             <span class="nav-link-inner--text d-lg-none">Фацебоок</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="https://www.instagram.com/creativetimofficial" target="_blank" data-toggle="tooltip" title="Инстаграм">
+          <a
+            class="nav-link nav-link-icon"
+            href="https://www.instagram.com/creativetimofficial"
+            target="_blank"
+            data-toggle="tooltip"
+            title="Инстаграм"
+          >
             <i class="fa fa-instagram"></i>
             <span class="nav-link-inner--text d-lg-none">Инстаграм</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="https://www.instagram.com/creativetimofficial" target="_blank" data-toggle="tooltip" title="Е-мајл">
+          <a
+            class="nav-link nav-link-icon"
+            href="https://www.instagram.com/creativetimofficial"
+            target="_blank"
+            data-toggle="tooltip"
+            title="Е-мајл"
+          >
             <i class="fa fa-envelope"></i>
             <span class="nav-link-inner--text d-lg-none">Мајл</span>
           </a>
