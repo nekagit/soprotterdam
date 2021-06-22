@@ -47,24 +47,28 @@
         "posalji": "verzenden",
 
         "hvala": "Bedankt voor het bezoeken!",
-
+        "osnova": "BASIS - HART VOOR ONZE KINDEREN. DOEL - LEREN EN SOCIALISATIE. RESULTATEN - GELUKKER, ONDERWIJS EN BETER",
+        "osnova2": "DOEL - LEREN EN SOCIALISATIE. ",
+        "osnova3": "RESULTATEN - GELUKKER, ONDERWIJS EN BETER",
         "skola": "Servische aanvullende school",
-        "skola1": "Welkom op de website waar je een kijkje kunt nemen in de aanvullende school.",
+        "skola1": "Welkom op de website van de Servische Aanvullende School in Rotterdam.",
+        "skola1.1": "We realiseerden ons dat onze kinderen hun taal, schrift en hun afkomst niet moesten vergeten en zijn daarom een ​​Servische talenschool begonnen.",
         "skola2": "Servische taal, cultuur en geschiedenis voor basisschoolleerlingen.",
         "skola3": "Onder auspiciën van het Ministerie van Onderwijs, Wetenschap en Technologische Ontwikkeling van de Republiek Servië.",
         "casovi": "De lessen zijn gratis.",
         "druzimo": "KOM OM UIT TE HANGEN EN TE LEREN VIA HET SPEL !!!",
-    
+        
+        "vesti": " Nieuws",
         "pocetak": "beginnen",
         "pocetak1": "Inschrijving in de Servische aanvullende school voor het schooljaar 2021/2022",
         "pocetak2": "jaar is in volle gang en vindt plaats onder auspiciën van het Ministerie van Onderwijs, Wetenschap en Technologische Ontwikkeling van de Republiek Servië en ondersteund door de vereniging SOP Rotterdam.",
         "opsirnije": "meer",
         "pocetak3": "De school is gratis en studenten zullen, naast het leren van de Servische taal, het Cyrillische alfabet, reizen door Servië, door de geschiedenis, geografie, traditie en cultuur van hun voorouders.",
         "pocetak4": "Het belangrijkste is dat we allemaal samen zijn, leren en groeien!",
+        "pocetak5": "De school is gratis en studenten zullen, naast het leren van de Servische taal, het Cyrillische alfabet, reizen door Servië, door de geschiedenis, geografie, traditie en cultuur van hun voorouders.",
     
         "podaci": "Gegevens",
         "podaci1": "ONZE DETERMINANTEN:",
-        "podaci2": "BASIS - HART VOOR ONZE KINDEREN. DOEL - LEREN EN SOCIALISATIE. RESULTATEN - GELUKKER, ONDERWIJS EN BETER.",
         "podaci3": "Contactpersoon: SOP Rotterdam admin@soprotterdam.com",
         "podaci4": "Leraar: Stana Polaček",
         "podaci5": "Locatie: Melanchthon Schiebroek",
@@ -74,7 +78,15 @@
         "podaci9": "2e middengroep van 12:25 tot 14:40",
         "podaci10": "3e seniorengroep van 14:45 tot 16:45",
 
-        "nastava": "onderwijzen",
+        "prenastava": "Er zullen vanaf schooljaar 2021/2022 extra lessen in de Servische taal in Nederland worden gegeven in Rotterdam, die deel zullen uitmaken van het systeem van het Ministerie van Onderwijs, Wetenschap en Technologische Ontwikkeling van de Republiek Servië.",
+        "prenastava1": " Het doel van educatief werk is om de Servische taal als moedertaal van studenten te leren en te koesteren, het bewustzijn van hun nationale en culturele identiteit te ontwikkelen en te versterken door de meest waardevolle werken van Servisch cultureel erfgoed te bestuderen en te onderhouden blijvende banden met het vaderland. van onderwijswerk in het buitenland, Staatscourant van RS, nr. 62/03, 34/03).",
+        
+        "poslenastava2": "De leraar voor het volgende schooljaar is Stana Polaček, een hoogleraar Servische taal- en letterkunde uit Rotterdam.",
+        "poslenastava3": "Als u geïnteresseerd bent in uw kind Servische taallessen, socializen, spelen en zingen met andere kinderen, neem dan contact met ons op via e-mail polacekstana@gmail.com",
+        "poslenastava4": "Er is altijd de mogelijkheid om nieuwe groepen te openen.",
+        "poslenastava5": "We kijken uit naar de komst van onze kinderen op onze school!",
+
+        "nastava": "Onderwijzen",
         "nastava1": "Speciaal programma",
         "nastava2": "basisonderwijs en opvoeding in het buitenland wordt gerealiseerd op drie leeftijdsniveaus:",
         "nastava3": "jonger",
@@ -85,11 +97,7 @@
         "nastava8": "(zevende en achtste klas) uit drie vakken: Servische taal, mijn thuisland Servië en grondbeginselen van de cultuur van het Servische volk.",
         "nastava9": "De lessen worden gegeven met kinderen van 6 tot 15 jaar.",
         "nastava10": "De lessen worden gegeven op zaterdag van 10:00 tot 17:00",
-        "nastava11":  "uitgebreider",
-        "nastava12": "De leraar voor het volgende schooljaar is Stana Polaček, hoogleraar Servische taal- en letterkunde uit Rotterdam",
-        "nastava13": "Als u geïnteresseerd bent in uw kind Servische taallessen, socializen, spelen en zingen met andere kinderen, neem dan contact op met: admin@soprotterdam.com",
-        "nastava14": "Er is altijd de mogelijkheid om nieuwe groepen te openen.",
-
+   
         "kalendar1": "Kalender",
         "kalendar2": "SCHOOLCLENDAR VOOR HET SCHOOLJAAR 2021/2022",
         "kalendar3": "LEGERDAG, 11 november",
@@ -97,7 +105,7 @@
         "kalendar5": "INDIVIDUELE OUDERVERGADERINGEN: Elke zaterdag, wanneer er extra lessen worden gegeven in de naschoolse uren, volgens de behoeften en wensen van de ouders.",
         "kalendar6": "De data in de kalender kunnen veranderen afhankelijk van de omstandigheden. Ouders worden tijdig op de hoogte gebracht.",
 
-        "pribor": "Accessoires",
+        "pribor": "Praktische informatie",
         "pribor1": "Van schoolmaterialen moeten kinderen beschikken over:",
         "pribor2": "-Grote notebook A4 op lijnen",
         "pribor3": "-Potlood en gum / puntenslijper",

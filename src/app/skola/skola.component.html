@@ -1,3 +1,4 @@
+
 <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
   <div class="container">
     <a class="navbar-brand mr-lg-5" [routerLink]="['/skola']">
@@ -63,108 +64,130 @@
         <div class="container shape-container d-flex align-items-center py-lg ">
           <div class="col px-0">
             <div class="row align-items-center justify-content-center">
-              <div class="col-lg-6 text-center">
-                <h1 class="lead pt-lg-5" style="font-size: 30px;">{{'skola1' | translate}}</h1>
+              <div class="col-lg-8 text-center">
+                <span class="pb-lg-3" style="color: #000; font-size: 30px; display: block;">{{'skola1' | translate}}</span>
+                <span class="text-muted " style="color: rgba(43, 43, 43, 0.678); font-size: 25px;">{{'skola1.1' | translate}}</span>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <div class="container" style="margin-bottom: 100px;">
-        <div class="row justify-content-center">
-          <div class="col-lg-6 p-lg-5 pb-5 justify-content-center">
-            <span  style="font-size: 21px; font-weight: 700;"> {{'skola2' | translate}} <br></span>
-            <p style="font-size: 19px;" > 
-              {{'skola3' | translate}}
-              <br> <br> {{'casovi' | translate}}
-              </p>
-              <img style="width: 100%; height: auto; margin: auto;" src="../../assets/img/Unbenannt.png" alt="">
-              <div class="row justify-content-center p-lg-3 pt-lg-5">
-              <img style="width: 100px; height: 100px; margin: auto;" src="../../assets/img/herz.png" alt="">
-              <img style="width: 100px; height: 100px; margin: auto;" src="../../assets/img/pfeil.png" alt="">
-              <img style="width: 100px; height: 100px; margin: auto;" src="../../assets/img/blatt.png" alt="">
-              
+        <div class="card card-profile shadow ">
+            <div class="row justify-content-center">
+                <div >
+           <p class="text-center p-lg-4" style="font-size: 21px; font-weight: 700;">{{'druzimo' | translate}}</p>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-6">
-           <p class="text-center" style="font-size: 21px; font-weight: 700;">{{'druzimo' | translate}}</p>
-              <ngb-tabset [justify]="'center'" class="custom-tab-content flex-column flex-md-row" type="pills">
-                  <ngb-tab>
+            <div class=" border-top text-center">
+              <div class="row justify-content-center">
+                <div class="col-lg-9">
+                  <div style="margin-bottom: 100px;">
+                    <div class="row justify-content-center">
+                      <div class="col-lg-5 pt-5 pb-5 justify-content-center">
+                        <span  style="font-size: 21px; font-weight: 700;"> {{'skola2' | translate}} <br></span>
+                        <p style="font-size: 19px;" > 
+                          {{'skola3' | translate}}
+                          <br> <br> {{'casovi' | translate}}
+                          </p>
+                          <img style="width: 100%; height: auto; margin: auto;" src="../../assets/img/Unbenannt.png" alt="">
+                          <div class="row justify-content-center p-lg-3 pt-lg-5">
+                            <img style="width: 120px; height: 100px; margin: auto;" src="../../assets/img/herz.png" alt="">
+                            <img style="width: 120px; height: 100px; margin: auto; margin-bottom: 33px;" src="../../assets/img/pfeil.png" alt="">
+                            <img style="width: 120px; height: 100px; margin: auto;" src="../../assets/img/blatt.png" alt="">
+                          <p style="font-weight: 800"> {{'osnova'| translate}} </p>
+                          <p style="font-weight: 800"> {{'osnova2'| translate}} </p>
+                          <p style="font-weight: 800"> {{'osnova3'| translate}} </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-7">
+                          <ngb-tabset [justify]="'center'" class="custom-tab-content flex-column flex-md-row" type="pills">
+                              <ngb-tab>
+            
+                                <ng-template ngbTabTitle>
+                                   {{'vesti' | translate}}
+                                </ng-template>
+                                  <ng-template ngbTabContent>
+                                   <p style="font-size: 21px;" class="description">{{'pocetak1' | translate }}<br><br> {{'pocetak2' | translate}} <br><br>
+                                    {{'pocetak4' | translate}} <br> <br>
+                                    {{'pocetak5' | translate}} 
+                                    <span id="dots">...</span>
+                                    <span id="more">
+                                      <p style="font-size: 21px;" class="description"><br><br> {{'podaci1' | translate}}</p>
+                                      <p style="font-size: 18px;" class="description">
+                                        {{'podaci3' | translate}}<br> 
+                                        {{'podaci4' | translate}}<br> 
+                                        {{'podaci5' | translate}}<br> <br>
+                                        {{'podaci6' | translate}}<br> <br>
+                                        {{'podaci7' | translate}} <br> <br> {{'podaci8' | translate}} <br> <br>
+                                                                   {{'podaci9' | translate }}<br> <br>
+                                                                   {{'podaci10' | translate}}
+                                        </p></span>
 
-                    <ng-template ngbTabTitle>
-                       {{'pocetak' | translate}}
-                    </ng-template>
-                      <ng-template ngbTabContent>
-                       <p style="font-size: 21px;" class="description">{{'pocetak1' | translate }}<br><br> {{'pocetak2' | translate}} <br><br>
-                          {{'pocetak4' | translate}}
-                          </p>
-                      </ng-template>
-                  </ngb-tab>
-                  <ngb-tab>
-                    <ng-template ngbTabTitle>
-                      {{'podaci' | translate}}
-                    </ng-template>
-                      <ng-template ngbTabContent>
-                        <p style="font-size: 21px;" class="description">{{'podaci1' | translate}}</p>
-                        <p class="description"> {{'podaci2' | translate}} <br> <br>
-                          {{'podaci3' | translate}}<br> 
-                          {{'podaci4' | translate}}<br> 
-                          {{'podaci5' | translate}}<br> <br>
-                          {{'podaci6'}}<br> <br>
-                          {{'podaci7' | translate}} <br> <br> {{'podaci8' | translate}} <br> <br>
-                                                     {{'podaci9' | translate }}<br> <br>
-                                                     {{'podaci10' | translate}}<br> <br>
-                          </p>
-                      </ng-template>
-                  </ngb-tab>
-                  <ngb-tab>
-                    <ng-template ngbTabTitle>
-                      {{'nastava' | translate}}
-                    </ng-template>
-                      <ng-template ngbTabContent>
-                        <p style="font-size: 21px; font-weight: 700;" class="description">{{'nastava1' | translate}}</p>
-                        <p style="font-size: 19px;"  class="description"> {{'nastava2' | translate}} <br><span style="font-weight: 700;"> {{'nastava3' | translate}} </span> {{'nastava4' | translate}}  <br><span style="font-weight: 700;"> {{'nastava5' | translate}} </span> {{'nastava6' | translate}} <span style="font-weight: 700;"> {{'nastava7' | translate}} </span> {{'nastava8' | translate}}
-                        <br> <br>   {{'nastava9' | translate}}
-                        <br> <br> {{'nastava10' | translate}} <span id="dots">...</span><br><br><button onclick="myFunction()" id="myBtn"> {{'nastava11' | translate}} </button> <br><br> 
-                        <span id="more"> {{'nastava12' | translate}} <div class="br"></div>
-                        <br> {{'nastava13' | translate}} 
-                      	<br> {{'nastava14' | translate}} </span>
-                          
-                          </p>
-                      </ng-template>
-                  </ngb-tab> 
-                  <ngb-tab>
-                    <ng-template ngbTabTitle>
-                        {{'kalendar1' | translate}}
-                    </ng-template>
-                      <ng-template  ngbTabContent>
-                        <p style="font-size: 21px; font-weight: 700;" class="description"> {{'kalendar2' | translate}} </p>
-                         <img id="myimage" style="width: 100%; height: auto; margin: auto;" src="../../assets/img/kalend.png" alt="">
-                        <p> {{'kalendar3' | translate}} <br> <br>
-                         {{'kalendar4' | translate}} <br> <br>
-                         {{'kalendar5' | translate}}
-                         <br> <br>
-                         {{'kalendar6' | translate}}
-                         </p>
-                      </ng-template>
-                  </ngb-tab>
-                  <ngb-tab>
-                    <ng-template ngbTabTitle>
-                        {{'pribor' | translate}}
-                    </ng-template>
-                      <ng-template  ngbTabContent>
-                        <p style="margin-top: 30px;"><span style="font-size: 21px; font-weight: 700;"> {{'pribor1' | translate}} <br> </span>
-                          {{'pribor2' | translate}} <br>
-                          {{'pribor3' | translate}} <br>
-                          {{'pribor4' | translate}} <br>
-                         {{'pribor5' | translate}} <br> <br>
-                          {{'pribor6' | translate}}
-                          </p>
-                      </ng-template>
-                  </ngb-tab>
-              </ngb-tabset>
-          </div>
-        </div>
+                                        <br>  <button onclick="myFunction()" style="padding:0px 12px 0px 12px; background-color: antiquewhite; border-radius: 21px; cursor: pointer;" id="myBtn">+</button>
+                                      </p>
+                                  </ng-template>
+                              </ngb-tab>
+                              <ngb-tab>
+                                <ng-template ngbTabTitle>
+                                  {{'nastava' | translate}}
+                                </ng-template>
+                                  <ng-template ngbTabContent>
+                                    <p style="font-size: 21px; font-weight: 700;" class="description">{{'nastava1' | translate}}</p>
+                                    <p style="font-size: 19px;"  class="description"> {{'nastava2' | translate}} <br><span style="font-weight: 700;"> {{'nastava3' | translate}} </span> {{'nastava4' | translate}}  
+                                    <br><span style="font-weight: 700;"> {{'nastava5' | translate}} </span> {{'nastava6' | translate}} 
+                                    <br><span style="font-weight: 700;"> {{'nastava7' | translate}} </span> {{'nastava8' | translate}}
+                                    <br> <br>   {{'nastava9' | translate}}
+                                    <br> <br> {{'nastava10' | translate}}  
+                                      </p>
+                                      <span id="dots">...</span>
+                                    <span style="font-size: 21px;" id="more">
+                                      <br>{{'prenastava' | translate}} <br> <br>
+                                      <br>{{'prenastava1' | translate}}<br> <br>
+                                      <br>{{'poslenastava2' | translate}}<br> <br>
+                                      <br>{{'poslenastava3' | translate}}<br> <br>
+                                      <br>{{'poslenastava4' | translate}}<br> <br>
+                                     <span style="font-weight: 800;"> <br>{{'poslenastava5' | translate}}<br> <br></span>
+                                      
+                                    </span>
+                                      <br>  <button onclick="myFunction()" style="padding:0px 12px 0px 12px; background-color: antiquewhite; border-radius: 21px; cursor: pointer;" id="myBtn">+</button>
+                                  </ng-template>
+                              </ngb-tab> 
+                              <ngb-tab>
+                                <ng-template ngbTabTitle>
+                                    {{'kalendar1' | translate}}
+                                </ng-template>
+                                  <ng-template  ngbTabContent>
+                                    <p style="font-size: 21px; font-weight: 700;" class="description"> {{'kalendar2' | translate}} </p>
+                                     <img id="myimage" style="width: 100%; height: auto; margin: auto;" src="../../assets/img/kalend.png" alt="">
+                                    <p> {{'kalendar3' | translate}} <br> <br>
+                                     {{'kalendar4' | translate}} <br> <br>
+                                     {{'kalendar5' | translate}}
+                                     <br> <br>
+                                     {{'kalendar6' | translate}}
+                                     </p>
+                                  </ng-template>
+                              </ngb-tab>
+                              <ngb-tab>
+                                <ng-template ngbTabTitle>
+                                    {{'pribor' | translate}}
+                                </ng-template>
+                                  <ng-template  ngbTabContent>
+                                    <p style="margin-top: 30px;"><span style="font-size: 21px; font-weight: 700;"> {{'pribor1' | translate}} <br> </span>
+                                      {{'pribor2' | translate}} <br>
+                                      {{'pribor3' | translate}} <br>
+                                      {{'pribor4' | translate}} <br>
+                                      {{'pribor5' | translate}} <br><br>
+                                      {{'pribor6' | translate}}
+                                      </p>
+                                  </ng-template>
+                              </ngb-tab>
+                          </ngb-tabset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
       </div>
     </div> 
   </main>

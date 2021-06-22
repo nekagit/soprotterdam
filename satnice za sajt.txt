@@ -20,8 +20,16 @@
 
 18.06	4 (34)	 15.00 do 17 nastavak sa skolom 18 do 19 nastavak sa skolom
 
-19.06	3	14 до 17
+19.06	3	14 до 17 pisanje teksta za cirilicu
 
-20.06	8.30	10 do 12 galeri  18 do 24.30
+20.06	8.30	10 do 12 galeri  18 do 24.30 prevesti sve na oba jezika
+
+21.06	(44)	8.00 do 9.30 10.30 do 11  prevesti sve na oba jezika
 
 
+13 satnice
+572 evra do 21.06
+
+-----------------------------------------------------------
+
+22.06		10 do 13 bugfixes za skoluc i logo doda0

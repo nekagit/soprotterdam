@@ -1,9 +1,9 @@
 <nav *ngIf="nav.visible" id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
   <div class="container">
     <a class="navbar-brand mr-0" [routerLink]="['/pocetna']">
-      <img class="logo" src="	http://soprotterdam.com/images/logo-stich-sop-rotterdam.gif?crc=134920669">
+      <img class="logo" src="../../../assets/img/thumbnail_IMG-20210622-WA0001.png">
     </a>
-    <span class="" style="margin: 21px; color: rgb(250, 103, 103); white-space: nowrap; font-size: x-large;" id="naslov">{{ 'title' | translate }}</span> 
+    <span class="" style="margin: 21px; color: rgb(255, 255, 255); white-space: nowrap; font-size: x-large;" id="naslov">{{ 'title' | translate }}</span> 
     <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
           [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
       <span class="navbar-toggler-icon"></span>
@@ -15,7 +15,7 @@
         <div class="row">
           <div class="col-6 collapse-brand">
             <a [routerLink]="['/pocetna']">
-              <img id="dropLogo" class="logo" src="	http://soprotterdam.com/images/logo-stich-sop-rotterdam.gif?crc=134920669">
+              <img class="logo" src="../../../assets/img/thumbnail_IMG-20210622-WA0001.png">
             </a>
           </div>
           <div class="col-6 collapse-close">
