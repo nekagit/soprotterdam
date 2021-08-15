@@ -13,40 +13,27 @@
         src="../../../assets/img/thumbnail_IMG-20210622-WA0001.png"
       />
     </a>
-    <span id="naslov">{{ "title" | translate }}</span>
     <button
-      style="order: 5"
+      style="order: 5; background-color: rgba(255, 187, 0, 0.623); padding: 3px;;"
       class="navbar-toggler"
       type="button"
       (click)="isCollapsed = !isCollapsed"
       [attr.aria-expanded]="!isCollapsed"
       aria-controls="navbar_global"
     >
-      <span
-        style="background-color: rgb(255, 0, 0); border-radius: 9px"
-        class="navbar-toggler-icon"
-      ></span>
+      <span class="navbar-toggler-icon"
+      style="font-size: 21px; ">   
+</span>
     </button>
-    <div style="order: 3;">
-    <a
-      (click)="switchLang('nl')"
-      style="padding: 12px;  cursor: pointer"
-      ><img
-        src="../../../assets/img/flag_of_the_netherlands.jpg"
-        width="40"
-        height="30"
-    /></a>
-    <a (click)="switchLang('rs')" style=" cursor: pointer"
-      ><img src="../../../assets/img/srpska zastava.jpg" width="40" height="30"
-    /></a>
-  </div>
+
+
     <div
-      style="order: 4"
+      style="order: 4; "
       class="navbar-collapse collapse"
       id="navbar_global"
       [ngbCollapse]="isCollapsed"
     >
-      <div class="navbar-collapse-header">
+      <div  class="navbar-collapse-header">
         <div class="row">
           <div class="col-9 collapse-brand">
             <a [routerLink]="['/pocetna']">
@@ -54,7 +41,6 @@
                 class="logo"
                 src="../../../assets/img/thumbnail_IMG-20210622-WA0001.png"
               />
-              <span style="color: black; margin: 15px 0 0 0; font-size: 16px;" id="naslov">{{ "title" | translate }}</span>
             </a>
           </div>
           <div class="col-3 collapse-close">
@@ -75,6 +61,26 @@
         class="navbar-nav align-items-lg-center ml-lg-auto"
         style="font-size: x-large"
       >
+      <li>
+        
+    <div style="padding-bottom: 10px; padding-right: 15px;" >
+      <a
+        (click)="switchLang('nl')"
+        style="padding-right: 15px;  cursor: pointer"
+        ><img
+          src="../../../assets/img/flag_of_the_netherlands.jpg"
+          width="33"
+          height="21"
+      /></a>
+      <a (click)="switchLang('rs')" style=" cursor: pointer"
+        ><img src="../../../assets/img/srpska zastava.jpg"
+        width="33"
+        height="21"
+      /></a>
+    </div>
+  
+  
+      </li>
         <li class="nav-item">
           <a
             id="navlink"
@@ -116,7 +122,7 @@
             data-toggle="tooltip"
             title="Фацебоок"
           >
-            <i class="fa fa-facebook-square"></i>
+            <i style="font-size: large;" class="fa fa-facebook-square"></i>
             <span class="nav-link-inner--text d-lg-none">Фацебоок</span>
           </a>
         </li>
@@ -128,7 +134,7 @@
             data-toggle="tooltip"
             title="Инстаграм"
           >
-            <i class="fa fa-instagram"></i>
+            <i style="font-size: large;" class="fa fa-instagram"></i>
             <span class="nav-link-inner--text d-lg-none">Инстаграм</span>
           </a>
         </li>
@@ -140,7 +146,7 @@
             data-toggle="tooltip"
             title="Е-мајл"
           >
-            <i class="fa fa-envelope"></i>
+            <i style="font-size: large;" class="fa fa-envelope"></i>
             <span class="nav-link-inner--text d-lg-none">Мајл</span>
           </a>
         </li>

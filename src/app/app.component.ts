@@ -68,13 +68,7 @@ export class AppComponent implements OnInit {
           }
           this.renderer.listen('window', 'scroll', (event) => {
               const number = window.scrollY;
-              if (number > 150 || window.pageYOffset > 150) {
-                  // add logic
-                  navbar.classList.add('headroom--not-top');
-              } else {
-                  // remove logic
-                  navbar.classList.remove('headroom--not-top');
-              }
+              
           });
       });
       this.hasScrolled();
