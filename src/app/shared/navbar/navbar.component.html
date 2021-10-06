@@ -5,16 +5,18 @@
     navbar navbar-main navbar-expand-lg navbar-transparent navbar-light
     headroom headroom--top headroom--pinned
   "
+  style="display: block;"
 >
-  <div class="container">
-    <a style="order: 1" class="navbar-brand mr-0" [routerLink]="['/pocetna']">
+
+  <div id="navbarz">
+    <a class="navbar-brand" >
       <img
-        class="logo"
-        src="../../../assets/img/thumbnail_IMG-20210622-WA0001.png"
+        class="logo" 
+        src="../../../assets/" 
       />
     </a>
     <button
-      style="order: 5; background-color: rgba(255, 187, 0, 0.623); padding: 3px;;"
+      style=" background-color: rgba(255, 187, 0, 0.623); padding: 3px;"
       class="navbar-toggler"
       type="button"
       (click)="isCollapsed = !isCollapsed"
@@ -22,13 +24,12 @@
       aria-controls="navbar_global"
     >
       <span class="navbar-toggler-icon"
-      style="font-size: 21px; ">   
+      style="font-size: 21px; ">
 </span>
     </button>
 
 
     <div
-      style="order: 4; "
       class="navbar-collapse collapse"
       id="navbar_global"
       [ngbCollapse]="isCollapsed"
@@ -39,7 +40,7 @@
             <a [routerLink]="['/pocetna']">
               <img
                 class="logo"
-                src="../../../assets/img/thumbnail_IMG-20210622-WA0001.png"
+                src="../../../assets/img/lo.png"
               />
             </a>
           </div>
@@ -51,35 +52,17 @@
               [attr.aria-expanded]="!isCollapsed"
               aria-controls="navbar_global"
             >
-              <span></span>
-              <span></span>
             </button>
           </div>
         </div>
       </div>
       <ul
-        class="navbar-nav align-items-lg-center ml-lg-auto"
-        style="font-size: x-large"
+        class="navbar-nav align-items-lg-center"
+        style="font-size: x-large; float: right;"
       >
       <li>
-        
-    <div style="padding-bottom: 10px; padding-right: 15px;" >
-      <a
-        (click)="switchLang('nl')"
-        style="padding-right: 15px;  cursor: pointer"
-        ><img
-          src="../../../assets/img/flag_of_the_netherlands.jpg"
-          width="33"
-          height="21"
-      /></a>
-      <a (click)="switchLang('rs')" style=" cursor: pointer"
-        ><img src="../../../assets/img/srpska zastava.jpg"
-        width="33"
-        height="21"
-      /></a>
-    </div>
-  
-  
+
+
       </li>
         <li class="nav-item">
           <a
@@ -103,14 +86,6 @@
             [routerLink]="['/kontakt']"
             class="nav-link nav-link-icon"
             >{{ "kontakt" | translate }}</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            id="navlink"
-            [routerLink]="['/prva']"
-            class="nav-link nav-link-icon"
-            >{{ "pocetna" | translate }}</a
           >
         </li>
 

@@ -1,79 +1,80 @@
-
-.logo {
-    width: 150px!important;
-    height: 150px!important;
+#navbar-main {
+    margin: 0;
+    justify-content: baseline!important;
 }
 
 
+#navbar_global {
+    display: block!important;
+
+}
+
+#navbarz {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-link-icon {
+    color: black!important;
+}
+
+.logo {
+    width: 150px!important;
+    height: 100px!important;
+}
+
 #naslov {
-    margin: 21px 21px 21px 0; 
-    color: rgb(255, 255, 255); 
-    white-space: nowrap; 
-    font-size: 18px; 
+    margin: 21px 21px 21px 0;
+    color: rgb(0, 0, 0);
+    white-space: nowrap;
+    font-size: 18px;
     order: 2;
 }
 
 #navlink {
     font-size: 21px;
     font-weight: 666;
-    color: rgb(255, 92, 92);
+    color: rgb(25, 112, 36)!important;
 }
 
 #navlink:hover {
     color: rgb(21, 101, 167);
 }
 
-
 @media (min-width:347px) {
-  
     #naslov {
-        font-size: x-large; 
+        font-size: x-large;
         margin-right: 66px;
-
     }
-    
 }
-
 
 @media (min-width:420px) {
-  
     #naslov {
-    margin: 21px 21px 21px 21px; 
-    margin-right: 88px;
+        margin: 21px 21px 21px 21px;
+        margin-right: 88px;
     }
-    
 }
-    
 
 @media (min-width:470px) {
-  
     #naslov {
-        font-size: 33px; 
+        font-size: 33px;
     }
-    
-    }
-    
+}
+
 @media (min-width:520px) {
-  
     #naslov {
         margin-right: 133px;
-    }   
-    
+    }
 }
-     
+
 @media (min-width:570px) {
-  
     #naslov {
         margin-right: 150px;
-    }   
-    
+    }
 }
-               
+
 @media (min-width:900px) {
-  
     #naslov {
         margin-right: 0px;
-    }   
-    
+    }
 }
-            

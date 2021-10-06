@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http'; 
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app.routing';
 
 
@@ -18,7 +18,6 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { HomeModule } from './home/home.module';
 import { SkolaComponent } from './skola/skola.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
-import { PrvaComponent } from './prva/prva.component';
 import { HttpClient} from '@angular/common/http';
 
 @NgModule({
@@ -30,7 +29,6 @@ import { HttpClient} from '@angular/common/http';
     FooterComponent,
     SkolaComponent,
     KontaktComponent,
-    PrvaComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,7 +46,7 @@ import { HttpClient} from '@angular/common/http';
       }
   }),
   ],
-  
+
   providers: [],
   bootstrap: [AppComponent]
 })

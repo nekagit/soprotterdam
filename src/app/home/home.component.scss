@@ -1,5 +1,6 @@
 #backImg {
-    background-image: url(../../assets/img/Sumadija-min.jpg);
+    //background-image: url(../../assets/img/Sumadija-min.jpg);
+    
     width: 100%;
     height: auto;
     background-repeat: no-repeat;
@@ -7,20 +8,20 @@
 }
 
 #slk {
-    background-color:rgb(46, 46, 46) ;    
+    background-color:rgb(46, 46, 46) ;
     border-radius: 4px;
 }
 
 .hoverIn {
     transition: all 1s ease;
     box-shadow: 1px 6px 21px 3px #000000;
-    border-radius: 33px; 
-    background-color:rgb(30, 141, 104)!important;    
+    border-radius: 33px;
+    background-color:rgb(30, 141, 104)!important;
   }
 
   .hoverOut {
     transition: all 1s ease;
     box-shadow: 1px 6px 21px 3px #000000;
-    border-radius: 33px; 
-    background-color:rgb(8, 34, 80)!important;    
+    border-radius: 33px;
+    background-color:rgb(8, 34, 80)!important;
   }
