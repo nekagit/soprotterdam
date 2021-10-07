@@ -1,48 +1,33 @@
-#navbar-main {
-    //border: 1px solid black;
-    padding: 21px;
-    position: sticky!important;
-    width: 90%;
-    justify-content: space-between!important;
-}
 
-
-#navbar_global {
-   // border: 1px solid black;
-    flex-grow: 0;
-    width: fit-content!important;
-    display: flex;
-    justify-content: end;
-    align-self: center;
-}
-
-#skola {
-    position: absolute; 
-    left: 43%; 
-    font-size: 88px;
-}
-
-.logo {
-    width: 200px!important;
-    height: 150px!important;
-}
-
-#navlink {
-    font-size: 21px;
-    font-weight: 666;
-    color: rgb(25, 112, 36)!important;
-}
-
-#navlink:hover {
-    color: rgb(21, 101, 167);
-}
 
 @media (min-width:280px) {
 
+    #navbar-main {
+        padding: 21px;
+        position: sticky!important;
+        width: 90%;
+        justify-content: space-around!important;
+        margin: auto;
+    }
+    
+    
+    #navbar_global {
+        flex-grow: 0;
+        width: fit-content!important;
+        display: flex;
+        justify-content: end;
+        align-self: center;
+    }
+    
     #skola {
-        font-size: 57px;
-        left: 30%;
+        position: absolute; 
+        color: rgba(233, 33, 33, 0.884);
+        font-family: 'Neucha', cursive;
+        font-size: 60px;
+        left: 27%;
         top: 88%;
+        font-weight: 601;
+
     }
     
     .logo {
@@ -50,64 +35,102 @@
         height: 100px!important;
     }
     
+    #navlink {
+        font-size: 18px;
+        font-weight: 666;
+        color: rgb(21, 101, 167)!important; 
+        font-family: 'Neucha', cursive;
+    
+    }
+    
+    #navlink:hover {
+        color: rgb(21, 101, 167);
+    }
+    
+
 }
 
 @media (min-width:300px) {
     #skola {
-        left: 33%;
+        left: 28%;
     }
     
 }
 
 @media (min-width:340px) {
     #skola {
-        left: 37%;
+        left: 35%;
     }
 }
 
 @media (min-width:410px) {
+
     #skola {
-        left: 41%;
+        left: 37%;
     }
+    
 }
 
-@media (min-width:510px) {
+@media (min-width:500px) {
     #skola {
-        left: 45%;
+        left: 42%;
         top: 20%;
     }
+    
+   
+    #navbar-main {
+        justify-content: space-between!important;
+    }
+    
+    
 }
 
 @media (min-width:800px) {
     #skola {
-        left: 48%;
+        left: 44%;
+        font-weight: 666;
+
+    }
+}
+
+@media (min-width:900px) {
+    #skola {
+        left: 45%;
     }
 }
 
 @media (min-width:990px) {
       
     #skola {
-        left: 47%;
-        font-size: 77px;
+        font-size: 60px;
+    }
+    #navlink {
+        font-size: 21px;
+    }
+}
+
+@media (min-width:1100px) {
+      
+    #skola {
+        font-size: 66px;
+        left: 45%;
+    }
+    #navlink {
+        font-size: 25px;
+    
+    }
+    
+    .logo {
+        width: 200px!important;
+        height: 150px!important;
     }
     
 }
 
 @media (min-width:1400px) {
-    #navbar-main {
-        //border: 1px solid black;
-        padding: 21px;
-    }
-    
-    
-    #navbar_global {
-       // border: 1px solid black;
-    }
     
     #skola {
-        position: absolute; 
-        left: 43%; 
-        font-size: 88px;
+        font-size: 77px;
     }
     
     .logo {
@@ -116,13 +139,9 @@
     }
     
     #navlink {
-        font-size: 21px;
+        font-size: 28px;
         font-weight: 666;
-        color: rgb(25, 112, 36)!important;
     }
     
-    #navlink:hover {
-        color: rgb(21, 101, 167);
-    }
     
 }

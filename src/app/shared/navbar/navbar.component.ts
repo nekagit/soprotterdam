@@ -30,7 +30,7 @@ export class NavbarComponent implements OnInit {
                  this.lastPoppedUrl = undefined;
                  window.scrollTo(0, this.yScrollStack.pop());
              } else
-                 window.scrollTo(0, 0);
+                window.scrollTo(0, 0);
          }
        });
        this.location.subscribe((ev:PopStateEvent) => {

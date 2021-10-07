@@ -11,6 +11,7 @@
       <img
         class="logo" 
         src="../../../assets/img/wg.png" 
+        [routerLink]="['/pocetna']"
       />
     </a>
 
@@ -22,6 +23,7 @@
       (click)="isCollapsed = !isCollapsed"
       [attr.aria-expanded]="!isCollapsed"
       aria-controls="navbar_global"
+
     >
       <span class="navbar-toggler-icon"
       style="font-size: 21px; ">
@@ -43,6 +45,8 @@
               <img
                 class="logo"
                 src="../../../assets/img/wg.png"
+                [routerLink]="['/pocetna']"
+
               />
             </a>
           </div>
