@@ -1,13 +1,12 @@
 
-
 @media (min-width:280px) {
 
     #navbar-main {
         padding: 21px;
         position: sticky!important;
-        width: 90%;
-        justify-content: space-around!important;
-        margin: auto;
+        width: 100%;
+        justify-content: space-between!important;
+
     }
     
     
@@ -17,16 +16,11 @@
         display: flex;
         justify-content: end;
         align-self: center;
+        
     }
     
     #skola {
-        position: absolute; 
-        color: rgba(233, 33, 33, 0.884);
-        font-family: 'Neucha', cursive;
-        font-size: 60px;
-        left: 27%;
-        top: 88%;
-        font-weight: 601;
+        display: none;
 
     }
     
@@ -39,7 +33,7 @@
         font-size: 18px;
         font-weight: 666;
         color: rgb(21, 101, 167)!important; 
-        font-family: 'Neucha', cursive;
+        font-family: 'Gabriela', serif;
     
     }
     
@@ -50,46 +44,28 @@
 
 }
 
-@media (min-width:300px) {
-    #skola {
-        left: 28%;
-    }
-    
-}
-
-@media (min-width:340px) {
-    #skola {
-        left: 35%;
-    }
-}
-
-@media (min-width:410px) {
-
-    #skola {
-        left: 37%;
-    }
-    
-}
-
 @media (min-width:500px) {
     #skola {
-        left: 42%;
-        top: 20%;
+        display: block;
+        position: absolute; 
+        color: rgba(233, 33, 33, 0.884);
+        font-family: 'Gabriela', serif;
+        font-size: 60px;
+        font-weight: 500;
+        left: 39%;
+        top: 18%;
     }
-    
-   
-    #navbar-main {
-        justify-content: space-between!important;
+}
+
+@media (min-width:600px) {
+    #skola {
+        left: 41%;
     }
-    
-    
 }
 
 @media (min-width:800px) {
     #skola {
-        left: 44%;
-        font-weight: 666;
-
+        left: 43%;
     }
 }
 

@@ -6,7 +6,6 @@
     headroom headroom--top headroom--pinned 
   "
 >
-
     <a class="navbar-brand" >
       <img
         class="logo" 
@@ -15,9 +14,8 @@
       />
     </a>
 
-
-    <button
-      style=" background-color: rgb(25, 112, 36); padding: 3px;"
+    <button 
+      style=" background-color: rgb(25, 112, 36); margin: 21px; padding: 3px;" 
       class="navbar-toggler"
       type="button"
       (click)="isCollapsed = !isCollapsed"
@@ -26,12 +24,11 @@
 
     >
       <span class="navbar-toggler-icon"
-      style="font-size: 21px; ">
+      style="font-size: 21px;">
       </span>
     </button>
 
     <h1 id="skola" >Skola</h1>
-
 
     <div
       class="navbar-collapse collapse"
@@ -40,7 +37,7 @@
     >
       <div  class="navbar-collapse-header">
         <div class="row">
-          <div class="col-9 collapse-brand">
+          <div class="collapse-brand">
             <a [routerLink]="['/pocetna']">
               <img
                 class="logo"
@@ -50,7 +47,7 @@
               />
             </a>
           </div>
-          <div class="col-3 collapse-close">
+          <div class="collapse-close">
             <button
               type="button"
               class="navbar-toggler"
@@ -64,11 +61,8 @@
       </div>
       <ul
         class="navbar-nav align-items-lg-center"
-        style="font-size: x-medium;"
       >
       <li>
-
-
       </li>
         <li class="nav-item">
           <a
@@ -94,8 +88,6 @@
             >{{ "kontakt" | translate }}</a
           >
         </li>
-
-      
       </ul>
   </div>
 </nav>
