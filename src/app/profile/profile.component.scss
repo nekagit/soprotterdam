@@ -1,4 +1,8 @@
-
+.backImg {
+  background-image: url(../../assets/img/beograd1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 #galeri {
     width: 95%;
@@ -11,6 +15,8 @@
     padding: 12px;
     font-size: 21px;
 }
+
+
 
 @media (min-width:1000px) {
     .titl {

@@ -1,31 +1,38 @@
 <main>
   <div class="position-relative">
-    <section id="backImg"  class="section section-lg section-hero section-shaped">
+    <section id="backImg" class="section section-lg section-hero section-shaped">
       <div class="container shape-container d-flex align-items-center py-lg">
         <div class="col px-0">
           <div class="row align-items-center justify-content-center">
-            
+
           </div>
         </div>
       </div>
     </section>
     <section class="section mb-5">
-      <div class= "profile-page">
+      <div class="profile-page">
         <div class="container">
           <div class="card card-profile shadow mt--200">
             <div class="px-4">
               <div class="row justify-content-center">
                 <div class="col-lg-3 order-lg-2">
                   <div class="card-profile-image">
-                      <img src="../../assets/img/kros.png" class="rounded-circle">
+                    <a [routerLink]="['/skola']"> <img src="../../assets/img/kids-school-logo-vector-22907690.jpg"
+                        class="rounded-circle"></a>
                   </div>
                 </div>
               </div>
               <div class="mt-5 py-5 border-top text-center">
                 <div class="row justify-content-center">
                   <div class="col-lg-9">
-                    <p> {{"krosRts" | translate}}
-                       </p>
+                    <section>
+                      <div class="text-center">
+                        <span class="pb-lg-3" style="color: #000; font-size: 30px; display: block;">{{'skola1' |
+                          translate}}</span>
+                        <span class="text-muted " style="color: rgba(43, 43, 43, 0.678); font-size: 25px;">{{'skola1.1'
+                          | translate}}</span>
+                      </div>
+                    </section>
                   </div>
                 </div>
               </div>
@@ -35,35 +42,87 @@
       </div>
     </section>
     <div class="trenner"></div>
-    <section  id="slk" class="section m-2 m-md-4" >
-      <div class="container p-md-1" >
-        <div class="row row-grid align-items-center">
-          <div class="col-md-6 embed-responsive embed-responsive-16by9 ">
-              <iframe class="embed-responsive-item p-3" id="idIframe" src="https://www.youtube.com/embed/eoJ3yRq9wGU" style="border: none; width:100%; margin: 0 0 0 1%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="col-md-6 text-center" style="color: white;">
-              <h3 style="color: white;">{{'video' | translate}}</h3>
-              <p class="lead">{{'video2' | translate}}</p>
-          </div>
+    <section class="card card-profile shadow" id="slk">
+      <p style="font-size: 33px;" class="text-center"> {{'skola2' | translate}} <br></p>
+      <p style="font-size: 19px;" class="text-center">
+        {{'skola3' | translate}}
+        <br> {{'casovi' | translate}}
+      </p>
+      <div class="card card-profile shadow richtlinie">
+        <div class="klBox">
+          <img style="width: 120px; height: 100px; margin: auto;" src="../../assets/img/herz.png" alt="">
+          <p style="font-weight: 600"> {{'osnova'| translate}} </p>
+        </div>
+        <div class="klBox">
+          <img style="width: 120px; height: 100px; " src="../../assets/img/pfeil.png" alt="">
+          <p style="font-weight: 600"> {{'osnova2'| translate}} </p>
+        </div>
+        <div class="klBox">
+          <img style="width: 120px; height: 100px;" src="../../assets/img/blatt.png" alt="">
+          <p style="font-weight: 600"> {{'osnova3'| translate}} </p>
         </div>
       </div>
+
     </section>
     <div class="trenner"></div>
 
+    <div class="card card-profile shadow tab">
+      <h1  style="font-size:  33px;"> {{'vesti' | translate}}</h1>
+      <p style="font-size: 21px; " class="description">
+        {{'pocetak1' | translate }}<br><br>
+        {{'pocetak2' | translate}} <br><br>
+        {{'pocetak4' | translate}} <br><br>
+        {{'pocetak5' | translate}}
+      </p>
+    </div>
+
+    <div class="trenner"></div>
+
+    <div class="card card-profile shadow tab">
+
+      <h1 style="font-size:  33px;">
+        {{'podaci1' | translate}}
+      </h1>
+      <p style="font-size: 18px;" class="description">
+        {{'podaci3' | translate}}<br>
+        {{'podaci4' | translate}}<br>
+        {{'podaci5' | translate}}<br> <br>
+        {{'podaci6' | translate}}<br> <br>
+      </p>
+    </div>
+
+    <div class="trenner"></div>
+
+
     <section class="section">
-      <div class= "profile-page">
+      <div class="profile-page">
         <div class="container">
-        <div style="margin:auto;" >
-          <img class="shadow " width="100%" height="auto" src="../../assets/img/spende.png">
-        </div>
-          <div class="p-3 card card-profile shadow mt-5">
-          <div class="text-center mt-2 p-3">
-            <h3>  {{'promocija1' | translate}}</h3>
-            <div class="h6 font-weight-300">  {{'promocija2' | translate}}</div>
+          <div style="margin:auto;">
+            <img class="shadow " width="100%" height="auto" src="../../assets/img/spende.png">
           </div>
+          <div class="p-3 card card-profile shadow mt-5">
+            <div class="text-center mt-2 p-3">
+              <h3> {{'promocija1' | translate}}</h3>
+              <div class="h6 font-weight-300"> {{'promocija2' | translate}}</div>
+            </div>
             <div class="row justify-content-center">
               <div class="col-lg-9">
-                <p class=" pl-3 pr-3 pl-md-0 pr-md-0">❤A Markovic , M. Keljevic, N. Vojvodic, S. Nenic, D. Jekic , N. Ceho , A. Oprin, K. Tezyk ,T. Panzalovic , I. Potocnik , I. Stankovic, L. Stankovic , Z. Stevic, Z. Kojic, D. Mihic , W. Waalring, JJc van Bouwhorst , E. Hasicic , B. Malovic , B. Kilic , M. Tankos , M. Bilgin , E. Ileri , M. Sroczynski , M. Kocak, O. Aktalan , D. Stevanovic , M. Kirli, W. de Groen, R. Markovic , J.G Louwman , G. Ayhan, Y.E Akman, M. Radosavljevic, J. Kalicanin , H. Eser , C. Eser , C. Erol , J. Franken , I. van Eijk , A. Arcun, V.I Getrouw, I.S Vreugt , F. Kirli , M. Gumus , M. Kirli , A. Kirli , J. Trumpaitis , A. Sargit , L. Tavcer , H. Soerotaroeno, D. Matijas , M. Jordacevic Armitage, O. Golijanin , M. Konjevic, M.A Stamper-Leon, S. Sarkanovic , N. Sabic , D. Fonseca , M. Simidzija, D. Konjevic, D. Patkovic, J. Jovic, M. Kolundzija, D. Zdravkovic , N. Dragojevic , A. Vukas , M. Vukas , J. Jankovic, N. Boksan , B. Sicar , M. Vojvodic , S. Vujnovic , R. Simic , D. Gvozdenac ,N. Mastilovic, A. Vukmanovic, M. Jordacevic , R. Rajakovic , A. Vasic , S. Cetojevic , S. Cvjeticanin , S. Popovic , P. Joldic , N. Stankovic , D. Beslac, A. Fekec , M. Nikic , B. Vojnovic , D. Skoric , B. Zoric , D. Vukojevic , B. Dragojevic , M. Gavrilovic ,V. Pejasinovic , B. Martinovic, O. Markovic , Z. Markovic , B. Sicar , R. Gvozdenovic , D. Djuricic , N. Zotovic , S. Peric , N. Brkovic , T. Turcan ,N. Rakovic, S. Pejic , N. Rajkovic , V. Bogdanovic , D. Vasiljevic , Z. Arsic , S. Popratina , S. Kuljaca , F. Pavlic , D. Vuckovic , J. Samardzija , P. Krcun , ARBO Rotterdam ❤</p>
+                <p class=" pl-3 pr-3 pl-md-0 pr-md-0">❤A Markovic , M. Keljevic, N. Vojvodic, S. Nenic, D. Jekic , N.
+                  Ceho , A. Oprin, K. Tezyk ,T. Panzalovic , I. Potocnik , I. Stankovic, L. Stankovic , Z. Stevic, Z.
+                  Kojic, D. Mihic , W. Waalring, JJc van Bouwhorst , E. Hasicic , B. Malovic , B. Kilic , M. Tankos , M.
+                  Bilgin , E. Ileri , M. Sroczynski , M. Kocak, O. Aktalan , D. Stevanovic , M. Kirli, W. de Groen, R.
+                  Markovic , J.G Louwman , G. Ayhan, Y.E Akman, M. Radosavljevic, J. Kalicanin , H. Eser , C. Eser , C.
+                  Erol , J. Franken , I. van Eijk , A. Arcun, V.I Getrouw, I.S Vreugt , F. Kirli , M. Gumus , M. Kirli ,
+                  A. Kirli , J. Trumpaitis , A. Sargit , L. Tavcer , H. Soerotaroeno, D. Matijas , M. Jordacevic
+                  Armitage, O. Golijanin , M. Konjevic, M.A Stamper-Leon, S. Sarkanovic , N. Sabic , D. Fonseca , M.
+                  Simidzija, D. Konjevic, D. Patkovic, J. Jovic, M. Kolundzija, D. Zdravkovic , N. Dragojevic , A. Vukas
+                  , M. Vukas , J. Jankovic, N. Boksan , B. Sicar , M. Vojvodic , S. Vujnovic , R. Simic , D. Gvozdenac
+                  ,N. Mastilovic, A. Vukmanovic, M. Jordacevic , R. Rajakovic , A. Vasic , S. Cetojevic , S. Cvjeticanin
+                  , S. Popovic , P. Joldic , N. Stankovic , D. Beslac, A. Fekec , M. Nikic , B. Vojnovic , D. Skoric ,
+                  B. Zoric , D. Vukojevic , B. Dragojevic , M. Gavrilovic ,V. Pejasinovic , B. Martinovic, O. Markovic ,
+                  Z. Markovic , B. Sicar , R. Gvozdenovic , D. Djuricic , N. Zotovic , S. Peric , N. Brkovic , T. Turcan
+                  ,N. Rakovic, S. Pejic , N. Rajkovic , V. Bogdanovic , D. Vasiljevic , Z. Arsic , S. Popratina , S.
+                  Kuljaca , F. Pavlic , D. Vuckovic , J. Samardzija , P. Krcun , ARBO Rotterdam ❤</p>
               </div>
             </div>
           </div>
@@ -74,35 +133,10 @@
     <div class="trenner"></div>
 
     <section class="section">
-      <div class= "profile-page card card-profile ">
-            <div class="row justify-content-center">
-              <div class="shadow container" style="background-color: rgba(32, 26, 26, 0.849); color: rgb(194, 194, 194); " >
-                <div class="text-center mt-2 p-3 ">
-                  <h2 style="color: white; padding-bottom: 21px;">{{"info" | translate}}
-                  </h2>
-                  <h5 style="color: white;">{{ "info2" | translate}}</h5>
-                </div>
-                  <div  class="row justify-content-center ">
-                    <div class="col-lg-9">
-                      <p style="text-align: left; font-size: 19px;" class=" pl-3 pr-3 pl-md-0 pr-md-0 "><span > Распоред за фолклор је следећи:</span><br>
-                        {{ "info3" | translate}}<br>
-                        <br><span >{{"lokacija" | translate}}</span><br>
-                        {{ "info4" | translate}}
-                        <br> <br><span >{{"uplata" | translate}}</span><br>
-                        {{"info5" | translate}}
-                        <br><br><span >{{"racun" | translate}}</span><br>
-                        Stichting SOP Rotterdam
-                        NL 97 RABO 0310651867
-                        {{"info6" | translate}}
-                        </p>
-                    </div>
-                  </div>
-              </div>
-            </div>
-      </div>
+
     </section>
 
-      <img src="../../assets/img/logo.png" style="margin: auto; width: 100%;"  alt="">
+    <img src="../../assets/img/logo.png" style="margin: auto; width: 100%;" alt="">
   </div>
 
 </main>

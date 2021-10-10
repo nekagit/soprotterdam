@@ -1,93 +1,42 @@
-<nav
-  *ngIf="nav.visible"
-  id="navbar-main"
-  class="
+<nav *ngIf="nav.visible" id="navbar-main" class="
     navbar navbar-main navbar-expand-lg navbar-transparent navbar-light
     headroom headroom--top headroom--pinned 
-  "
->
-    <a class="navbar-brand" >
-      <img
-        class="logo" 
-        src="../../../assets/img/wg.png" 
-        [routerLink]="['/pocetna']"
-      />
-    </a>
+  ">
+  <a class="navbar-brand">
+    <img class="logo" src="../../../assets/img/wg.png" [routerLink]="['/pocetna']" />
+  </a>
 
-    <button 
-      style=" background-color: rgb(25, 112, 36); margin: 21px; padding: 3px;" 
-      class="navbar-toggler"
-      type="button"
-      (click)="isCollapsed = !isCollapsed"
-      [attr.aria-expanded]="!isCollapsed"
-      aria-controls="navbar_global"
+  <button style=" background-color: rgb(25, 112, 36); margin: 18px; padding: 3px;" class="navbar-toggler" type="button"
+    (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+    <span class="navbar-toggler-icon" style="font-size: 21px;">
+    </span>
+  </button>
 
-    >
-      <span class="navbar-toggler-icon"
-      style="font-size: 21px;">
-      </span>
-    </button>
+  <h1 id="skola">{{ "skolaa" | translate }}</h1>
 
-    <h1 id="skola" >Skola</h1>
-
-    <div
-      class="navbar-collapse collapse"
-      id="navbar_global"
-      [ngbCollapse]="isCollapsed"
-    >
-      <div  class="navbar-collapse-header">
-        <div class="row">
-          <div class="collapse-brand">
-            <a [routerLink]="['/pocetna']">
-              <img
-                class="logo"
-                src="../../../assets/img/wg.png"
-                [routerLink]="['/pocetna']"
-
-              />
-            </a>
-          </div>
-          <div class="collapse-close">
-            <button
-              type="button"
-              class="navbar-toggler"
-              (click)="isCollapsed = !isCollapsed"
-              [attr.aria-expanded]="!isCollapsed"
-              aria-controls="navbar_global"
-            >
-            </button>
-          </div>
+  <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed" style="font-size: 12px;">
+    <div class="navbar-collapse-header">
+      <div class="row">
+        <div class="collapse-close">
+          <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed"
+            [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+          </button>
         </div>
       </div>
-      <ul
-        class="navbar-nav align-items-lg-center"
-      >
-      <li>
+    </div>
+    <ul class="navbar-nav align-items-lg-center">
+      <li class="nav-item">
+        <a id="navlink" [routerLink]="['/pocetna']" class="nav-link nav-link-icon">{{ "pocetna" | translate }}</a>
       </li>
-        <li class="nav-item">
-          <a
-            id="navlink"
-            [routerLink]="['/aktivnosti']"
-            class="nav-link nav-link-icon"
-            >{{ "aktivnosti" | translate }}</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            id="navlink"
-            [routerLink]="['/galerija']"
-            class="nav-link nav-link-icon"
-            >{{ "galerija" | translate }}</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            id="navlink"
-            [routerLink]="['/kontakt']"
-            class="nav-link nav-link-icon"
-            >{{ "kontakt" | translate }}</a
-          >
-        </li>
-      </ul>
+      <li class="nav-item">
+        <a id="navlink" [routerLink]="['/aktivnosti']" class="nav-link nav-link-icon">{{ "aktivnosti" | translate }}</a>
+      </li>
+      <li class="nav-item">
+        <a id="navlink" [routerLink]="['/galerija']" class="nav-link nav-link-icon">{{ "galerija" | translate }}</a>
+      </li>
+      <li class="nav-item">
+        <a id="navlink" [routerLink]="['/kontakt']" class="nav-link nav-link-icon">{{ "kontakt" | translate }}</a>
+      </li>
+    </ul>
   </div>
 </nav>

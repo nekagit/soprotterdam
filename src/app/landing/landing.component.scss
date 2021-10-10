@@ -1,22 +1,31 @@
-#backImg {
-    //background-image: url(../../assets/img/89345595_1618233841668483_6694992061772333056_n-min.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.backImg {
+    width: max-content;
+    height: auto;
 }
 
 
-@media (min-width:260px) {
-
-    #titule {
-        padding-top: 100px;
+@media (min-width:280px) {
+    
+    .sect{
+        width:90%; 
+        margin: auto;
+        margin-top: 100px;
+        padding: 33px;
+    
     }
-
+    
 }
 
-@media (min-width:900px) {
 
-    #titule {
-        font-size: 42px;
-    }
-
-}
+    @media (min-width:400px) {
+    
+        .sect{
+            width:60%; 
+            margin: auto;
+            margin-top: 100px;
+            padding: 21px;
+        
+        }
+        
+        }
+            
