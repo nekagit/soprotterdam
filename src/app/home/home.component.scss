@@ -4,6 +4,19 @@
   height: auto;
   background-repeat: no-repeat;
   background-size: cover;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-direction: reverse;
+  animation-iteration-count: infinite;
+
+}
+
+
+@keyframes example {
+  0%   { top:0px;}
+  50%  { top:3px;}
+  100% { top:0px;}
 }
 
 #slk {
@@ -15,6 +28,10 @@
   width: 77%;
   padding: 33px;
   margin: auto;
+  animation-name: example;
+  animation-duration: 9s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
 }
 
 .richtlinie {
@@ -28,6 +45,10 @@
 }
 img {
   margin: auto;
+  animation-name: example;
+  animation-duration: 9s;
+  animation-delay: 9s;
+  animation-iteration-count: infinite;
 }
 
 .klBox {
