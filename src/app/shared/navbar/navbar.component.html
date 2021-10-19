@@ -2,19 +2,25 @@
     navbar navbar-main navbar-expand-lg navbar-transparent navbar-light
     headroom headroom--top headroom--pinned 
   ">
-  <a class="navbar-brand">
-    <img class="logo" src="../../../assets/img/wg.png" [routerLink]="['/pocetna']" />
-  </a>
 
-  <button style=" background-color: rgb(25, 112, 36); margin: 18px; padding: 3px;" class="navbar-toggler" type="button"
-    (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
-    <span class="navbar-toggler-icon" style="font-size: 21px;">
+  <div>
+    <img (mouseover)="showa = true " (mouseout)="showa = false " class="logo"
+      src="../../../assets/img/heder-mirnije.png" type="button" data-toggle="tooltip" data-placement="right"
+      title="Амбасада републике србије хаг - краљевина холадија, Mинистарство просвете" type="button"
+      data-toggle="tooltip" data-placement="right"
+      title="Амбасада републике србије хаг - краљевина холадија, Mинистарство просвете">
+
+    <a class="navbar-brand">
+      <img  *ngIf="!showa" id="logo" class="logo2" src="../../../assets/img/wg.png" [routerLink]="['/pocetna']" />
+    </a>
+  </div>
+
+  <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
+    aria-controls="navbar_global">
+    <span class="navbar-toggler-icon">
     </span>
   </button>
-
-  <h1 id="skola">{{ "skolaa" | translate }}</h1>
-
-  <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed" style="font-size: 12px;">
+  <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed" style="width: fit-content;">
     <div class="navbar-collapse-header">
       <div class="row">
         <div class="collapse-close">
@@ -23,13 +29,27 @@
           </button>
         </div>
       </div>
+      <div class="wrapper2">
+        <img class="img-fluid" src="../../../assets/img/heder-mirnije.png" alt="">
+        <br>
+        <h1 class="nasll">{{ "ministar2" | translate }}</h1>
+        <h1 class="nasll">{{ "ministar1" | translate }}</h1>
+        <h1 id="skola2">{{ "skolaa" | translate }}</h1>
+      </div>
     </div>
     <ul class="navbar-nav align-items-lg-center">
+      <li>
+        <a (click)="switchLang('nl')"><img src="../../../assets/img/flag_of_the_netherlands.jpg" width="30"
+            height="20" /></a>
+        <a (click)="switchLang('rs')" style="padding: 21px;"><img src="../../../assets/img/srpska zastava.jpg"
+            width="30" height="20" /></a>
+      </li>
       <li class="nav-item">
         <a id="navlink" [routerLink]="['/pocetna']" class="nav-link nav-link-icon">{{ "pocetna" | translate }}</a>
       </li>
       <li class="nav-item">
-        <a id="navlink" [routerLink]="['/aktivnosti']" class="nav-link nav-link-icon">{{ "aktivnosti" | translate }}</a>
+        <a id="navlink" [routerLink]="['/aktivnosti']" class="nav-link nav-link-icon">{{ "aktivnosti" | translate
+          }}</a>
       </li>
       <li class="nav-item">
         <a id="navlink" [routerLink]="['/galerija']" class="nav-link nav-link-icon">{{ "galerija" | translate }}</a>
@@ -38,5 +58,12 @@
         <a id="navlink" [routerLink]="['/kontakt']" class="nav-link nav-link-icon">{{ "kontakt" | translate }}</a>
       </li>
     </ul>
+
+    <div style="width: 333px; text-align: center; margin: auto;">
+      <h4 style="font-weight: 600; font-size: 16px; font-family: Gabriela, serif;" *ngIf="showa">{{ "ministar3" |
+        translate }}</h4>
+    </div>
+
   </div>
+
 </nav>

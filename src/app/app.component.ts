@@ -35,6 +35,8 @@ export class AppComponent implements OnInit {
 
         var navbar = document.getElementsByTagName('nav')[0];
         var titl = this.document.getElementsByTagName('h1')[0];
+        var logo = this.document.getElementById('logo');
+        console.log(logo.classlist)
 
         // If they scrolled down and are past the navbar, add class .headroom--unpinned.
         // This is necessary so you never see what is "behind" the navbar.
@@ -43,6 +45,7 @@ export class AppComponent implements OnInit {
             if (navbar.classList.contains('headroom--pinned')) {
                 navbar.classList.remove('headroom--pinned');
                 navbar.classList.add('headroom--unpinned');
+                logo.classList.add('margin');
                 titl.classList.remove('headroom--pinned');
                 titl.classList.add('headroom--unpinned');
             }
@@ -54,6 +57,7 @@ export class AppComponent implements OnInit {
                 // $('.navbar.headroom--unpinned').removeClass('headroom--unpinned').addClass('headroom--pinned');
                 if (navbar.classList.contains('headroom--unpinned')) {
                     navbar.classList.remove('headroom--unpinned');
+                    logo.classList.remove('margin');
                     navbar.classList.add('headroom--pinned');
                     titl.classList.remove('headroom--unpinned');
                     titl.classList.add('headroom--pinned');
