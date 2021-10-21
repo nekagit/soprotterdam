@@ -19,6 +19,7 @@ import { HomeModule } from './home/home.module';
 import { SkolaComponent } from './skola/skola.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { HttpClient} from '@angular/common/http';
+import { VestComponent } from './vest/vest.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { HttpClient} from '@angular/common/http';
     FooterComponent,
     SkolaComponent,
     KontaktComponent,
+    VestComponent,
   ],
   imports: [
     BrowserModule,

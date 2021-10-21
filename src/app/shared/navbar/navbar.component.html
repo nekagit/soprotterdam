@@ -30,26 +30,32 @@
         </div>
       </div>
       <div class="wrapper2">
-        <img class="img-fluid" src="../../../assets/img/heder-mirnije.png" alt="">
+        <img style="margin-top: -80px!important;"  src="../../../assets/img/heder-mirnije.png" alt="">
         <br>
         <h1 class="nasll">{{ "ministar2" | translate }}</h1>
         <h1 class="nasll">{{ "ministar1" | translate }}</h1>
         <h1 id="skola2">{{ "skolaa" | translate }}</h1>
       </div>
     </div>
-    <ul class="navbar-nav align-items-lg-center">
+    <ul style="align-items: center;" class="navbar-nav align-items-lg-center">
       <li>
-        <a (click)="switchLang('nl')"><img src="../../../assets/img/flag_of_the_netherlands.jpg" width="30"
+        <a (click)="switchLang('nl')" style="padding-right: 5px;"><img src="../../../assets/img/flag_of_the_netherlands.jpg" width="30"
             height="20" /></a>
-        <a (click)="switchLang('rs')" style="padding: 21px;"><img src="../../../assets/img/srpska zastava.jpg"
+        <a (click)="switchLang('rs')"  ><img src="../../../assets/img/srpska zastava.jpg"
             width="30" height="20" /></a>
       </li>
       <li class="nav-item">
         <a id="navlink" [routerLink]="['/pocetna']" class="nav-link nav-link-icon">{{ "pocetna" | translate }}</a>
       </li>
       <li class="nav-item">
-        <a id="navlink" [routerLink]="['/aktivnosti']" class="nav-link nav-link-icon">{{ "aktivnosti" | translate
+        <a id="navlink" [routerLink]="['/vest']" class="nav-link nav-link-icon">{{ "vesti" | translate }}</a>
+      </li>
+      <li class="nav-item">
+        <a id="navlink" [routerLink]="['/aktivnosti']" class="nav-link nav-link-icon">{{ "nastava" | translate
           }}</a>
+      </li>
+      <li class="nav-item">
+        <a id="navlink" [routerLink]="['/skola']" class="nav-link nav-link-icon">{{ "vrtic" | translate }}</a>
       </li>
       <li class="nav-item">
         <a id="navlink" [routerLink]="['/galerija']" class="nav-link nav-link-icon">{{ "galerija" | translate }}</a>
