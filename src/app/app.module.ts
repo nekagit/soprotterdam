@@ -20,6 +20,7 @@ import { SkolaComponent } from './skola/skola.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { HttpClient} from '@angular/common/http';
 import { VestComponent } from './vest/vest.component';
+import { UdzComponent } from './udz/udz.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { VestComponent } from './vest/vest.component';
     SkolaComponent,
     KontaktComponent,
     VestComponent,
+    UdzComponent,
   ],
   imports: [
     BrowserModule,

@@ -25,12 +25,11 @@
           </button>
         </div>
       </div>
-      <div class="wrapper2">
-        <img style="margin-top: -80px!important;"  src="../../../assets/img/heder-mirnije.png" alt="">
+      <div style="margin-top: -120px!important;" class="wrapper2">
+        <img   src="../../../assets/img/heder-mirnije.png" alt="">
         <br>
-        <h1 class="nasll">{{ "ministar2" | translate }}</h1>
-        <h1 class="nasll">{{ "ministar1" | translate }}</h1>
-        <h1 id="skola2">{{ "skolaa" | translate }}</h1>
+        <span class="nasll">{{ "ministar2" | translate }}</span>
+        <span class="nasll">{{ "ministar1" | translate }}</span>
       </div>
     </div>
     <ul style="align-items: center;" class="navbar-nav align-items-lg-center">
@@ -54,6 +53,9 @@
         <a id="navlink" [routerLink]="['/skola']" class="nav-link nav-link-icon">{{ "vrtic" | translate }}</a>
       </li>
       <li class="nav-item">
+        <a id="navlink" [routerLink]="['/udz']" class="nav-link nav-link-icon">{{ "udz" | translate }}</a>
+      </li>
+      <li class="nav-item">
         <a id="navlink" [routerLink]="['/galerija']" class="nav-link nav-link-icon">{{ "galerija" | translate }}</a>
       </li>
       <li class="nav-item">
@@ -62,7 +64,8 @@
     </ul>
 
     <div style="width: 333px; text-align: center; margin: auto;">
-      <h4 style="font-weight: 600; font-size: 16px; font-family: Gabriela, serif;" *ngIf="showa">{{ "ministar3" |
+      <h4 style="font-weight: 600; font-size: 16px; font-family: Gabriela, serif;" *ngIf="showa">{{ "ministar1" |
+        translate }} <br>  {{ "ministar2" |
         translate }}</h4>
     </div>
 
