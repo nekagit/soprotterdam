@@ -1,5 +1,5 @@
-{  
-        "skolaa" : "Servische aanvullende school",
+{
+        "skolaa": "Servische aanvullende school",
         "title": "Verwelkomen!",
         "ministar1": "Ambassade van de Republiek Servië Den Haag - Koninkrijk der Nederlanden",
         "ministar2": "Ministerie van Onderwijs",
@@ -25,22 +25,18 @@
         "info5": "Kleinere groep 15 euro. Middelgrote jeugdgroep 20 euro.",
         "racun": "U kunt een betaling doen naar de rekening:",
         "info6": "Geef bij betaling aan dat het om folklore gaat. Meer informatie kunt u krijgen via telefoon +31641173071 Email: admin@soprotterdam.com",
-
         "aktivTitl": "In overeenstemming met ons team bieden we kinderen kunstfolklorelessen en aanvullende Servische taallessen.",
         "folkTitl": "Folklore voor kinderen",
         "deca": "Kindergroep (van 5 tot 12 jaar) op vrijdag van 18.30 tot 19.30 uur",
         "sred": "Midden- en jeugdgroep (van 13 tot 25 jaar) op woensdag van 18 tot 20u",
         "kore": "Choreograaf: Milan Teodosic",
-    
         "galeriMN": "Archief van oude beelden",
-
         "dostupni": "We zijn dagelijks beschikbaar op alle netwerken!",
         "tim": "Ons organisatieteam",
         "ime": "Naam*",
         "majl": "Mail*",
         "poruka": "Bericht*",
         "posalji": "verzenden",
-
         "hvala": "Bedankt voor het bezoeken!",
         "osnova": "BASIS - HART VOOR ONZE KINDEREN.",
         "osnova2": "DOEL - LEREN EN SOCIALISATIE. ",
@@ -52,7 +48,6 @@
         "skola3": "Onder auspiciën van het Ministerie van Onderwijs, Wetenschap en Technologische Ontwikkeling van de Republiek Servië.",
         "casovi": "De lessen zijn gratis.",
         "druzimo": "KOM OM UIT TE HANGEN EN TE LEREN VIA HET SPEL !!!",
-        
         "vesti": " Nieuws",
         "pocetak": "beginnen",
         "pocetak1": "Inschrijving in de Servische aanvullende school voor het schooljaar 2021/2022",
@@ -61,7 +56,6 @@
         "pocetak3": "De school is gratis en studenten zullen, naast het leren van de Servische taal, het Cyrillische alfabet, reizen door Servië, door de geschiedenis, geografie, traditie en cultuur van hun voorouders.",
         "pocetak4": "Het belangrijkste is dat we allemaal samen zijn, leren en groeien!",
         "pocetak5": "De school is gratis en studenten zullen, naast het leren van de Servische taal, het Cyrillische alfabet, reizen door Servië, door de geschiedenis, geografie, traditie en cultuur van hun voorouders.",
-    
         "podaci": "Gegevens",
         "podaci1": "ONZE DETERMINANTEN:",
         "podaci3": "Contactpersoon: SOP Rotterdam admin@soprotterdam.com",
@@ -72,15 +66,12 @@
         "podaci8": "1e jeugdgroep van 10:00 tot 12:15 azen",
         "podaci9": "2e middengroep van 12:25 tot 14:40",
         "podaci10": "3e seniorengroep van 14:45 tot 16:45",
-
         "prenastava": "Er zullen vanaf schooljaar 2021/2022 extra lessen in de Servische taal in Nederland worden gegeven in Rotterdam, die deel zullen uitmaken van het systeem van het Ministerie van Onderwijs, Wetenschap en Technologische Ontwikkeling van de Republiek Servië.",
         "prenastava1": " Het doel van educatief werk is om de Servische taal als moedertaal van studenten te leren en te koesteren, het bewustzijn van hun nationale en culturele identiteit te ontwikkelen en te versterken door de meest waardevolle werken van Servisch cultureel erfgoed te bestuderen en te onderhouden blijvende banden met het vaderland. van onderwijswerk in het buitenland, Staatscourant van RS, nr. 62/03, 34/03).",
-        
         "poslenastava2": "De leraar voor het volgende schooljaar is Stana Polaček, een hoogleraar Servische taal- en letterkunde uit Rotterdam.",
         "poslenastava3": "Als u geïnteresseerd bent in uw kind Servische taallessen, socializen, spelen en zingen met andere kinderen, neem dan contact met ons op via e-mail polacekstana@gmail.com",
         "poslenastava4": "Er is altijd de mogelijkheid om nieuwe groepen te openen.",
         "poslenastava5": "We kijken uit naar de komst van onze kinderen op onze school!",
-
         "nastava": "Onderwijzen",
         "nastava1": "Speciaal programma",
         "nastava2": "basisonderwijs en opvoeding in het buitenland wordt gerealiseerd op drie leeftijdsniveaus:",
@@ -92,22 +83,25 @@
         "nastava8": "(zevende en achtste klas) uit drie vakken: Servische taal, mijn thuisland Servië en grondbeginselen van de cultuur van het Servische volk.",
         "nastava9": "De lessen worden gegeven met kinderen van 6 tot 15 jaar.",
         "nastava10": "De lessen worden gegeven op zaterdag van 10:00 tot 17:00",
-   
         "kalendar1": "Kalender",
         "kalendar2": "SCHOOLCLENDAR VOOR HET SCHOOLJAAR 2021/2022",
         "kalendar3": "LEGERDAG, 11 november",
         "kalendar4": "STATEHOOD DAG VAN DE REPUBLIEK SERVI, 15 februari",
         "kalendar5": "INDIVIDUELE OUDERVERGADERINGEN: Elke zaterdag, wanneer er extra lessen worden gegeven in de naschoolse uren, volgens de behoeften en wensen van de ouders.",
         "kalendar6": "De data in de kalender kunnen veranderen afhankelijk van de omstandigheden. Ouders worden tijdig op de hoogte gebracht.",
-
         "pribor": "Praktische informatie",
         "pribor1": "Van schoolmaterialen moeten kinderen beschikken over:",
         "pribor2": "-Grote notebook A4 op lijnen",
         "pribor3": "-Potlood en gum / puntenslijper",
-        "pribor4":  "-Houten kleurpotloden",
+        "pribor4": "-Houten kleurpotloden",
         "pribor5": "-Map / map",
         "pribor6": "Tegelijkertijd is het noodzakelijk om elke zaterdag twee ouders te hebben, wiens taak het is om voor de kinderen te zorgen tijdens de pauze en na de lessen, zodat we allemaal het klaslokaal en de ruimte voor leraren kunnen schoonmaken, waar ouders kunnen verblijven terwijl ze op hun kinderen wachten. De ouderdiensten regelen we samen.",
-        "vrtic" : "kleuterschool"
+        "vrtic": "kleuterschool",
 
-
-}  
+        "kontakt0": "Ambassade van de Republiek Servië in het Koninkrijk der Nederlanden",
+        "kontakt0.1": "konzularno.hag@mfa.rs",
+        "kontakt1": "SOP Rotterdam",
+        "kontakt1.1": "E-mailadres?",
+        "kontakt2": "Biljana Krčum",
+        "kontakt2.1": "krcumb@gmail.com"
+}

@@ -4,13 +4,9 @@
   ">
 
   <div>
-    <img (mouseover)="showa = true " (mouseout)="showa = false " class="logo"
-      src="../../../assets/img/heder-mirnije.png" type="button" data-toggle="tooltip" data-placement="right"
-      title="Амбасада републике србије хаг - краљевина холадија, Mинистарство просвете" type="button"
-      data-toggle="tooltip" data-placement="right"
-      title="Амбасада републике србије хаг - краљевина холадија, Mинистарство просвете">
-
-    <a class="navbar-brand">
+   <center> <img (mouseover)="showa = true " (mouseout)="showa = false " class="logo"
+      src="../../../assets/img/heder-mirnije.png" type="button" ></center> 
+    <a class="navbar-brand"> 
       <img  *ngIf="!showa" id="logo" class="logo2" src="../../../assets/img/wg.png" [routerLink]="['/pocetna']" />
     </a>
   </div>

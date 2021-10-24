@@ -3,34 +3,22 @@
 
     <section style="padding: 0!important;" class="section section-lg">
       <div class="container">
-        <div style="background-color: rgb(255, 221, 176);"  class="row p-5 rounded-circle shadow">
-          <div  class=""><!--col-md-6 col-lg-3 mb-5 mb-lg-0-->
-            <div id="carts" style="margin:auto; width: fit-content!important; padding: 21px;" class="px-4 bg-gradient-info >p-5 rounded-circle shadow">
-              <img src="./assets/img/theme/team-1-800x800.jpg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;">
-              <div class="pt-4 text-center ">
-                <h5 class="title">
-                  <span class="d-block mb-1 text-white">Vuukass</span>
-                  <small class="h6 ">smeker</small>
-                </h5>
-                <div class="mt-3">
-                  <a href="javascript:void(0)" class="btn btn-warning btn-icon-only rounded-circle">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                  <a href="javascript:void(0)" class="btn btn-warning btn-icon-only rounded-circle">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                  <a href="javascript:void(0)" class="btn btn-warning btn-icon-only rounded-circle">
-                    <i class="fa fa-dribbble"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
+        <div class="card card-profile tab" style="padding: 21px; margin: auto; width:fit-content; text-align: center;">
+          <h1 style="font-size:  42px;">
+            {{'kontakt' | translate}}
+          </h1>
+          <p style="font-size: 18px;" class="description">
+            {{'kontakt0' | translate}}<br>
+            {{'kontakt0.1' | translate}}<br><br>
+            {{'kontakt1' | translate}}<br>
+            {{'kontakt1.1' | translate}}<br><br>
+            {{'kontakt2' | translate}}<br>
+            {{'kontakt2.1' | translate}}<br> 
+          </p>
         </div>
       </div>
     </section>
-    <section class="container" >
+    <section class="container">
       <form name="contact" method="POST" data-netlify="true">
         <div class="row mt-5 ">
           <div class="col-6 ">
@@ -40,7 +28,8 @@
             <input class="form-control mb-3" type="email" name="email" placeholder="{{'majl' | translate}}" required />
           </div>
           <div class="col-12 ">
-            <textarea class="form-control contact-message" name="message" placeholder="{{'poruka' | translate}}" required></textarea>
+            <textarea class="form-control contact-message" name="message" placeholder="{{'poruka' | translate}}"
+              required></textarea>
           </div>
         </div>
         <div class="text-center mb-5">
