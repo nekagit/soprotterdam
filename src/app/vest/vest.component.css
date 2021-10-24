@@ -3,6 +3,21 @@
     height: auto;
 }
 
+.hoverIn {
+  transition: all 1s ease;
+  box-shadow: 1px 6px 21px 3px #000000;
+  border-radius: 33px;
+  background-color: rgb(30, 141, 104) !important;
+}
+
+.hoverOut {
+  transition: all 1s ease;
+  box-shadow: 1px 6px 21px 3px #000000;
+  border-radius: 33px;
+  background-color: rgb(8, 34, 80) !important;
+}
+
+
 @media (min-width: 280px) {
     .sect {
         width: 90%;
