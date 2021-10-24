@@ -34,7 +34,6 @@ export class AppComponent implements OnInit {
             return;
 
         var navbar = document.getElementsByTagName('nav')[0];
-        var titl = this.document.getElementsByTagName('h1')[0];
         var logo = this.document.getElementById('logo');
         console.log(logo.classlist)
 
@@ -46,8 +45,6 @@ export class AppComponent implements OnInit {
                 navbar.classList.remove('headroom--pinned');
                 navbar.classList.add('headroom--unpinned');
                 logo.classList.add('margin');
-                titl.classList.remove('headroom--pinned');
-                titl.classList.add('headroom--unpinned');
             }
             // $('.navbar.headroom--pinned').removeClass('headroom--pinned').addClass('headroom--unpinned');
         } else {
@@ -59,8 +56,6 @@ export class AppComponent implements OnInit {
                     navbar.classList.remove('headroom--unpinned');
                     logo.classList.remove('margin');
                     navbar.classList.add('headroom--pinned');
-                    titl.classList.remove('headroom--unpinned');
-                    titl.classList.add('headroom--pinned');
                 }
             }
         }
