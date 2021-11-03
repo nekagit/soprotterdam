@@ -1,156 +1,77 @@
-<nav
-  *ngIf="nav.visible"
-  id="navbar-main"
-  class="
+<nav *ngIf="nav.visible" id="navbar-main" class="
     navbar navbar-main navbar-expand-lg navbar-transparent navbar-light
-    headroom headroom--top headroom--pinned
-  "
->
-  <div class="container">
-    <a style="order: 1" class="navbar-brand mr-0" [routerLink]="['/pocetna']">
-      <img
-        class="logo"
-        src="../../../assets/img/thumbnail_IMG-20210622-WA0001.png"
-      />
+    headroom headroom--top headroom--pinned 
+  ">
+
+  <div>
+   <center> <img (mouseover)="showa = true " (mouseout)="showa = false " class="logo"
+      src="../../../assets/img/heder-mirnije.png" type="button" ></center> 
+    <a class="navbar-brand"> 
+      <img  *ngIf="!showa" id="logo" class="logo2" src="../../../assets/img/wg.png" [routerLink]="['/pocetna']" />
     </a>
-    <button
-      style="order: 5; background-color: rgba(255, 187, 0, 0.623); padding: 3px;;"
-      class="navbar-toggler"
-      type="button"
-      (click)="isCollapsed = !isCollapsed"
-      [attr.aria-expanded]="!isCollapsed"
-      aria-controls="navbar_global"
-    >
-      <span class="navbar-toggler-icon"
-      style="font-size: 21px; ">   
-</span>
-    </button>
+  </div>
 
-
-    <div
-      style="order: 4; "
-      class="navbar-collapse collapse"
-      id="navbar_global"
-      [ngbCollapse]="isCollapsed"
-    >
-      <div  class="navbar-collapse-header">
-        <div class="row">
-          <div class="col-9 collapse-brand">
-            <a [routerLink]="['/pocetna']">
-              <img
-                class="logo"
-                src="../../../assets/img/thumbnail_IMG-20210622-WA0001.png"
-              />
-            </a>
-          </div>
-          <div class="col-3 collapse-close">
-            <button
-              type="button"
-              class="navbar-toggler"
-              (click)="isCollapsed = !isCollapsed"
-              [attr.aria-expanded]="!isCollapsed"
-              aria-controls="navbar_global"
-            >
-              <span></span>
-              <span></span>
-            </button>
-          </div>
+  <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
+    aria-controls="navbar_global">
+    <span class="navbar-toggler-icon">
+    </span>
+  </button>
+  <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed" style="width: fit-content;">
+    <div class="navbar-collapse-header">
+      <div class="row">
+        <div class="collapse-close">
+          <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed"
+            [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+          </button>
         </div>
       </div>
-      <ul
-        class="navbar-nav align-items-lg-center ml-lg-auto"
-        style="font-size: x-large"
-      >
+      <div style="margin-top: -120px!important;" class="wrapper2">
+        <img   src="../../../assets/img/heder-mirnije.png" alt="">
+        <br>
+        <span class="nasll">{{ "ministar2" | translate }}</span>
+        <span class="nasll">{{ "ministar1" | translate }}</span>
+      </div>
+    </div>
+    <ul style="align-items: center;" class="navbar-nav align-items-lg-center">
       <li>
-        
-    <div style="padding-bottom: 10px; padding-right: 15px;" >
-      <a
-        (click)="switchLang('nl')"
-        style="padding-right: 15px;  cursor: pointer"
-        ><img
-          src="../../../assets/img/flag_of_the_netherlands.jpg"
-          width="33"
-          height="21"
-      /></a>
-      <a (click)="switchLang('rs')" style=" cursor: pointer"
-        ><img src="../../../assets/img/srpska zastava.jpg"
-        width="33"
-        height="21"
-      /></a>
-    </div>
-  
-  
+        <a (click)="switchLang('nl')" style="padding-right: 5px;"><img src="../../../assets/img/flag_of_the_netherlands.jpg" width="30"
+            height="20" /></a>
+        <a (click)="switchLang('rs')"  ><img src="../../../assets/img/srpska zastava.jpg"
+            width="30" height="20" /></a>
       </li>
-        <li class="nav-item">
-          <a
-            id="navlink"
-            [routerLink]="['/aktivnosti']"
-            class="nav-link nav-link-icon"
-            >{{ "aktivnosti" | translate }}</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            id="navlink"
-            [routerLink]="['/galerija']"
-            class="nav-link nav-link-icon"
-            >{{ "galerija" | translate }}</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            id="navlink"
-            [routerLink]="['/kontakt']"
-            class="nav-link nav-link-icon"
-            >{{ "kontakt" | translate }}</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            id="navlink"
-            [routerLink]="['/prva']"
-            class="nav-link nav-link-icon"
-            >{{ "pocetna" | translate }}</a
-          >
-        </li>
+      <li class="nav-item">
+        <a id="navlink" [routerLink]="['/prva']" class="nav-link nav-link-icon">{{ "prva" | translate }}</a>
+      </li>
+      <li class="nav-item">
+        <a id="navlink" [routerLink]="['/pocetna']" class="nav-link nav-link-icon">{{ "pocetna" | translate }}</a>
+      </li>
+      <li class="nav-item">
+        <a id="navlink" [routerLink]="['/vest']" class="nav-link nav-link-icon">{{ "vesti" | translate }}</a>
+      </li>
+      <li class="nav-item">
+        <a id="navlink" [routerLink]="['/aktivnosti']" class="nav-link nav-link-icon">{{ "nastava" | translate
+          }}</a>
+      </li>
+      <li class="nav-item">
+        <a id="navlink" [routerLink]="['/skola']" class="nav-link nav-link-icon">{{ "vrtic" | translate }}</a>
+      </li>
+      <li class="nav-item">
+        <a id="navlink" [routerLink]="['/udz']" class="nav-link nav-link-icon">{{ "udz" | translate }}</a>
+      </li>
+      <li class="nav-item">
+        <a id="navlink" [routerLink]="['/galerija']" class="nav-link nav-link-icon">{{ "galerija" | translate }}</a>
+      </li>
+      <li class="nav-item">
+        <a id="navlink" [routerLink]="['/kontakt']" class="nav-link nav-link-icon">{{ "kontakt" | translate }}</a>
+      </li>
+    </ul>
 
-        <li class="nav-item">
-          <a
-            class="nav-link nav-link-icon"
-            href="https://www.facebook.com/creativetim"
-            target="_blank"
-            data-toggle="tooltip"
-            title="Фацебоок"
-          >
-            <i style="font-size: large;" class="fa fa-facebook-square"></i>
-            <span class="nav-link-inner--text d-lg-none">Фацебоок</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link nav-link-icon"
-            href="https://www.instagram.com/creativetimofficial"
-            target="_blank"
-            data-toggle="tooltip"
-            title="Инстаграм"
-          >
-            <i style="font-size: large;" class="fa fa-instagram"></i>
-            <span class="nav-link-inner--text d-lg-none">Инстаграм</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link nav-link-icon"
-            href="https://www.instagram.com/creativetimofficial"
-            target="_blank"
-            data-toggle="tooltip"
-            title="Е-мајл"
-          >
-            <i style="font-size: large;" class="fa fa-envelope"></i>
-            <span class="nav-link-inner--text d-lg-none">Мајл</span>
-          </a>
-        </li>
-      </ul>
+    <div style="width: 333px; text-align: center; margin: auto;">
+      <h4 style="font-weight: 600; font-size: 16px; font-family: Gabriela, serif;" *ngIf="showa">{{ "ministar1" |
+        translate }} <br>  {{ "ministar2" |
+        translate }}</h4>
     </div>
+
   </div>
+
 </nav>

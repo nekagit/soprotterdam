@@ -1,0 +1,156 @@
+.backImg {
+    width: max-content;
+    height: auto;
+}
+
+.hoverIn {
+  transition: all 1s ease;
+  box-shadow: 1px 6px 21px 3px #000000;
+  border-radius: 33px;
+  background-color: rgb(30, 141, 104) !important;
+}
+
+.hoverOut {
+  transition: all 1s ease;
+  box-shadow: 1px 6px 21px 3px #000000;
+  border-radius: 33px;
+  background-color: rgb(8, 34, 80) !important;
+}
+
+
+@media (min-width: 280px) {
+    .sect {
+        width: 90%;
+        margin: auto;
+        margin-top: 100px;
+        padding: 33px;
+    }
+}
+
+@media (min-width: 400px) {
+    .sect {
+        width: 60%;
+        margin: auto;
+        margin-top: 100px;
+        padding: 21px;
+    }
+}
+
+#backImg {
+    background-image: url(../../assets/img/970cba6b03f716ee8ad49b0a3e7fc6a4.jpg);
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+  
+  }
+  
+  @keyframes example {
+    0%   { top:0px;}
+    50%  { top:3px;}
+    100% { top:0px;}
+  }
+  
+  #slk {
+    background-color: rgb(38, 91, 184);
+    font-size: 21px;
+    font-weight: 600;
+    color: white;
+    border-radius: 33px;
+    width: 77%;
+    padding: 21px;
+    margin: auto;
+    animation-name: example;
+    animation-duration: 9s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+  }
+  
+  .richtlinie {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    flex-direction: row;
+    background-color: white;
+    justify-content: space-between;
+    color: black;
+    align-items: center;
+    border-radius: 21px;
+    padding: 11px;
+  
+  }
+  
+  .richtlinie > img {
+    margin: auto;
+    max-width: 120px;
+  }
+  .klBox {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  .hoverIn {
+    transition: all 1s ease;
+    box-shadow: 1px 6px 21px 3px #000000;
+    border-radius: 33px;
+    background-color: rgb(30, 141, 104) !important;
+  }
+  
+  .hoverOut {
+    transition: all 1s ease;
+    box-shadow: 1px 6px 21px 3px #000000;
+    border-radius: 33px;
+    background-color: rgb(8, 34, 80) !important;
+  }
+  
+  
+  @media (min-width:280px) {
+      
+    .tab {
+      width: 80%;
+      margin: auto;
+      padding: 21px;
+      color: black;
+      text-align: center;
+    }
+  
+    
+  .klBox {
+    padding: 2px;
+    font-size: 9px;
+    width: fit-content;
+  }
+  
+  .klBox > img {
+    max-width: 120px;
+    padding: 12px;
+  }
+  
+  }
+    
+  
+  @media (min-width:400px) {
+      
+    .tab {
+      width: 60%;
+    }
+    
+      .richtlinie >  p{
+          font-weight: 600;
+        }
+    }
+    
+  
+  @media (max-width: 990px) {
+    .richtlinie {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  

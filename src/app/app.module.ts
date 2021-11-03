@@ -20,6 +20,12 @@ import { SkolaComponent } from './skola/skola.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { PrvaComponent } from './prva/prva.component';
 import { HttpClient} from '@angular/common/http';
+import { HomeSComponent } from './home-s/home-s.component';
+import { KontaktSComponent } from './kontakt-s/kontakt-s.component';
+import { LandingSComponent } from './landing-s/landing-s.component';
+import { ProfileSComponent } from './profile-s/profile-s.component';
+import { UdzSComponent } from './udz-s/udz-s.component';
+import { VestSComponent } from './vest-s/vest-s.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +37,12 @@ import { HttpClient} from '@angular/common/http';
     SkolaComponent,
     KontaktComponent,
     PrvaComponent,
+    HomeSComponent,
+    KontaktSComponent,
+    LandingSComponent,
+    ProfileSComponent,
+    UdzSComponent,
+    VestSComponent,
   ],
   imports: [
     BrowserModule,

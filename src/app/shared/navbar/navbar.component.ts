@@ -13,10 +13,12 @@ export class NavbarComponent implements OnInit {
     public isCollapsed = true;
     private lastPoppedUrl: string;
     private yScrollStack: number[] = [];
+    showa : boolean;
 
     constructor(public location: Location, private router: Router, public nav: NavbarService,  public translate: TranslateService ) {
         translate.addLangs(['rs', 'nl']);  
         translate.setDefaultLang('rs');  
+        this.showa = false;
     }
 
     ngOnInit() {
@@ -30,7 +32,7 @@ export class NavbarComponent implements OnInit {
                  this.lastPoppedUrl = undefined;
                  window.scrollTo(0, this.yScrollStack.pop());
              } else
-                 window.scrollTo(0, 0);
+                window.scrollTo(0, 0);
          }
        });
        this.location.subscribe((ev:PopStateEvent) => {
@@ -60,6 +62,10 @@ export class NavbarComponent implements OnInit {
       switchLang(lang){
         this.translate.use(lang);
         console.log(this.translate.currentLang);
+    }
+
+    show() {
+
     }
 
 }

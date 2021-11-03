@@ -9,6 +9,12 @@ import { LandingComponent } from './landing/landing.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { SkolaComponent } from './skola/skola.component';
 import { PrvaComponent } from './prva/prva.component';
+import { HomeSComponent } from './home-s/home-s.component';
+import { ProfileSComponent } from './profile-s/profile-s.component';
+import { LandingSComponent } from './landing-s/landing-s.component';
+import { KontaktSComponent } from './kontakt-s/kontakt-s.component';
+import { VestSComponent } from './vest-s/vest-s.component';
+import { UdzSComponent } from './udz-s/udz-s.component';
 
 const routes: Routes =[
     { path: 'pocetna',             component: HomeComponent },
@@ -17,6 +23,14 @@ const routes: Routes =[
     { path: 'kontakt',          component: KontaktComponent },
     { path: 'skola',          component: SkolaComponent },
     { path: 'prva',          component: PrvaComponent },
+    
+  { path: 'pocetnaS',             component: HomeSComponent },
+  { path: 'galerijaS',     component: ProfileSComponent },
+  { path: 'aktivnostiS',          component: LandingSComponent },
+  { path: 'kontaktS',          component: KontaktSComponent },
+  { path: 'skolaS',          component: SkolaComponent },
+  { path: 'vest',          component: VestSComponent },
+  { path: 'udz',          component: UdzSComponent },
     { path: '', redirectTo: 'prva', pathMatch: 'full' }
 ];
 
