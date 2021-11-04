@@ -1,9 +1,10 @@
 <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
   <div class="container">
     <a class="navbar-brand mr-lg-5" [routerLink]="['/skola']">
+      <img class="logo" src="../../assets/img/wg.PNG">
      
     </a>
-    <span id="naslov">{{'vrtic' | translate}}</span>
+    <span id="naslov">{{'skola' | translate}}</span>
     <div>
     <a (click)="switchLang('nl')" class="p-lg-4 p-3"  ><img  src="../../../assets/img/flag_of_the_netherlands.jpg" width="30" height="20"/></a>
     <a (click)="switchLang('rs')" class="p-lg-4 p-3" ><img  src="../../../assets/img/srpska zastava.jpg" width="29" height="20"/></a>
@@ -16,6 +17,9 @@
       <div class="navbar-collapse-header">
         <div class="row">
           <div class="col-6 collapse-brand">
+            <a [routerLink]="['/skola']">
+              <img id="dropLogo" class="logo" src="../../assets/img/wg.PNG">
+            </a>
           <span  style="color: rgb(250, 103, 103); font-size: x-large;" id="naslov">{{'skola' | translate}}</span>
           </div>
           <div class="col-6 collapse-close">
@@ -29,14 +33,31 @@
       </div>
       <ul class="navbar-nav align-items-lg-center ml-lg-auto" style="font-size: x-large;">
         <li class="nav-item">
-          <a id="navlink" [routerLink]="['/pocetna']" class="nav-link nav-link-icon">{{'pocetna' | translate}}</a>
+          <a id="navlink" [routerLink]="['/prva']" class="nav-link nav-link-icon">{{'pocetna' | translate}}</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-link-icon" href="https://www.facebook.com/creativetim" target="_blank" data-toggle="tooltip" title="Like us on Facebook">
+            <i class="fa fa-facebook-square"></i>
+            <span class="nav-link-inner--text d-lg-none">Facebook</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-icon" href="https://www.instagram.com/creativetimofficial" target="_blank" data-toggle="tooltip" title="Follow us on Instagram">
+            <i class="fa fa-instagram"></i>
+            <span class="nav-link-inner--text d-lg-none">Instagram</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-icon" href="https://www.instagram.com/creativetimofficial" target="_blank" data-toggle="tooltip" title="Follow us on Instagram">
+            <i class="fa fa-envelope"></i>
+            <span class="nav-link-inner--text d-lg-none">E-mail</span>
+          </a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-<div class="trenner"></div>
-<!--
 <main>
     <div class="position-relative" >
       <section style="padding:100px 0 0 0;">
@@ -54,6 +75,7 @@
         <div class="card card-profile shadow ">
             <div class="row justify-content-center">
                 <div >
+           <p class="text-center p-lg-4" style="font-size: 21px; font-weight: 700; padding: 33px;">{{'druzimo' | translate}}</p>
               </div>
             </div>
             <div class=" border-top text-center">
@@ -62,7 +84,11 @@
                   <div style="margin-bottom: 100px;">
                     <div class="row justify-content-center">
                       <div class="col-lg-5 pt-5 pb-5 justify-content-center">
-                      
+                        <span  style="font-size: 21px; font-weight: 700;"> {{'skola2' | translate}} <br></span>
+                        <p style="font-size: 19px;" > 
+                          {{'skola3' | translate}}
+                          <br> <br> {{'casovi' | translate}}
+                          </p>
                           <img style="width: 100%; height: auto; margin: auto;" src="../../assets/img/Unbenannt.png" alt="">
                           <div class="row justify-content-center p-lg-3 pt-lg-5">
                             <img style="width: 120px; height: 100px; margin: auto;" src="../../assets/img/herz.png" alt="">
@@ -166,4 +192,4 @@
     </div> 
   </main>
   
-  -->
+  
