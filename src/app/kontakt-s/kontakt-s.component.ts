@@ -11,7 +11,7 @@ export class KontaktSComponent implements OnInit {
 
   constructor(public nav: NavbarService) { }
 
-  ngOnInit(): void {this.nav.show();
+  ngOnInit(): void {this.nav.showS();
   }
 
 }

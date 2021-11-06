@@ -8,8 +8,6 @@ import { NavbarService } from '../navbar.service';
 })
 
 export class LandingComponent implements OnInit {
-  focus: any;
-  focus1: any;
 
   constructor(public nav: NavbarService) { }
 

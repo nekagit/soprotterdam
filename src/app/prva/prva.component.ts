@@ -12,6 +12,7 @@ export class PrvaComponent implements OnInit {
 
   ngOnInit(): void {
     this.nav.hide();
+    this.nav.hideS();
   }
 
 }

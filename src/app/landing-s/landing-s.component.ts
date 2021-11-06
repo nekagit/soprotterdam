@@ -8,11 +8,8 @@ import { NavbarService } from '../navbar.service';
 })
 export class LandingSComponent implements OnInit {
 
-  focus: any;
-  focus1: any;
-
   constructor(public nav: NavbarService) { }
 
-  ngOnInit() {this.nav.show();}
+  ngOnInit() {this.nav.showS();}
 
 }

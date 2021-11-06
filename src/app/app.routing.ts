@@ -14,10 +14,12 @@ import { HomeSComponent } from './home-s/home-s.component';
 import { ProfileSComponent } from './profile-s/profile-s.component';
 import { KontaktSComponent } from './kontakt-s/kontakt-s.component';
 import { PrvaComponent } from './prva/prva.component';
+import { LandingSComponent } from './landing-s/landing-s.component';
 
 const routes: Routes =[
   { path: 'pocetna',             component: HomeComponent },
   { path: 'galerija',     component: ProfileComponent },
+  { path: 'aktivnostiS',          component: LandingSComponent },
   { path: 'aktivnosti',          component: LandingComponent },
   { path: 'kontakt',          component: KontaktComponent },
   { path: 'skola',          component: SkolaComponent },

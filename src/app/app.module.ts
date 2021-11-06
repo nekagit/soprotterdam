@@ -21,11 +21,17 @@ import { KontaktComponent } from './kontakt/kontakt.component';
 import { HttpClient} from '@angular/common/http';
 import { VestComponent } from './vest/vest.component';
 import { UdzComponent } from './udz/udz.component';
+import { PrvaComponent } from './prva/prva.component';
+import { ProfileSComponent } from './profile-s/profile-s.component';
+import { HomeSComponent } from './home-s/home-s.component';
+import { KontaktSComponent } from './kontakt-s/kontakt-s.component';
+import { LandingSComponent } from './landing-s/landing-s.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
+    LandingSComponent,
     ProfileComponent,
     NavbarComponent,
     FooterComponent,
@@ -33,6 +39,10 @@ import { UdzComponent } from './udz/udz.component';
     KontaktComponent,
     VestComponent,
     UdzComponent,
+    KontaktSComponent,
+    ProfileSComponent,
+    HomeSComponent,
+    PrvaComponent,
   ],
   imports: [
     BrowserModule,

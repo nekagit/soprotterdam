@@ -10,6 +10,6 @@ export class ProfileSComponent implements OnInit {
 
     constructor(public nav: NavbarService) { }
 
-    ngOnInit() {this.nav.show();}
+    ngOnInit() {this.nav.showS();}
 
 }

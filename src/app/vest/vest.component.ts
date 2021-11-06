@@ -10,7 +10,7 @@ export class VestComponent implements OnInit {
 
   constructor(public nav: NavbarService) { }
 
-  ngOnInit() {this.nav.show();
+  ngOnInit() {this.nav.showS();
   
     document.getElementById("slk").onmouseover = function ()  {
       document.getElementById("slk").classList.add('hoverIn');

@@ -11,17 +11,19 @@
 
 /* Control the left side  */
 .left {
-  color: white;
+  color: black;
   left: 0;
   background-size: cover;
+  background-image: url(../../assets/img/vector-sports-seamless-pattern-background-illustration-wallpaper-vector-sports-seamless-pattern-background-illustration-wallpaper-160001917.jpg);
   border-right: 3px solid gold;
 }
 
 /* Control the right side */
 .right {
   color: white;
-  right: 0;
   background-size: cover;
+  right: 0;
+  background-image: url(../../assets/img/Skola-srpskog-jezika-u-Roterdamu.jpg);
   border-left: 3px solid gold;
 
 }

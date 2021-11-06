@@ -14,6 +14,7 @@ export class NavbarComponent implements OnInit {
     private lastPoppedUrl: string;
     private yScrollStack: number[] = [];
     showa : boolean;
+    showSk : boolean;
 
     constructor(public location: Location, private router: Router, public nav: NavbarService,  public translate: TranslateService ) {
         translate.addLangs(['rs', 'nl']);  
@@ -65,6 +66,9 @@ export class NavbarComponent implements OnInit {
     }
 
     show() {
+
+    }
+    showS() {
 
     }
 

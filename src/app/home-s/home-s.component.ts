@@ -19,7 +19,7 @@ export class HomeSComponent implements OnInit {
     constructor(public nav: NavbarService) { }
 
     ngOnInit() {
-        this.nav.show();
+        this.nav.showS();
 
         document.getElementById("slk").onmouseover = function ()  {
             document.getElementById("slk").classList.add('hoverIn');
