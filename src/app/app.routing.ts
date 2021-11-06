@@ -13,8 +13,7 @@ import { UdzComponent } from './udz/udz.component';
 import { HomeSComponent } from './home-s/home-s.component';
 import { ProfileSComponent } from './profile-s/profile-s.component';
 import { KontaktSComponent } from './kontakt-s/kontakt-s.component';
-import { VestSComponent } from './vest-s/vest-s.component';
-import { UdzSComponent } from './udz-s/udz-s.component';
+import { PrvaComponent } from './prva/prva.component';
 
 const routes: Routes =[
   { path: 'pocetna',             component: HomeComponent },
@@ -27,9 +26,7 @@ const routes: Routes =[
   { path: 'pocetnaS',             component: HomeSComponent },
   { path: 'galerijaS',     component: ProfileSComponent },
   { path: 'kontaktS',          component: KontaktSComponent },
-  { path: 'skola',          component: SkolaComponent },
-  { path: 'vestS',          component: VestSComponent },
-  { path: 'udzS',          component: UdzSComponent },
+  { path: 'prva',          component: PrvaComponent },
     { path: '', redirectTo: 'prva', pathMatch: 'full' }
 ];
 

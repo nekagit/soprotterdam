@@ -12,7 +12,6 @@
 /* Control the left side  */
 .left {
   color: white;
-  background-image: url(../../assets/img/split1.jpg);
   left: 0;
   background-size: cover;
   border-right: 3px solid gold;
@@ -22,7 +21,6 @@
 .right {
   color: white;
   right: 0;
-  background-image: url(../../assets/img/Book-HD-Wallpapers-download.jpeg);
   background-size: cover;
   border-left: 3px solid gold;
 
@@ -54,7 +52,6 @@
 /* Control the left side  */
 .left {
   color: white;
-  background-image: url(../../assets/img/split1.jpg);
   left: 0;
   background-size: cover;
   border-right: none;
@@ -66,7 +63,6 @@
   color: white;
   right: none;
   bottom: 0;
-  background-image: url(../../assets/img/../../assets/img/Book-HD-Wallpapers-download.jpeg);
   background-size: cover;
   border-left: none;
   border-top: 3px solid rgb(151, 128, 0);

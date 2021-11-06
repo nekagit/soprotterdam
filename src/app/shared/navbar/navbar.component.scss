@@ -66,7 +66,7 @@
 
     #navlink {
         width: fit-content !important;
-        font-size: 16px;
+        font-size: 13px;
         font-weight: 666;
         color: rgb(21, 101, 167) !important;
         font-family: "Gabriela", serif;
@@ -97,7 +97,7 @@
 
 @media (min-width: 700px) {
     .logo2 {
-        height: 140px !important;
+        height: 120px !important;
     }
 
     .navbar-toggler {
@@ -147,19 +147,39 @@
 
 @media (min-width: 991px) {
     
-    
     .logo2 {
         left: auto!important;
-       right: 10%!important;
+       right: 1%!important;
         top: 13%!important;
         width: auto !important;
-        height: 150px !important;
+        height: 140px !important;
+    }
+
+    #navlink {
+        font-size: 17px;
     }
 
     
 }
 
 @media (min-width: 1230px) {
+    
+    .logo {
+        width: 80px;
+    }
+    
+    .logo2 {
+        left: auto!important;
+       right: 5%!important;
+        top: 13%!important;
+        width: auto !important;
+        height: 160px !important;
+    }
+
+    #navlink {
+        font-size: 21px;
+    }
+
 }
 
 @media (min-width: 1300px) {

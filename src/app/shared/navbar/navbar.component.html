@@ -7,7 +7,7 @@
    <center> <img (mouseover)="showa = true " (mouseout)="showa = false " class="logo"
       src="../../../assets/img/heder-mirnije.png" type="button" ></center> 
     <a class="navbar-brand"> 
-      <img  *ngIf="!showa" id="logo" class="logo2" src="../../../assets/img/wg.png" [routerLink]="['/pocetna']" />
+      <img  *ngIf="!showa" id="logo" class="logo2" src="../../../assets/img/wg.PNG" [routerLink]="['/pocetna']" />
     </a>
   </div>
 
@@ -40,7 +40,7 @@
             width="30" height="20" /></a>
       </li>
       <li class="nav-item">
-        <a id="navlink" [routerLink]="['/pocetna']" class="nav-link nav-link-icon">{{ "pocetna" | translate }}</a>
+        <a id="navlink" style="margin-left: 10px!important;" [routerLink]="['/pocetna']" class="nav-link nav-link-icon">{{ "pocetna" | translate }}</a>
       </li>
       <li class="nav-item">
         <a id="navlink" [routerLink]="['/vest']" class="nav-link nav-link-icon">{{ "vesti" | translate }}</a>
