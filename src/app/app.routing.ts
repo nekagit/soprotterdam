@@ -15,6 +15,9 @@ import { ProfileSComponent } from './profile-s/profile-s.component';
 import { KontaktSComponent } from './kontakt-s/kontakt-s.component';
 import { PrvaComponent } from './prva/prva.component';
 import { LandingSComponent } from './landing-s/landing-s.component';
+import { VaterpoloComponent } from './vaterpolo/vaterpolo.component';
+import { KrosComponent } from './kros/kros.component';
+import { OstaliComponent } from './ostali/ostali.component';
 
 const routes: Routes =[
   { path: 'pocetna',             component: HomeComponent },
@@ -28,6 +31,9 @@ const routes: Routes =[
   { path: 'pocetnaS',             component: HomeSComponent },
   { path: 'galerijaS',     component: ProfileSComponent },
   { path: 'kontaktS',          component: KontaktSComponent },
+  { path: 'vaterpolo',          component: VaterpoloComponent },
+  { path: 'kros',          component: KrosComponent },
+  { path: 'ostali',          component: OstaliComponent },
   { path: 'prva',          component: PrvaComponent },
     { path: '', redirectTo: 'prva', pathMatch: 'full' }
 ];

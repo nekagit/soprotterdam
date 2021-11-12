@@ -15,8 +15,8 @@
     "krosRts": "Драги родитељи, пријатељи и драга децо, Овим вам прносимо обавештење у вези КРОС РТС–а 2021. РТС–а који је планиран 23.05.2021 одлажемо за 27.06.2021, због COVID-19 мера.У зависности од развоја ситуације, а у циљу првенције заразе доносићемо одлуке о којима ћемо вас благовремено обавестити.Остајемо у нади да да ће се ситуација развијати у позитивном смеру. Велики поздрав и будите нам здрави и насмејани. Ваш Стихтинг СОП Ротердам",
     "promocija1": "Промоција великог клуба 2020",
     "promocija2": "Тооооо, успели смо! Хвала свим донаторима!",
-    "video": "Видео запис друге смотре фолклора ”Весело Коло”",
-    "video2": " Смотра је одржана 29. јуна 2019. у Ридеркерку, Холандија.",
+    "video": "Видео запис ватерполо радионице са Арно Хавенга",
+    "video2": "Радионица је одржана 14. априла 2019. у спортском центру De Wilgering у Ротердаму",
     "info": "Битне информације фолклорне групе КУД Свети Сава",
     "info2": "Драга децо и родитељи, Нова сезона фолклора почиње у понедељак 2. септембра.",
     "info3": "Распоред за фолклор је следећи: Среда од 18:00 до 20:00- средња омладинска група Петак проба од 18:30 до 19:30- мања група.",
@@ -112,7 +112,32 @@
     "kontakt2.1": "krcumb@gmail.com",
     "udz" : "Уџбеници",
     "udz1" : " Уџбенике можете преузети",
-    "prva" : "Првa"
+    "prva" : "Првa",
+    "kros": "Kros",
+    "vaterpolo": "Bатерполо",
+    "ostali": "Остали",
+
+    "kros2015": "Draga deco Kros RTS-a je divno prošao !!! Hvala vam što ste svojom veselom dečijom energijom ulepšali dan. Pokazali ste se u najboljem sportskom duhu ! Veliko bravo za sve učesnike koji su osvojili medalje ! Hvala svoj deci koja su učestvovala! Zahvaljujemo se svima na strpljenju i nadamo se da ste se lepo proveli. Ovim putem se zahvaljujemo i našim sponzorima i volonterima koji su nam mnogo pomogli !!! Vidimo se na sledećem sportskom okupljanju ! ☺ Dobili smo nagradu za najlepsi kros RTS-a u dijaspori ,Rotterdam 2015 Bravo !!!",
+
+    "kros2017": "Pogledajte i video izveštaj od  krosa RTS-a u Roterdamu. Zaista je to bio jedan lep i uspešan sportski dan ! Hvala još jednom svima na učešću i lepom druženju. Vidimo se sledeće godine ! Stichting SOP Roterdam",
+    
+    "kros2017.1": "Pogledajte lepu reportažu o završnom Kampu Krosa RTS-a 2017 u Futogu. Uz bogat sportski i kulturni program deca su imala priliku da upoznaju i našu proslavljenu atletičarku Ivanu Španović.",
+    
+    
+    "kros2018": "Kros RTS-a u Roterdamu održan je prošle nedelje 20.maja 2018 godine u 14 časova. Ovu lepu sportsku manifestaciju , jedanaestu po redu u Holandiji , organizovalo je kao i svih prethodnih godina naše udruženje Srpsko Omladinsko Prijateljstvo iz Roterdama ( Stichting SOP Rotterdam) I ove godine smo se okupili na terenu Atletskog udruženja Rotterdam Atletiek sportski teren Nenijto. U sportskom duhu smo proveli  divan, sunčan dan i okupili 110 dece razlicitih uzrasta. Kros RTS je  otvorio Milan Vukas, predsednik Udruženja SOP Roterdam  a sve učesnike i njihove pratioce  je pozdravio  Bojan Kljajić  , prvi savetnik i šef Konzularnog odeljenja Ambasade Republike Srbije u Hagu, koji je kasnije uručio medalje, diplome i prigodne poklone svim učesnicima krosa. Hvala gospodinu Kljajiću  što je svojim prisustvom uveličao ovogodišnji Kros RTS-a.",
+    
+    "kros2018.1": "Najlepše hvala svim našim sponzorima : Iso Core Quality Matters, Beson Distributie , E-quale techniek, PQuality Inspections , Niški Project , Tehnoplast Holland, Z Aulić Isolatiebedrijf, GFI , Oranjegroep, Arbo Rotterdam , GS Toezicht, Oostwings Uitzendbureau, Hairish , Šabac Technical Services , K&P, TandzorgCentrum Schieweg, Hujdur Holding ,Niklaz Projects, DS Isolatie, Zmaj Techniek, Mile Industrie Services, I&S Electro . Takodje veliko hvala ekipi zaduženoj za roštilj : Biljana, Mirjana,Marijana, Živko i Slavko, kao i svim ostalim volonterima , vama roditeljima,pratiocima i dragoj deci na učešću ! Nadamo se da ste uživali i da ćemo se opet družiti sledeće  godine.  Vaš Stichting SOP Roterdam ",
+    
+    "kros2018.2": "Sa ponosom vas obaveštavamo ! Drugog dana Kampa RTS-a 2018 godine  u Svilajncu su podeljene nagrade. Osvojili smo bronzanu statuu za najbolje organizovan kros RTS-a u dijaspori ! Još jednom bravo i hvala za naše učesnike, roditelje, spozore , volontere i sve ljude dobre volje koji nas podržavaju u organizovanju  http://krosrts.rs/drugi-dan-kampa-rts-a-svilajnac-2018/",
+
+    
+    
+    "kros2019": "Pokretač prvog RTS krosa u Holandiji bio je Ratko Nikolić, profesor tadašnje srpske dopunske škole   „Vuk Karadžić „ u Rotterdamu davne 2001g. Prof. Nikolic vodio je Kros do 2005g. Prisecanjem na tadasnje uspehe mnogobrojne dece i njihovih medalja, otvara zajedno sa Milanom Vukas predsednikom udruzenja „SOP“ ambasadorkom Ksenijom Milenkovic i konzulom Bojanom Kljajic, ovogodisnji 30-ti jubilarni kros   RTS-a , sa zeljom da se sa ovom vec tradicijom nastavi jos dugi niz godina.  Kros se odrzao u Dordrechtu kao i prvi put davne 2010g pod koordinacijom Milana Vukas. Po prvi put kros RTS -a  je humanitarnog karaktera i sakupljena donacija namenjena je AK “ Priluzje” sa Kosova i Metohije.  Na zadovoljstvo naseg udruzenja “SOP” na humanitarnoj trci “Trcimo jedni za druge” sakupljeno je blizu 2.200€ koji ce biti prosledjeni preko kancelarije direktora za saradnju sa dijasporom, Arno Gujona.  80. ucesnika dece od 2018 do 2005godista su sa osmehom na licu ponosno poneli majice, zasluzene medalje, razne pokloncice, diplome i nagrade sa lutrije, gde su donirane lopte odbojkaske i fudbalske, dres od Damjana Dostanic iz TSC „Backa Topola“ i tortu kao donacija za 30g RTS krosa Jovane Dukic. ",
+    
+    "kros2019.1": "Uz pomoc mnogobrojnih Sponzora, tima „SOP“ udruzenja i mnogobrojnih roditelja ova manifestacija svaki put je uspesno organizovana i odrzavana. Najvise bih se zahvalio ambasadorki Kseniji Milenkovic , konzulu Bojanu Kljajic, na velikoj podrsci i njihovom dolasku.  Veoma vazno  je naglasiti,  da je velika podrska dosla od gradjana grada Šapca kao sto su : prof. Ratko Nikolic koji je zvanicno otvorio 30-ti RTS kros, mojoj lepsoj polovini Jovani Dukic, mom velikom prijatelju Vladimir Urosevic i gosp. Radan Gvozdenovic tkdje. iz okruga Šapca. Veliko hvala za Macvane!🌷 Mom prijatelju Aci Vasic i ujedno time i mom udruzenju, Mladenu Milanovic i svim dragim roditeljima koji su nesebicno pruzili pomoc i bili velika podrska.  Kros je zavrsen u lepoj atmosferi koju su nam omogucili AK „Fortius“ uz nova poznanstva, draga lica dece i njihovih ponosnih roditelja. ",
+    
+    "kros2019.2": "Sponzori: Sicom. NL, Beson, Tehnoplast kozijnen, RVB managment, Oostwings, ZAulic isolatiebedrijf, GFI, ZDJO32, Petromarine, GSToezicht, STS, Oranjegroep, Benelux constructie, Triptech, Hairish, Traprenovatie style, Arbo Rotterdam, Mile industrie service, BSIsolatie, Hujdur Holding BV. Veoma smo zahvalni i ponosni na nasu decu i njihov vedar duh. Veliki sportski pozdrav i  hvala vam na svemu.  Vas Stichting „ SOP“ Rotterdam"
+
     
    
 }

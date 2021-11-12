@@ -26,6 +26,9 @@ import { ProfileSComponent } from './profile-s/profile-s.component';
 import { HomeSComponent } from './home-s/home-s.component';
 import { KontaktSComponent } from './kontakt-s/kontakt-s.component';
 import { LandingSComponent } from './landing-s/landing-s.component';
+import { VaterpoloComponent } from './vaterpolo/vaterpolo.component';
+import { KrosComponent } from './kros/kros.component';
+import { OstaliComponent } from './ostali/ostali.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +46,9 @@ import { LandingSComponent } from './landing-s/landing-s.component';
     ProfileSComponent,
     HomeSComponent,
     PrvaComponent,
+    VaterpoloComponent,
+    KrosComponent,
+    OstaliComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,46 @@
+.header {
+    padding-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    padding-top: 0.5rem;
+    text-align: center;
+}
+
+.datum {
+    padding-top: 0.5rem;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+}
+
+
+.text {
+    padding: 2rem;
+    font-weight: 500;
+    align-items: center;
+    justify-content:center;
+    align-self: center;
+}
+
+.image {
+    padding: 1rem;
+} 
+
+
+@media (min-width: 280px) {
+    .main {
+        flex-direction: column;
+    }
+}
+
+
+@media (min-width: 767px) {
+    .main {
+        flex-direction: row;
+    }
+}
