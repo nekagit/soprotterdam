@@ -18,6 +18,7 @@ import { LandingSComponent } from './landing-s/landing-s.component';
 import { VaterpoloComponent } from './vaterpolo/vaterpolo.component';
 import { KrosComponent } from './kros/kros.component';
 import { OstaliComponent } from './ostali/ostali.component';
+import { SportComponent } from './sport/sport.component';
 
 const routes: Routes =[
   { path: 'pocetna',             component: HomeComponent },
@@ -35,6 +36,7 @@ const routes: Routes =[
   { path: 'kros',          component: KrosComponent },
   { path: 'ostali',          component: OstaliComponent },
   { path: 'prva',          component: PrvaComponent },
+  { path: 'sport',          component: SportComponent },
     { path: '', redirectTo: 'prva', pathMatch: 'full' }
 ];
 

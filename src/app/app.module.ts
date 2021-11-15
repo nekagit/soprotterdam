@@ -29,6 +29,7 @@ import { LandingSComponent } from './landing-s/landing-s.component';
 import { VaterpoloComponent } from './vaterpolo/vaterpolo.component';
 import { KrosComponent } from './kros/kros.component';
 import { OstaliComponent } from './ostali/ostali.component';
+import { SportComponent } from './sport/sport.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { OstaliComponent } from './ostali/ostali.component';
     VaterpoloComponent,
     KrosComponent,
     OstaliComponent,
+    SportComponent,
   ],
   imports: [
     BrowserModule,

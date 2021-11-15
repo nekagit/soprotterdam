@@ -4,10 +4,10 @@
   ">
 
   <div>
-   <center> <img (mouseover)="showa = true " (mouseout)="showa = false " class="logo"
-      src="../../../assets/img/heder-mirnije.png" type="button" ></center> 
-    <a class="navbar-brand"> 
-      <img  *ngIf="!showa" id="logo" class="logo2" src="../../../assets/img/wg.PNG" [routerLink]="['/pocetna']" />
+    <center> <img (mouseover)="showa = true " (mouseout)="showa = false " class="logo"
+        src="../../../assets/img/heder-mirnije.png" type="button"></center>
+    <a class="navbar-brand">
+      <img  id="logo" class="logo2" src="../../../assets/img/wg.PNG" [routerLink]="['/pocetna']" />
     </a>
   </div>
 
@@ -26,45 +26,52 @@
         </div>
       </div>
       <div style="margin-top: -120px!important;" class="wrapper2">
-        <img   src="../../../assets/img/heder-mirnije.png" alt="">
+        <img src="../../../assets/img/heder-mirnije.png" alt="">
         <br>
         <span class="nasll">{{ "ministar2" | translate }}</span>
         <span class="nasll">{{ "ministar1" | translate }}</span>
       </div>
     </div>
-    <ul style="align-items: center;" class="navbar-nav align-items-lg-center">
-      <li>
-        <a (click)="switchLang('nl')" style="padding-right: 5px;"><img src="../../../assets/img/flag_of_the_netherlands.jpg" width="30"
-            height="20" /></a>
-        <a (click)="switchLang('rs')"  ><img src="../../../assets/img/srpska zastava.jpg"
-            width="30" height="20" /></a> 
+
+    <div style="display:flex; flex-direction: row; justify-content: space-around;">
+      <div style="margin-right: 5px;">
+        <a (click)="switchLang('nl')" ><img
+            src="../../../assets/img/flag_of_the_netherlands.jpg" width="33" height="24" /></a>
+      </div>
+      <div > 
+        <a (click)="switchLang('rs')" ><img src="../../../assets/img/srpska zastava.jpg"
+            width="33" height="24" /></a>
+      </div>
+    </div>
+        
+        <ul style="align-items: center; "  class="navbar-nav align-items-lg-center">
+      <li class="nav-item">
+        <a id="navlink" style="padding-bottom: 10px!important;" [routerLink]="['/pocetna']"
+        
+          class="nav-link nav-link-icon"> <span style=" text-shadow: 1px 1px 1px rgb(21, 101, 167) !important; ;" > {{ "pocetna" | translate }}</span> </a>
       </li>
       <li class="nav-item">
-        <a id="navlink" style="margin-left: 10px!important;" [routerLink]="['/pocetna']" class="nav-link nav-link-icon">{{ "pocetna" | translate }}</a>
+        <a id="navlink" style="padding-bottom: 10px!important;" [routerLink]="['/sport']"
+        
+          class="nav-link nav-link-icon"> <span style=" text-shadow: 1px 1px 1px rgb(21, 101, 167) !important; ;" > {{ "sport" | translate }}</span> </a>
       </li>
       <li class="nav-item">
-        <a id="navlink" style="margin-left: 10px!important;" [routerLink]="['/kros']" class="nav-link nav-link-icon">{{ "kros" | translate }}</a>
+        
+        <a id="navlink" [routerLink]="['/galerija']" class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"> <span style=" text-shadow: 1px 1px 1px ;" > {{ "galerija" | translate }}</span> </a>
       </li>
       <li class="nav-item">
-        <a id="navlink" style="margin-left: 10px!important;" [routerLink]="['/vaterpolo']" class="nav-link nav-link-icon">{{ "vaterpolo" | translate }}</a>
+        
+        <a id="navlink" [routerLink]="['/kontakt']" class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"> <span style=" text-shadow: 1px 1px 1px ;" > {{ "kontakt" | translate }}</span> </a>
       </li>
       <li class="nav-item">
-        <a id="navlink" style="margin-left: 10px!important;" [routerLink]="['/ostali']" class="nav-link nav-link-icon">{{ "ostali" | translate }}</a>
-      </li>
-      <li class="nav-item">
-        <a id="navlink" [routerLink]="['/galerija']" class="nav-link nav-link-icon">{{ "galerija" | translate }}</a>
-      </li>
-      <li class="nav-item">
-        <a id="navlink" [routerLink]="['/kontakt']" class="nav-link nav-link-icon">{{ "kontakt" | translate }}</a>
-      </li>
-      <li class="nav-item">
-        <a id="navlink" [routerLink]="['/prva']" class="nav-link nav-link-icon">{{ "prva" | translate }}</a>
+        
+        <a id="navlink" [routerLink]="['/prva']" class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"> <span style=" text-shadow: 1px 1px 1px ;" > {{ "prva" | translate }}</span> </a>
       </li>
     </ul>
 
     <div style="width: 333px; text-align: center; margin: auto;">
       <h4 style="font-weight: 600; font-size: 16px; font-family: Gabriela, serif;" *ngIf="showa">{{ "ministar1" |
-        translate }} <br>  {{ "ministar2" |
+        translate }} <br> {{ "ministar2" |
         translate }}</h4>
     </div>
 
@@ -78,10 +85,10 @@
   ">
 
   <div>
-   <center> <img (mouseover)="showa = true " (mouseout)="showa = false " class="logo"
-      src="../../../assets/img/heder-mirnije.png" type="button" ></center> 
-    <a class="navbar-brand"> 
-      <img  *ngIf="!showa" id="logo" class="logo2" src="../../../assets/img/wg.PNG" [routerLink]="['/pocetna']" />
+    <center> <img (mouseover)="showa = true " (mouseout)="showa = false " class="logo"
+        src="../../../assets/img/heder-mirnije.png" type="button"></center>
+    <a class="navbar-brand">
+      <img id="logo" class="logo2" src="../../../assets/img/wg.PNG" [routerLink]="['/pocetna']" />
     </a>
   </div>
 
@@ -100,46 +107,59 @@
         </div>
       </div>
       <div style="margin-top: -120px!important;" class="wrapper2">
-        <img   src="../../../assets/img/heder-mirnije.png" alt="">
+        <img src="../../../assets/img/heder-mirnije.png" alt="">
         <br>
         <span class="nasll">{{ "ministar2" | translate }}</span>
         <span class="nasll">{{ "ministar1" | translate }}</span>
       </div>
     </div>
+
+    
+    
     <ul style="align-items: center;" class="navbar-nav align-items-lg-center">
-      <li>
-        <a (click)="switchLang('nl')" style="padding-right: 5px;"><img src="../../../assets/img/flag_of_the_netherlands.jpg" width="30"
-            height="20" /></a>
-        <a (click)="switchLang('rs')"  ><img src="../../../assets/img/srpska zastava.jpg"
-            width="30" height="20" /></a> 
+      <div style="display:flex; flex-direction: column; justify-content: space-around;">
+        <div style="margin-right: 5px;">
+          <a (click)="switchLang('nl')" ><img
+              src="../../../assets/img/flag_of_the_netherlands.jpg" width="33" height="24" /></a>
+        </div>
+        <div> 
+          <a (click)="switchLang('rs')" ><img src="../../../assets/img/srpska zastava.jpg"
+              width="33" height="24" /></a>
+        </div>
+      </div>
+      <li class="nav-item">
+        <a id="navlink" style="margin-left: 10px!important;" [routerLink]="['/pocetnaS']"
+        
+          class="nav-link nav-link-icon"> <span style=" text-shadow: 1px 1px 1px rgb(21, 101, 167) !important; ;" > {{ "pocetna" | translate }}</span> </a>
       </li>
       <li class="nav-item">
-        <a id="navlink" style="margin-left: 10px!important;" [routerLink]="['/pocetnaS']"  class="nav-link nav-link-icon">{{ "pocetna" | translate }}</a>
+        
+        <a id="navlink" [routerLink]="['/vest']" class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"> <span style=" text-shadow: 1px 1px 1px ;" > {{ "vesti" | translate }}</span> </a>
       </li>
       <li class="nav-item">
-        <a id="navlink" [routerLink]="['/vest']"  class="nav-link nav-link-icon">{{ "vesti" | translate }}</a>
+        
+        <a id="navlink" [routerLink]="['/aktivnostiS']" class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"> <span style=" text-shadow: 1px 1px 1px ;" > {{ "nastava" | translate}}</span> </a>
       </li>
       <li class="nav-item">
-        <a id="navlink" [routerLink]="['/aktivnostiS']"  class="nav-link nav-link-icon">{{ "nastava" | translate
-          }}</a>
+        
+        <a id="navlink" [routerLink]="['/udz']" class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"> <span style=" text-shadow: 1px 1px 1px ;" > {{ "udz" | translate }}</span> </a>
       </li>
       <li class="nav-item">
-        <a id="navlink" [routerLink]="['/udz']"  class="nav-link nav-link-icon">{{ "udz" | translate }}</a>
+        
+        <a id="navlink" [routerLink]="['/galerijaS']" class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"> <span style=" text-shadow: 1px 1px 1px ;" > {{ "galerija" | translate }}</span> </a>
       </li>
       <li class="nav-item">
-        <a id="navlink" [routerLink]="['/galerijaS']"  class="nav-link nav-link-icon">{{ "galerija" | translate }}</a>
+        
+        <a id="navlink" [routerLink]="['/kontaktS']" class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"> <span style=" text-shadow: 1px 1px 1px ;" > {{ "kontakt" | translate }}</span> </a>
       </li>
       <li class="nav-item">
-        <a id="navlink" [routerLink]="['/kontaktS']"  class="nav-link nav-link-icon">{{ "kontakt" | translate }}</a>
-      </li>
-      <li class="nav-item">
-        <a id="navlink" [routerLink]="['/prva']" class="nav-link nav-link-icon">{{ "prva" | translate }}</a>
+        
+        <a id="navlink" [routerLink]="['/prva']" class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"> <span style=" text-shadow: 1px 1px 1px ;" > {{ "prva" | translate }}</span> </a>
       </li>
     </ul>
-
     <div style="width: 333px; text-align: center; margin: auto;">
       <h4 style="font-weight: 600; font-size: 16px; font-family: Gabriela, serif;" *ngIf="showa">{{ "ministar1" |
-        translate }} <br>  {{ "ministar2" |
+        translate }} <br> {{ "ministar2" |
         translate }}</h4>
     </div>
 
