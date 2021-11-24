@@ -32,18 +32,17 @@
         <span style="text-align: center;" class="nasll">{{ "ministar1" | translate }}</span>
       </div>
     </div>
-
-    <div style="display:flex; flex-direction: row; justify-content: space-around;">
+    
+    <div style="display:flex; flex-direction: column; justify-content: space-around;">
       <div style="margin-right: 5px;">
         <a (click)="switchLang('nl')" ><img
             src="../../../assets/img/flag_of_the_netherlands.jpg" width="33" height="24" /></a>
       </div>
-      <div > 
+      <div> 
         <a (click)="switchLang('rs')" ><img src="../../../assets/img/srpska zastava.jpg"
             width="33" height="24" /></a>
       </div>
     </div>
-        
         <ul style="align-items: center; "  class="navbar-nav align-items-lg-center">
       <li class="nav-item">
         <a id="navlink" style="padding-bottom: 10px!important;" [routerLink]="['/pocetna']"
