@@ -1,167 +1,346 @@
-<nav *ngIf="nav.visible" id="navbar-main" class="
-    navbar navbar-main navbar-expand-lg navbar-transparent navbar-light
-    headroom headroom--top headroom--pinned 
-  ">
-
+<nav
+  *ngIf="nav.visible"
+  id="navbar-main"
+  class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned"
+>
   <div>
-    <center> <img (mouseover)="showa = true " (mouseout)="showa = false " class="logo" width="100px" height="auto"
-        src="../../../assets/img/heder-mirnije.png" type="button"></center> 
+    <center>
+      <img
+        (mouseover)="showa = true"
+        (mouseout)="showa = false"
+        class="logo"
+        width="100px"
+        height="auto"
+        src="../../../assets/img/heder-mirnije.png"
+        type="button"
+      />
+    </center>
     <a class="navbar-brand">
-      <img  id="logo" class="logo2" src="../../../assets/img/wg.PNG" [routerLink]="['/pocetna']" />
+      <img
+        id="logo"
+        class="logo2"
+        src="../../../assets/img/wg.PNG"
+        [routerLink]="['/pocetna']"
+      />
     </a>
   </div>
 
-  <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
-    aria-controls="navbar_global">
-    <span class="navbar-toggler-icon">
-    </span>
+  <button
+    class="navbar-toggler"
+    type="button"
+    (click)="isCollapsed = !isCollapsed"
+    [attr.aria-expanded]="!isCollapsed"
+    aria-controls="navbar_global"
+  >
+    <span class="navbar-toggler-icon"> </span>
   </button>
-  <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed" style="width: fit-content;">
+  <div
+    class="navbar-collapse collapse"
+    id="navbar_global"
+    [ngbCollapse]="isCollapsed"
+    style="width: fit-content"
+  >
     <div class="navbar-collapse-header">
       <div class="row">
         <div class="collapse-close">
-          <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed"
-            [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
-          </button>
+          <button
+            type="button"
+            class="navbar-toggler"
+            (click)="isCollapsed = !isCollapsed"
+            [attr.aria-expanded]="!isCollapsed"
+            aria-controls="navbar_global"
+          ></button>
         </div>
       </div>
       <div class="wrapper2">
-        <img width="100px" height="auto" src="../../../assets/img/heder-mirnije.png" alt="">
-        <br>
-        <span style="text-align: center;" class="nasll">{{ "ministar2" | translate }}</span>
-        <span style="text-align: center;" class="nasll">{{ "ministar1" | translate }}</span>
+        <img
+          width="100px"
+          height="auto"
+          src="../../../assets/img/heder-mirnije.png"
+          alt=""
+        />
+        <br />
+        <span style="text-align: center" class="nasll">{{
+          "ministar2" | translate
+        }}</span>
+        <span style="text-align: center" class="nasll">{{
+          "ministar1" | translate
+        }}</span>
       </div>
     </div>
-    
-    <div style="display:flex; flex-direction: column; justify-content: space-around;">
-      <div style="margin-right: 5px;">
-        <a (click)="switchLang('nl')" ><img
-            src="../../../assets/img/flag_of_the_netherlands.jpg" width="33" height="24" /></a>
+
+    <ul
+      style="align-items: center; margin-left: 10px"
+      class="navbar-nav align-items-lg-center"
+    >
+      <div class="spaceBoxFlags">
+        <div>
+          <a (click)="switchLang('nl')"
+            ><img
+              id="nethFlagSport"
+              style="margin-right: 10px"
+              src="../../../assets/img/flag_of_the_netherlands.jpg"
+              width="52"
+              height="36"
+          /></a>
+        </div>
+        <div>
+          <a (click)="switchLang('rs')"
+            ><img
+              id="srbFlagSport"
+              src="../../../assets/img/srpska zastava.jpg"
+              width="52"
+              height="36"
+          /></a>
+        </div>
       </div>
-      <div> 
-        <a (click)="switchLang('rs')" ><img src="../../../assets/img/srpska zastava.jpg"
-            width="33" height="24" /></a>
-      </div>
-    </div>
-        <ul style="align-items: center; "  class="navbar-nav align-items-lg-center">
+
       <li class="nav-item">
-        <a id="navlink" style="padding-bottom: 10px!important;" [routerLink]="['/pocetna']"
-        
-          class="nav-link nav-link-icon"> <span style=" text-shadow: 1px 1px 1px rgb(21, 101, 167) !important; ;" > {{ "pocetna" | translate }}</span> </a>
+        <a
+          id="navlink"
+          style="padding-bottom: 10px !important"
+          [routerLink]="['/pocetna']"
+          class="nav-link nav-link-icon"
+        >
+          <span style="text-shadow: 1px 1px 1px rgb(21, 101, 167) !important ;">
+            {{ "pocetna" | translate }}</span
+          >
+        </a>
       </li>
       <li class="nav-item">
-        <a id="navlink" style="padding-bottom: 10px!important;" [routerLink]="['/sport']"
-        
-          class="nav-link nav-link-icon"> <span style=" text-shadow: 1px 1px 1px rgb(21, 101, 167) !important; ;" > {{ "sport" | translate }}</span> </a>
+        <a
+          id="navlink"
+          style="padding-bottom: 10px !important"
+          [routerLink]="['/sport']"
+          class="nav-link nav-link-icon"
+        >
+          <span style="text-shadow: 1px 1px 1px rgb(21, 101, 167) !important ;">
+            {{ "sport" | translate }}</span
+          >
+        </a>
       </li>
       <li class="nav-item">
-        
-        <a id="navlink" [routerLink]="['/galerija']" class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"> <span style=" text-shadow: 1px 1px 1px ;" > {{ "galerija" | translate }}</span> </a>
+        <a
+          id="navlink"
+          [routerLink]="['/galerija']"
+          class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"
+        >
+          <span style="text-shadow: 1px 1px 1px">
+            {{ "galerija" | translate }}</span
+          >
+        </a>
       </li>
       <li class="nav-item">
-        
-        <a id="navlink" [routerLink]="['/kontakt']" class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"> <span style=" text-shadow: 1px 1px 1px ;" > {{ "kontakt" | translate }}</span> </a>
+        <a
+          id="navlink"
+          [routerLink]="['/kontakt']"
+          class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"
+        >
+          <span style="text-shadow: 1px 1px 1px">
+            {{ "kontakt" | translate }}</span
+          >
+        </a>
       </li>
       <li class="nav-item">
-        
-        <a id="navlink" [routerLink]="['/prva']" class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"> <span style=" text-shadow: 1px 1px 1px ;" > {{ "prva" | translate }}</span> </a>
+        <a
+          id="navlink"
+          [routerLink]="['/prva']"
+          class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"
+        >
+          <span style="text-shadow: 1px 1px 1px">
+            {{ "prva" | translate }}</span
+          >
+        </a>
       </li>
     </ul>
 
-    <div style="width: 333px; text-align: center; margin: auto;">
-      <h4 style="font-weight: 600; font-size: 16px; font-family: Gabriela, serif;" *ngIf="showa">{{ "ministar1" |
-        translate }} <br> {{ "ministar2" |
-        translate }}</h4>
+    <div style="width: 333px; text-align: center; margin: auto">
+      <h4
+        style="font-weight: 600; font-size: 16px; font-family: Gabriela, serif"
+        *ngIf="showa"
+      >
+        {{ "ministar1" | translate }} <br />
+        {{ "ministar2" | translate }}
+      </h4>
     </div>
-
   </div>
-
 </nav>
 
-<nav *ngIf="nav.visibleS" id="navbar-main" class="
-    navbar navbar-main navbar-expand-lg navbar-transparent navbar-light
-    headroom headroom--top headroom--pinned 
-  ">
-
+<nav
+  *ngIf="nav.visibleS"
+  id="navbar-main"
+  class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned"
+>
   <div>
-    <center> <img (mouseover)="showa = true " (mouseout)="showa = false " class="logo" width="100px" height="auto"
-        src="../../../assets/img/heder-mirnije.png" type="button"></center>
+    <center>
+      <img
+        (mouseover)="showa = true"
+        (mouseout)="showa = false"
+        class="logo"
+        width="100px"
+        height="auto"
+        src="../../../assets/img/heder-mirnije.png"
+        type="button"
+      />
+    </center>
     <a class="navbar-brand">
-      <img id="logo" class="logo2" src="../../../assets/img/wg.PNG" [routerLink]="['/pocetna']" />
+      <img
+        id="logo"
+        class="logo2"
+        src="../../../assets/img/wg.PNG"
+        [routerLink]="['/pocetna']"
+      />
     </a>
   </div>
 
-  <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
-    aria-controls="navbar_global">
-    <span class="navbar-toggler-icon">
-    </span>
+  <button
+    class="navbar-toggler"
+    type="button"
+    (click)="isCollapsed = !isCollapsed"
+    [attr.aria-expanded]="!isCollapsed"
+    aria-controls="navbar_global"
+  >
+    <span class="navbar-toggler-icon"> </span>
   </button>
-  <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed" style="width: fit-content;">
+  <div
+    class="navbar-collapse collapse"
+    id="navbar_global"
+    [ngbCollapse]="isCollapsed"
+    style="width: fit-content"
+  >
     <div class="navbar-collapse-header">
       <div class="row">
         <div class="collapse-close">
-          <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed"
-            [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
-          </button>
+          <button
+            type="button"
+            class="navbar-toggler"
+            (click)="isCollapsed = !isCollapsed"
+            [attr.aria-expanded]="!isCollapsed"
+            aria-controls="navbar_global"
+          ></button>
         </div>
       </div>
       <div class="wrapper2">
-        <img width="100px" height="auto" src="../../../assets/img/heder-mirnije.png" alt="">
-        <br>
+        <img
+          width="100px"
+          height="auto"
+          src="../../../assets/img/heder-mirnije.png"
+          alt=""
+        />
+        <br />
         <span class="nasll">{{ "ministar2" | translate }}</span>
         <span class="nasll">{{ "ministar1" | translate }}</span>
       </div>
     </div>
 
-    
-    
-    <ul style="align-items: center;" class="navbar-nav align-items-lg-center">
-      <div style="display:flex; flex-direction: column; justify-content: space-around;">
-        <div style="margin-right: 5px;">
-          <a (click)="switchLang('nl')" ><img
-              src="../../../assets/img/flag_of_the_netherlands.jpg" width="33" height="24" /></a>
+    <ul style="align-items: center" class="navbar-nav align-items-lg-center">
+      <div class="spaceBoxFlags">
+        <div>
+          <a (click)="switchLang('nl')"
+            ><img
+              id="nethFlagSport"
+              style="margin-right: 10px"
+              src="../../../assets/img/flag_of_the_netherlands.jpg"
+              width="52"
+              height="36"
+          /></a>
         </div>
-        <div> 
-          <a (click)="switchLang('rs')" ><img src="../../../assets/img/srpska zastava.jpg"
-              width="33" height="24" /></a>
+        <div>
+          <a (click)="switchLang('rs')"
+            ><img
+              id="srbFlagSport"
+              src="../../../assets/img/srpska zastava.jpg"
+              width="52"
+              height="36"
+          /></a>
         </div>
       </div>
+
       <li class="nav-item">
-        <a id="navlink" style="margin-left: 10px!important;" [routerLink]="['/pocetnaS']"
-        
-          class="nav-link nav-link-icon"> <span style=" text-shadow: 1px 1px 1px rgb(21, 101, 167) !important; ;" > {{ "pocetna" | translate }}</span> </a>
+        <a
+          id="navlink"
+          style="margin-left: 10px !important"
+          [routerLink]="['/pocetnaS']"
+          class="nav-link nav-link-icon"
+        >
+          <span style="text-shadow: 1px 1px 1px rgb(21, 101, 167) !important ;">
+            {{ "pocetna" | translate }}</span
+          >
+        </a>
       </li>
       <li class="nav-item">
-        
-        <a id="navlink" [routerLink]="['/vest']" class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"> <span style=" text-shadow: 1px 1px 1px ;" > {{ "vesti" | translate }}</span> </a>
+        <a
+          id="navlink"
+          [routerLink]="['/vest']"
+          class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"
+        >
+          <span style="text-shadow: 1px 1px 1px">
+            {{ "vesti" | translate }}</span
+          >
+        </a>
       </li>
       <li class="nav-item">
-        
-        <a id="navlink" [routerLink]="['/aktivnostiS']" class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"> <span style=" text-shadow: 1px 1px 1px ;" > {{ "nastava" | translate}}</span> </a>
+        <a
+          id="navlink"
+          [routerLink]="['/aktivnostiS']"
+          class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"
+        >
+          <span style="text-shadow: 1px 1px 1px">
+            {{ "nastava" | translate }}</span
+          >
+        </a>
       </li>
       <li class="nav-item">
-        
-        <a id="navlink" [routerLink]="['/udz']" class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"> <span style=" text-shadow: 1px 1px 1px ;" > {{ "udz" | translate }}</span> </a>
+        <a
+          id="navlink"
+          [routerLink]="['/udz']"
+          class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"
+        >
+          <span style="text-shadow: 1px 1px 1px"> {{ "udz" | translate }}</span>
+        </a>
       </li>
       <li class="nav-item">
-        
-        <a id="navlink" [routerLink]="['/galerijaS']" class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"> <span style=" text-shadow: 1px 1px 1px ;" > {{ "galerija" | translate }}</span> </a>
+        <a
+          id="navlink"
+          [routerLink]="['/galerijaS']"
+          class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"
+        >
+          <span style="text-shadow: 1px 1px 1px">
+            {{ "galerija" | translate }}</span
+          >
+        </a>
       </li>
       <li class="nav-item">
-        
-        <a id="navlink" [routerLink]="['/kontaktS']" class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"> <span style=" text-shadow: 1px 1px 1px ;" > {{ "kontakt" | translate }}</span> </a>
+        <a
+          id="navlink"
+          [routerLink]="['/kontaktS']"
+          class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"
+        >
+          <span style="text-shadow: 1px 1px 1px">
+            {{ "kontakt" | translate }}</span
+          >
+        </a>
       </li>
       <li class="nav-item">
-        
-        <a id="navlink" [routerLink]="['/prva']" class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"> <span style=" text-shadow: 1px 1px 1px ;" > {{ "prva" | translate }}</span> </a>
+        <a
+          id="navlink"
+          [routerLink]="['/prva']"
+          class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"
+        >
+          <span style="text-shadow: 1px 1px 1px">
+            {{ "prva" | translate }}</span
+          >
+        </a>
       </li>
     </ul>
-    <div style="width: 333px; text-align: center; margin: auto;">
-      <h4 style="font-weight: 600; font-size: 16px; font-family: Gabriela, serif;" *ngIf="showa">{{ "ministar1" |
-        translate }} <br> {{ "ministar2" |
-        translate }}</h4>
+    <div style="width: 333px; text-align: center; margin: auto">
+      <h4
+        style="font-weight: 600; font-size: 16px; font-family: Gabriela, serif"
+        *ngIf="showa"
+      >
+        {{ "ministar1" | translate }} <br />
+        {{ "ministar2" | translate }}
+      </h4>
     </div>
-
   </div>
-
 </nav>

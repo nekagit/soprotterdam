@@ -1,189 +1,200 @@
-    .margin {
-        animation: all 1s ease;
-        display: none!important;
-    }
+.margin {
+  animation: all 1s ease;
+  display: none !important;
+}
+
+.spaceBoxFlags {
+  padding: 10px;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/////////////////Animationen////////////////////////
+
+.spaceBoxFlags:hover {
+  cursor: pointer;
+  padding-right: 0;
+}
+
+#srbFlagSport:hover {
+
+  width: 62px;
+  height: 42px;
+}
+#nethFlagSport:hover {
+    
+  width: 62px;
+  height: 42px;
+
+}
+
+////////////////StylesContianer////////////////////
 
 @media (min-width: 280px) {
-    #navbar-main { 
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-content: center;
-        align-items: center;
-        position: sticky !important;
-        width: 100%;
-        padding: 15px 15px 5px 25px!important;
-    } 
+  #navbar-main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    position: sticky !important;
+    width: 100%;
+    padding: 15px 15px 5px 25px !important;
+  }
 
-    #navbar_global {
-        width: fit-content !important;
-        margin: auto;
-        padding: 15px 15px 5px 25px!important;
-    }
+  #navbar_global {
+    width: fit-content !important;
+    margin: auto;
+    padding: 15px 15px 5px 25px !important;
+  }
 
-    .navbar-toggler {
-        background-color: rgb(25, 112, 36);
-        padding: 3px;
-        margin: 33px;
-    }
+  .navbar-toggler {
+    background-color: rgb(108, 236, 194);
+    padding: 3px;
+    margin: 33px;
+  }
 
-    .nasll {
-        font-size: 15px;
-        color: black;
-        margin: auto;
-    }
+  .nasll {
+    font-size: 15px;
+    color: black;
+    margin: auto;
+  }
 
-    .logo {
-        height: 140px !important;
-        width: 100px!important;
-        display: none;
-    }
- 
-    .logo2 {
-        position: absolute;
-        left: 10%!important;
-        top: 13%!important;
-        width: auto !important;
-        height: 100px !important;
-    }
+  .logo {
+    height: 140px !important;
+    width: 100px !important;
+    display: none;
+  }
 
+  .logo2 {
+    position: absolute;
+    left: 10% !important;
+    top: 13% !important;
+    width: auto !important;
+    height: 100px !important;
+  }
 
-    .wrapper {
-        display: none;
-    }
+  .wrapper {
+    display: none;
+  }
 
-    .wrapper2 > img {
-        margin: auto;
-    }
+  .wrapper2 > img {
+    margin: auto;
+  }
 
-    .wrapper2 {
-        display: flex;
-        align-self: center;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        max-width: 150px;
-        margin: auto;
-    }
+  .wrapper2 {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 150px;
+    margin: auto;
+  }
 
-    #navlink {
-        width: fit-content !important;
-        font-size: 13px;
-        font-weight: 666;
-        color: rgb(21, 101, 167) !important;
-        font-family: "Gabriela", serif;
-    }
+  #navlink {
+    width: fit-content !important;
+    font-size: 13px;
+    font-weight: 666;
+    color: rgb(21, 101, 167) !important;
+    font-family: "Gabriela", serif;
+  }
 
-    #navlink:hover {
-        color: rgb(24, 126, 209);
-        text-decoration: underline;
-    }
+  #navlink:hover {
+    color: rgb(24, 126, 209);
+    text-decoration: underline;
+  }
 
-    #skola {
-        display: none;
-    }
-    #skola2 {
-        text-align: center;
-        font-size:33px;
-        font-family: "Gabriela", serif;
-    }
-}
-
-@media (min-width: 400px) {
-    
-}
-
-@media (min-width: 600px) {
-    
+  #skola {
+    display: none;
+  }
+  #skola2 {
+    text-align: center;
+    font-size: 33px;
+    font-family: "Gabriela", serif;
+  }
 }
 
 @media (min-width: 700px) {
-    .logo2 {
-        height: 120px !important;
-    }
+  .logo2 {
+    height: 120px !important;
+  }
 
-    .navbar-toggler {
-        background-color: rgb(25, 112, 36);
-        padding: 5px;
-        margin: 50px;
-    }
-    .navbar-toggler-icon {
-        font-size: 21px;
-    }
-
+  .navbar-toggler {
+    padding: 5px;
+    margin: 50px;
+  }
+  .navbar-toggler-icon {
+    font-size: 21px;
+  }
 }
 
-
 @media (min-width: 900px) {
-    #skola {
-    }
+  #skola {
+  }
 }
 
 @media (min-width: 990px) {
-    #skola {
-        display: block;
-        font-size: 33px;
-        margin: auto;
-        color: rgba(233, 33, 33, 0.884);
-        width: max-content;
-    }
-    
-    .wrapper {
-        display: block;
-    }
-    
-    .logo {
-        align-self: center;
-        display: block;
-        width: 60px;
-        height: fit-content;
-        padding: 0;
-        margin: 0 12px 0 11px; 
-    }
-    
+  #skola {
+    display: block;
+    font-size: 33px;
+    margin: auto;
+    color: rgba(233, 33, 33, 0.884);
+    width: max-content;
+  }
+
+  .wrapper {
+    display: block;
+  }
+
+  .logo {
+    align-self: center;
+    display: block;
+    width: 60px;
+    height: fit-content;
+    padding: 0;
+    margin: 0 12px 0 11px;
+  }
 }
 
 @media (min-width: 991px) {
-    
-    .logo2 {
-        left: auto!important;
-       right: 1%!important;
-        top: 13%!important;
-        width: auto !important;
-        height: 140px !important;
-    }
+  .logo2 {
+    left: auto !important;
+    right: 1% !important;
+    top: 13% !important;
+    width: auto !important;
+    height: 140px !important;
+  }
 
-    #navlink {
-        font-size: 17px;
-    }
-
-    
+  #navlink {
+    font-size: 17px;
+  }
 }
 
 @media (min-width: 1230px) {
-    
-    .logo {
-    }
-    
-    .logo2 {
-        left: auto!important;
-       right: 5%!important;
-        top: 13%!important;
-        width: auto !important;
-        height: 160px !important;
-    }
+  .logo {
+  }
 
-    #navlink {
-        font-size: 21px;
-    }
+  .logo2 {
+    left: auto !important;
+    right: 5% !important;
+    top: 13% !important;
+    width: auto !important;
+    height: 160px !important;
+  }
 
+  #navlink {
+    font-size: 21px;
+  }
 }
 
 @media (min-width: 1300px) {
 }
 
 @media (min-width: 1400px) {
-    
 }
