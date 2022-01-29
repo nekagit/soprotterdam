@@ -111,13 +111,35 @@
   
   
   @media (min-width:280px) {
+
+    .vesti {
+      width: 80%!important;
+      background-color: rgb(241, 250, 215);
+    }
+
+    .images {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
       
+    }
+
+    .imagesRow {
+      max-width: 100%;
+      height: auto;
+      margin: 10px;
+    }
+
     .tab {
       width: 80%;
       margin: auto;
       padding: 21px;
       color: black;
       text-align: center;
+    }
+    #prviDanText {
+      font-weight: bold; 
+
     }
   
     
@@ -145,12 +167,56 @@
           font-weight: 600;
         }
     }
+
+  @media (min-width: 700px) {
+    .imagesRow {
+      max-width: 80%;
+      margin: auto;
+      height: auto;
+      padding: 21px;
+    }
+
+
+  }
     
   
-  @media (max-width: 990px) {
+  @media (min-width: 990px) {
     .richtlinie {
       flex-direction: column;
       justify-content: space-between;
+    }
+
+    
+    .vesti {
+      width: 80%!important;
+      background-color: rgb(241, 250, 215);
+    }
+
+    .images {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      
+    }
+
+    .imagesRow {
+      max-width: 33%;
+      height: auto;
+      margin: auto;
+    }
+
+    #prviDanText {
+      font-weight: bold; 
+
+    }
+  
+    .bildmitSeitentext {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+
     }
   }
   
