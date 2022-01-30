@@ -9,9 +9,8 @@
         (mouseover)="showa = true"
         (mouseout)="showa = false"
         class="logo"
-        width="100px"
-        height="auto"
-        src="../../../assets/img/heder-mirnije.png"
+        
+        src="../../../assets/img/heder-mirnije-removebg-preview.png"
         type="button"
       />
     </center>
@@ -20,7 +19,7 @@
         id="logo"
         class="logo2"
         src="../../../assets/img/wg.PNG"
-        [routerLink]="['/pocetna']"
+        *ngIf="!showa"
       />
     </a>
   </div>
@@ -54,9 +53,8 @@
       </div>
       <div class="wrapper2">
         <img
-          width="100px"
-          height="auto"
-          src="../../../assets/img/heder-mirnije.png"
+          
+          src="../../../assets/img/heder-mirnije-removebg-preview.png"
           alt=""
         />
         <br />
@@ -80,8 +78,8 @@
               id="nethFlagSport"
               style="margin-right: 10px"
               src="../../../assets/img/flag_of_the_netherlands.jpg"
-              width="52"
-              height="36"
+              width="42"
+              height="24"
           /></a>
         </div>
         <div>
@@ -89,8 +87,8 @@
             ><img
               id="srbFlagSport"
               src="../../../assets/img/srpska zastava.jpg"
-              width="52"
-              height="36"
+              width="42"
+              height="24"
           /></a>
         </div>
       </div>
@@ -177,18 +175,18 @@
         (mouseover)="showa = true"
         (mouseout)="showa = false"
         class="logo"
-        width="100px"
+        width="80px"
         height="auto"
-        src="../../../assets/img/heder-mirnije.png"
+        src="../../../assets/img/heder-mirnije-removebg-preview.png"
         type="button"
       />
     </center>
     <a class="navbar-brand">
       <img
+      *ngIf="!showa"
         id="logo"
         class="logo2"
         src="../../../assets/img/wg.PNG"
-        [routerLink]="['/pocetna']"
       />
     </a>
   </div>
@@ -222,9 +220,9 @@
       </div>
       <div class="wrapper2">
         <img
-          width="100px"
+          width="80px" 
           height="auto"
-          src="../../../assets/img/heder-mirnije.png"
+          src="../../../assets/img/heder-mirnije-removebg-preview.png"
           alt=""
         />
         <br />
@@ -241,8 +239,8 @@
               id="nethFlagSport"
               style="margin-right: 10px"
               src="../../../assets/img/flag_of_the_netherlands.jpg"
-              width="52"
-              height="36"
+              width="42"
+              height="24"
           /></a>
         </div>
         <div>
@@ -250,8 +248,8 @@
             ><img
               id="srbFlagSport"
               src="../../../assets/img/srpska zastava.jpg"
-              width="52"
-              height="36"
+              width="42"
+              height="24"
           /></a>
         </div>
       </div>
@@ -333,9 +331,9 @@
         </a>
       </li>
     </ul>
-    <div style="width: 333px; text-align: center; margin: auto">
+    <div id="BoxMinistarstvoShowa">
       <h4
-        style="font-weight: 600; font-size: 16px; font-family: Gabriela, serif"
+      id="TextMinistarstvoShowa"
         *ngIf="showa"
       >
         {{ "ministar1" | translate }} <br />
