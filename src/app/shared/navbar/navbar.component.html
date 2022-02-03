@@ -9,7 +9,8 @@
         (mouseover)="showa = true"
         (mouseout)="showa = false"
         class="logo"
-        
+        width="80px"
+        height="auto"
         src="../../../assets/img/heder-mirnije-removebg-preview.png"
         type="button"
       />
@@ -53,7 +54,8 @@
       </div>
       <div class="wrapper2">
         <img
-          
+          width="80px"
+          height="auto"
           src="../../../assets/img/heder-mirnije-removebg-preview.png"
           alt=""
         />
@@ -68,7 +70,7 @@
     </div>
 
     <ul
-      style="align-items: center; margin-left: 10px"
+      style="align-items: center; align-self: center; margin-left: 10px"
       class="navbar-nav align-items-lg-center"
     >
       <div class="spaceBoxFlags">
@@ -96,11 +98,10 @@
       <li class="nav-item">
         <a
           id="navlink"
-          style="padding-bottom: 10px !important"
           [routerLink]="['/pocetna']"
           class="nav-link nav-link-icon"
         >
-          <span style="text-shadow: 1px 1px 1px rgb(21, 101, 167) !important ;">
+          <span style="text-shadow: 1px 1px 1px rgb(21, 101, 167) !important ">
             {{ "pocetna" | translate }}</span
           >
         </a>
@@ -108,11 +109,10 @@
       <li class="nav-item">
         <a
           id="navlink"
-          style="padding-bottom: 10px !important"
           [routerLink]="['/sport']"
           class="nav-link nav-link-icon"
         >
-          <span style="text-shadow: 1px 1px 1px rgb(21, 101, 167) !important ;">
+          <span style="text-shadow: 1px 1px 1px rgb(21, 101, 167) !important ">
             {{ "sport" | translate }}</span
           >
         </a>
@@ -183,7 +183,7 @@
     </center>
     <a class="navbar-brand">
       <img
-      *ngIf="!showa"
+        *ngIf="!showa"
         id="logo"
         class="logo2"
         src="../../../assets/img/wg.PNG"
@@ -220,7 +220,7 @@
       </div>
       <div class="wrapper2">
         <img
-          width="80px" 
+          width="80px"
           height="auto"
           src="../../../assets/img/heder-mirnije-removebg-preview.png"
           alt=""
@@ -232,36 +232,14 @@
     </div>
 
     <ul style="align-items: center" class="navbar-nav align-items-lg-center">
-      <div class="spaceBoxFlags">
-        <div>
-          <a (click)="switchLang('nl')"
-            ><img
-              id="nethFlagSport"
-              style="margin-right: 10px"
-              src="../../../assets/img/flag_of_the_netherlands.jpg"
-              width="42"
-              height="24"
-          /></a>
-        </div>
-        <div>
-          <a (click)="switchLang('rs')"
-            ><img
-              id="srbFlagSport"
-              src="../../../assets/img/srpska zastava.jpg"
-              width="42"
-              height="24"
-          /></a>
-        </div>
-      </div>
-
+     
       <li class="nav-item">
         <a
           id="navlink"
-          style="margin-left: 10px !important"
           [routerLink]="['/pocetnaS']"
           class="nav-link nav-link-icon"
         >
-          <span style="text-shadow: 1px 1px 1px rgb(21, 101, 167) !important ;">
+          <span style="text-shadow: 1px 1px 1px rgb(21, 101, 167) !important ">
             {{ "pocetna" | translate }}</span
           >
         </a>
@@ -286,15 +264,6 @@
           <span style="text-shadow: 1px 1px 1px">
             {{ "nastava" | translate }}</span
           >
-        </a>
-      </li>
-      <li class="nav-item">
-        <a
-          id="navlink"
-          [routerLink]="['/udz']"
-          class="nav-link nav-link-icon color: rgb(21, 101, 167) !important;"
-        >
-          <span style="text-shadow: 1px 1px 1px"> {{ "udz" | translate }}</span>
         </a>
       </li>
       <li class="nav-item">
@@ -330,12 +299,31 @@
           >
         </a>
       </li>
+      <div class="spaceBoxFlags">
+        <div>
+          <a (click)="switchLang('nl')"
+            ><img
+              id="nethFlagSport"
+              style="margin-right: 10px"
+              src="../../../assets/img/flag_of_the_netherlands.jpg"
+              width="42"
+              height="24"
+          /></a>
+        </div>
+        <div>
+          <a (click)="switchLang('rs')"
+            ><img
+              id="srbFlagSport"
+              src="../../../assets/img/srpska zastava.jpg"
+              width="42"
+              height="24"
+          /></a>
+        </div>
+      </div>
+
     </ul>
     <div id="BoxMinistarstvoShowa">
-      <h4
-      id="TextMinistarstvoShowa"
-        *ngIf="showa"
-      >
+      <h4 id="TextMinistarstvoShowa" *ngIf="showa">
         {{ "ministar1" | translate }} <br />
         {{ "ministar2" | translate }}
       </h4>

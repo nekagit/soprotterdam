@@ -70,7 +70,8 @@ li {
   }
 
   .nasll {
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 666;
     color: black;
     margin: auto;
   }
@@ -114,7 +115,7 @@ li {
     margin: 0;
     padding: 5px!important;
     width: fit-content !important;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 666;
     color: rgb(21, 101, 167) !important;
     font-family: "Gabriela", serif;
@@ -162,6 +163,11 @@ li {
     height: fit-content;
     padding: 0;
     margin: 0 12px 0 11px;
+  }
+
+  
+  #navlink {
+    font-size: 17px;
   }
 }
 

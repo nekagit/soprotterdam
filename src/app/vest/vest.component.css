@@ -1,6 +1,13 @@
-.backImg {
-    width: max-content;
-    height: auto;
+@keyframes example {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 3px;
+  }
+  100% {
+    top: 0px;
+  }
 }
 
 .hoverIn {
@@ -15,207 +22,183 @@
   box-shadow: 1px 6px 21px 3px #000000;
   border-radius: 33px;
   background-color: rgb(8, 34, 80) !important;
-}
+} 
 
-
+ 
 @media (min-width: 280px) {
-    .sect {
-        width: 90%;
-        margin: auto;
-        margin-top: 100px;
-        padding: 33px;
-    }
-}
-
-@media (min-width: 400px) {
-    .sect {
-        width: 60%;
-        margin: auto;
-        margin-top: 100px;
-        padding: 21px;
-    }
-}
-
-#backImg {
-    background-image: url(../../assets/img/970cba6b03f716ee8ad49b0a3e7fc6a4.jpg);
-    width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation-name: example;
-    animation-duration: 3s;
-    animation-delay: 3s;
-    animation-direction: reverse;
-    animation-iteration-count: infinite;
-  
-  }
-  
-  @keyframes example {
-    0%   { top:0px;}
-    50%  { top:3px;}
-    100% { top:0px;}
-  }
-  
-  #slk {
-    background-color: rgb(38, 91, 184);
-    font-size: 21px;
-    font-weight: 600;
-    color: white;
-    border-radius: 33px;
-    width: 77%;
-    padding: 21px;
-    margin: auto;
-    animation-name: example;
-    animation-duration: 9s;
-    animation-delay: 3s;
-    animation-iteration-count: infinite;
-  }
-  
   .richtlinie {
+    width: 80%!important;
     display: flex;
-    width: fit-content;
     margin: auto;
-    flex-direction: row;
     background-color: white;
     justify-content: space-between;
     color: black;
     align-items: center;
-    border-radius: 21px;
-    padding: 11px;
-  
+    border-radius: 11px;
+    flex-direction: column;
   }
-  
-  .richtlinie > img {
+  .vesti {
+    width: 80% !important;
+    background-color: rgb(241, 250, 215);
+    padding: 10px;
+  }
+  .vestiKnjige {
+    width: 90% !important;
+    background-color: rgb(239, 215, 250);
+    padding: 20px;
+  }
+
+  .images {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .imagesRow {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+
+  .imagesRow:hover {
+    transform: scale(1.5);
+  }
+  .tab {
+    width: 80%;
     margin: auto;
-    max-width: 120px;
-  }
-  .klBox {
-    display: table-cell;
-    vertical-align: middle;
+    padding: 21px;
+    color: black;
     text-align: center;
   }
-  
-  .hoverIn {
-    transition: all 1s ease;
-    box-shadow: 1px 6px 21px 3px #000000;
-    border-radius: 33px;
-    background-color: rgb(30, 141, 104) !important;
+  #prviDanText {
+    font-weight: bold;
+    text-align:center;
+    margin:auto;
   }
-  
-  .hoverOut {
-    transition: all 1s ease;
-    box-shadow: 1px 6px 21px 3px #000000;
-    border-radius: 33px;
-    background-color: rgb(8, 34, 80) !important;
-  }
-  
-  
-  @media (min-width:280px) {
 
-    .vesti {
-      width: 80%!important;
-      background-color: rgb(241, 250, 215);
-    }
-
-    .images {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      
-    }
-
-    .imagesRow {
-      max-width: 100%;
-      height: auto;
-      margin: 10px;
-    }
-
-    .tab {
-      width: 80%;
-      margin: auto;
-      padding: 21px;
-      color: black;
-      text-align: center;
-    }
-    #prviDanText {
-      font-weight: bold; 
-
-    }
-  
-    
   .klBox {
     padding: 2px;
     font-size: 9px;
     width: fit-content;
   }
-  
+
   .klBox > img {
     max-width: 120px;
     padding: 12px;
   }
-  
+  .sect {
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    padding: 33px;
   }
-    
-  
-  @media (min-width:400px) {
-      
-    .tab {
-      width: 60%;
-    }
-    
-      .richtlinie >  p{
-          font-weight: 600;
-        }
-    }
+}
 
-  @media (min-width: 700px) {
-    .imagesRow {
-      max-width: 80%;
-      margin: auto;
-      height: auto;
-      padding: 21px;
-    }
-
-
+@media (min-width: 400px) {
+  .tab {
+    width: 60%;
   }
-    
-  
-  @media (min-width: 990px) {
-    .richtlinie {
-      flex-direction: column;
-      justify-content: space-between;
-    }
 
-    
-    .vesti {
-      width: 60%!important;
-    }
+  .richtlinie > p {
+    font-weight: 600;
+  }
+}
 
-    .images {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: nowrap;
-      
-    }
+@media (min-width: 700px) {
+  .imagesRow {
+    max-width: 80%;
+    margin: auto;
+    height: auto;
+    padding: 21px;
+  }
+  .sect {
+    width: 60%;
+    margin: auto;
+    margin-top: 100px;
+    padding: 21px;
+  }
+}
 
-    .imagesRow {
-      max-width: 33%;
-      height: auto;
-      margin: auto;
-    }
+@media (min-width: 990px) {
+  .richtlinie {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    #prviDanText {
-      font-weight: bold; 
+  .vesti {
+    width: 80% !important;
+    padding: 15px;
+  }
 
-    }
-  
-    .bildmitSeitentext {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: nowrap;
+  .images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 5px;
+  }
 
-    }
+  .imagesRow {
+    max-width: 33%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
   }
   
+.imagesRow:hover {
+  transform: scale(2);
+}
+
+  #prviDanText {
+    font-size:large;
+    font-weight: bold;
+    padding: 5px;
+  }
+
+  .bildmitSeitentext {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 10px;
+  }
+
+}
+
+#backImg {
+  background-image: url(../../assets/img/970cba6b03f716ee8ad49b0a3e7fc6a4.jpg);
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-direction: reverse;
+  animation-iteration-count: infinite;
+}
+
+#slk {
+  background-color: rgb(38, 91, 184);
+  font-size: 21px;
+  font-weight: 600;
+  color: white;
+  border-radius: 33px;
+  width: fit-content;
+  padding: 21px;
+  margin: auto;
+  animation-name: example;
+  animation-duration: 9s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+
+.richtlinie > img {
+  margin: auto; 
+  max-width: 120px;
+}
+.klBox {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
