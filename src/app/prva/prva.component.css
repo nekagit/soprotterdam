@@ -16,6 +16,7 @@
   background-size: cover;
   background-image: url(../../assets/img/vector-sports-seamless-pattern-background-illustration-wallpaper-vector-sports-seamless-pattern-background-illustration-wallpaper-160001917.jpg);
   border-right: 3px solid gold;
+  z-index: 999;
 }
 
 /* Control the right side */
@@ -25,6 +26,7 @@
   right: 0;
   background-image: url(../../assets/img/Skola-srpskog-jezika-u-Roterdamu.jpg);
   border-left: 3px solid gold;
+  z-index: 999;
 
 }
 
