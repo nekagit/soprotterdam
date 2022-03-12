@@ -19,26 +19,19 @@
       </div>
     </section>
     <section class="container">
-      <form
-      action="https://formspree.io/f/mvolqpaj"
-      method="POST"
-    >
-      <label>
-        Your email:
-        <input type="email" name="email">
-      </label>
-      <label>
-        Your message:
-        <textarea name="message"></textarea>
-      </label>
-      <!-- your other form fields go here -->
-      <button type="submit">Send</button>
+     
+      <form [formGroup]="subscribeForm" novalidate (ngSubmit)="sendMail($event)">
+        <input type="text" placeholder="Enter your email" formControlName="email"/>
+        <button class="button margin-top-15" type="submit">Subscribe</button>
     </form>
 
-      <form name="contact" method="POST" action="https://formspree.io/f/mvolqpaj">
+      <form [formGroup]="subscribeForm" novalidate (ngSubmit)="sendMail($event)">
+
+
+        
         <div class="row mt-5 ">
           <div class="col-6 ">
-            <input class="form-control mb-3" type="text" name="name" placeholder="{{'ime' | translate}}" required />
+            <input class="form-control mb-3" type="text" name="name" formControlName="email" placeholder="{{'ime' | translate}}" required />
           </div>
           <div class="col-6">
             <input class="form-control mb-3" type="email" name="email" placeholder="{{'majl' | translate}}" required />

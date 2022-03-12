@@ -1,22 +1,37 @@
 <?php
+    header('Content-type: application/json');
+    header("Access-Control-Allow-Origin: *");
+    header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
+    $request = json_decode(file_get_contents("php://input"));
+    $from_email = "nenad99@hotmail.de";
 
-    if(isset($_POST['email'])&& $_POST['email'] != ''){
+    $message = "Welcome.";
 
-        if(filter_var( $_POST['email'], FILTER_VALIDATE_EMAIL)){
-            
-            $userName = $_POST['name'];
-            $userEmail = $_POST['email'];
-            $message = $_POST['message'];
+    $from_name = "your name goes here";
 
-            $to = "nenad99@hotmail.de";
-            $body = "";
-            $body .= "From: ".$userName. "\r\n";
-            $body .= "Email: ".$userEmail. "\r\n";
-            $body .= "Message: ".$message. "\r\n";
+    $to_email = $request->email;
 
-            mail($to,$messageSubject,$body);
+    $contact = "<p><strong>Name:</strong>$from_name</p><p><strong>Email:</strong> $from_email</p>";
 
-            
-        }
-    }
+    $email_subject = "Angular Php Email Example: Neue Nachricht von $from_name erhalten";
+
+    $email_body = '<html><body>';
+    $email_body .= "$<p><strong>Name:</strong>$from_name</p><p><strong>Email:</strong> $from_email</p>
+                    <p>$message</p>";
+    $email_body .= '</body></html>';
+
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+    $headers .= "From: $from_email\n";
+    $headers .= "Reply-To: $from_email";
+
+    mail($to_email,$email_subject,$email_body,$headers);
+
+    $response_array['status'] = 'success';
+    $response_array['from'] = $from_email;
+
+    echo json_encode($response_array);
+    echo json_encode($from_email);
+    header($response_array);
+    return $from_email;
 ?>
