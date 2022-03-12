@@ -68,7 +68,9 @@
       </div>
     </section>
     <section class="container" >
-      <form name="contact" action="POST" method="POST" data-netlify="true">
+      
+
+      <form name="contact" method="POST" action="https://formspree.io/f/mvolqpaj">
         <div class="row mt-5 ">
           <div class="col-6 ">
             <input class="form-control mb-3" type="text" name="name" placeholder="{{'ime' | translate}}" required />
@@ -77,13 +79,15 @@
             <input class="form-control mb-3" type="email" name="email" placeholder="{{'majl' | translate}}" required />
           </div>
           <div class="col-12 ">
-            <textarea class="form-control contact-message" name="message" placeholder="{{'poruka' | translate}}" required></textarea>
+            <textarea class="form-control contact-message" name="message" placeholder="{{'poruka' | translate}}"
+              required></textarea>
           </div>
         </div>
         <div class="text-center mb-5">
-          <button type="submit" class="mt-4 mb-1 btn btn-primary">{{'posalji' | translate}}</button>
+          <button (click)="sendEmail()" type="submit" class="mt-4 mb-1 btn btn-primary">{{'posalji' |
+            translate}}</button>
         </div>
-      </form>  
+      </form>
     </section>
   </div>
 </main>

@@ -8,9 +8,12 @@ import { NavbarService } from '../navbar.service';
 })
 export class KontaktComponent implements OnInit {
 
+
+  
   constructor(public nav: NavbarService) { }
 
   ngOnInit(): void {this.nav.show();
+    
   }
 
 }
