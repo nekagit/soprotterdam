@@ -1,3 +1,5 @@
+$theme : rgb(6,127,12);
+
 .margin {
   animation: all 1s ease;
   display: none !important;
@@ -64,7 +66,7 @@ li {
   }
 
   .navbar-toggler {
-    background-color: rgb(108, 236, 194);
+    background-color: $theme;
     padding: 3px;
     margin: 33px;
   }
@@ -89,7 +91,7 @@ li {
     left: 5%;
     top: 33% !important;
     width: auto !important;
-    height: 100px !important;
+    height: 130px !important;
   }
 
   .wrapper {
@@ -112,17 +114,16 @@ li {
   }
 
   #navlink {
-    margin: 0;
-    padding: 5px!important;
+    padding: 3px;
+    margin: 5px!important;
     width: fit-content !important;
-    font-size: 16px;
-    font-weight: 666;
-    color: rgb(21, 101, 167) !important;
+    font-size: 21px;
+    color: $theme!important;
     font-family: "Gabriela", serif;
   }
 
   #navlink:hover {
-    color: rgb(24, 126, 209);
+    color: $theme;
     text-decoration: underline;
   }
 
@@ -140,7 +141,7 @@ li {
 @media (min-width: 990px) {
 
   .logo2 {
-    height: 120px!important;
+    height: 160px!important;
   }
 
 
@@ -167,7 +168,7 @@ li {
 
   
   #navlink {
-    font-size: 17px;
+    font-size: 26px;
   }
 }
 
@@ -180,7 +181,7 @@ li {
   }
 
   #navlink {
-    font-size: 17px;
+    font-size: 23px;
   }
 }
 
@@ -214,12 +215,8 @@ li {
   }
 
   .logo2 {
-    height: 150px !important;
+    height: 210px !important;
     right: 3%;
-  }
-
-  #navlink {
-    font-size: 21px;
   }
 
   #BoxMinistarstvoShowa {
@@ -237,3 +234,53 @@ li {
   }
 }
 
+
+.button {
+  position: relative;
+  margin: 7px;
+  color: rgba(51, 51, 51, 0.197);
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  transition: .3s;
+}
+.button::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  background: rgba(51, 51, 51, 0.197);
+  transition: transform .3s;
+}
+.button:hover {
+  color: #fff;
+}
+
+
+.button08 {
+  overflow: hidden;
+}
+.button08::before {
+  left: -5%;
+  right: auto;
+  bottom: auto;
+  width: 110%;
+  height: 180%;
+  transform-origin: left top;
+  transform: skewY(-10deg) scale(1, 0);
+}
+.button08:hover::before {
+  transform-origin: left bottom;
+  transform: skewY(-10deg) scale(1, 1);
+}
+
+
+
+
+
+//////////////////////////////////////////

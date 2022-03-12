@@ -8,7 +8,6 @@ import { AppRoutingModule } from './app.routing';
 
 
 import { AppComponent } from './app.component';
-import { LandingComponent } from './landing/landing.component';
 import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
@@ -34,7 +33,6 @@ import { SportComponent } from './sport/sport.component';
 @NgModule({
   declarations: [
     AppComponent,
-    LandingComponent,
     LandingSComponent,
     ProfileComponent,
     NavbarComponent,
