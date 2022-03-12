@@ -19,16 +19,7 @@
       </div>
     </section>
     <section class="container">
-     
       <form [formGroup]="subscribeForm" novalidate (ngSubmit)="sendMail($event)">
-        <input type="text" placeholder="Enter your email" formControlName="email"/>
-        <button class="button margin-top-15" type="submit">Subscribe</button>
-    </form>
-
-      <form [formGroup]="subscribeForm" novalidate (ngSubmit)="sendMail($event)">
-
-
-        
         <div class="row mt-5 ">
           <div class="col-6 ">
             <input class="form-control mb-3" type="text" name="name" formControlName="email" placeholder="{{'ime' | translate}}" required />
