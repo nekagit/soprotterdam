@@ -84,13 +84,15 @@
       </p>
     </div>
   </div>
+  <img id="vestiGallery" [src]='currentGalleryPath' alt="" class="src">
 </section> 
+
 <div class="vestiNavigation">
-  <button class="button button08" (click)="getPreviousVesti()">Predhodna Vest</button>
+  <button class="button button08" (click)="getPreviousVesti()">Prethodna Vest</button>
   <button class="button button08" (click)="getNextVesti()">Sledeca Vest</button>
-  <button class="button button08" (click)="getPictures">Slike</button>
+  <button class="button button08"  [routerLink]="['/galerijaS']">Slike</button>
 
 </div>
 <div class="trenner"></div>
 
-<div class="trenner"></div>
+

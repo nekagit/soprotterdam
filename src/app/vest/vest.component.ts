@@ -8,21 +8,28 @@ import vestiText from '../../assets/vesti.json';
   styleUrls: ['./vest.component.css'],
 })
 
+///////////////////////////////////////////////////////
+
+
 export class VestComponent implements OnInit {
-  
   vestiJson = vestiText;  
-  vestiJsonIndex: string[] = ['0','3'];
-  vestiExtension: string[] = ['.jpeg', '.jpeg']
+  vestiLastIndex: number = 10;
+  vestiJsonIndex: string[] = ['0','3', '7'];
+  vestiExtension: string[] = ['.jpeg', '.jpeg', '.jpeg']
   directoryPath: String = '../../assets/img/skola/' 
-  frontImg = document.getElementById("frontImg") as HTMLImageElement;
+  imagePathEnding = this.getImgPathEnding()
+  frontImg = document.getElementById("frontImg")
+  vestiGalleryContainer = document.getElementById("vestiGallery")
+  vestiGalleryPath = this.directoryPath
+  vestiGallerySlika = document.getElementById("vestiGallerySlika");
+
+  galleryImages : string[][] = new Array();
 
   currentVestiNumber: number = 0;
   currentVestiString: string = this.currentVestiNumber + '';
-  currentVestiExtension = this.vestiExtension[this.currentVestiNumber]  
-  getImgPathEnding() {
-    return this.vestiJsonIndex[this.currentVestiNumber] + this.vestiExtension[this.currentVestiNumber]
-  }
-  imagePathEnding = this.getImgPathEnding()
+  currentVestiExtension = this.vestiExtension[this.currentVestiNumber]
+  currentVestiGallery: string[] = new Array();  
+
 
   getImagePath() {
     return this.directoryPath + this.getImgPathEnding()
@@ -35,46 +42,69 @@ export class VestComponent implements OnInit {
   imagePath: string = this.getImagePath()
   tmpImg: string = "";
   
+  constructor(public nav: NavbarService) {}
+  ngOnInit() {
+    this.nav.showS();
+    let slk = document.getElementById('slk');
+    slk.onmouseover = function () {
+      slk.classList.add('hoverIn');
+      slk.classList.remove('hoverOut');
+    };
+    slk.onmouseleave = function () {
+      slk.classList.add('hoverOut');
+      slk.classList.remove('hoverIn');
+    };
+  }
+  
+  //////////////////////////////////////////////////////////
   getNewVesti() {
     this.frontText = this.getFrontText();
     this.imagePath = this.getImagePath()
     console.log(this.imagePath)
-    this.tmpImg = '<img id="frontImg" class="frontImage" [src]="' + this.imagePath +' />';
-    this.frontImg.replaceWith(this.tmpImg) 
+    this.tmpImg = '<img id="frontImg" class="frontImage" [src]=' + this.imagePath +' />';
+    this.frontImg.innerHTML = this.tmpImg
     
   }
 
-  
 
-
-  constructor(public nav: NavbarService) {}
-
-  ngOnInit() {
-    this.nav.showS();
-
-    document.getElementById('slk').onmouseover = function () {
-      document.getElementById('slk').classList.add('hoverIn');
-      document.getElementById('slk').classList.remove('hoverOut');
-    };
-    document.getElementById('slk').onmouseleave = function () {
-      document.getElementById('slk').classList.add('hoverOut');
-      document.getElementById('slk').classList.remove('hoverIn');
-    };
-  }
-  
   getNextVesti() {
-    console.log(this.currentVestiNumber)
-    if(this.currentVestiNumber < 2 && this.currentVestiNumber >= 0) {
-      
+    if(this.currentVestiNumber < this.vestiJsonIndex.length-1 ) {
     this.currentVestiNumber = this.currentVestiNumber +1;
     this.getNewVesti()
     }
   }
   getPreviousVesti() {
-    if(this.currentVestiNumber < 2 && this.currentVestiNumber >= 0) {
-      
+      if(this.currentVestiNumber > 0) {
       this.currentVestiNumber = this.currentVestiNumber -1;
       this.getNewVesti()
       }
   }
+  getImgPathEnding() {
+    return this.vestiJsonIndex[this.currentVestiNumber] + this.vestiExtension[this.currentVestiNumber]
+  }
+
+
+  setGalleryImages (start : number, end : number) { 
+    for(let i = start; i <= end; i++){
+      console.log(end)
+      this.currentVestiGallery[i] = this.directoryPath.concat(i+".jpeg") 
+    }
+    return this.currentVestiGallery
+  }
+
+
+  getCurrentImages() { 
+    let currNum = this.currentVestiNumber
+    let currNumNext = currNum + 1 
+    this.currentVestiGallery = []
+
+    if(currNum === this.vestiJsonIndex.length-1){
+      this.setGalleryImages(parseInt(this.vestiJsonIndex[currNum]), this.vestiLastIndex)
+    } else {
+      console.log(parseInt(this.vestiJsonIndex[currNumNext]))
+      this.setGalleryImages(parseInt(this.vestiJsonIndex[currNum]), parseInt(this.vestiJsonIndex[currNumNext])-1)
+    }
+    console.log(this.currentVestiGallery)
+  }
+
 }

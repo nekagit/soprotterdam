@@ -89,7 +89,7 @@ button {
   }
   
 .frontImage:hover {
-  transform: scale(1.4);
+  transform: scale(1.3);
 }
 
 .frontTextC {
@@ -276,4 +276,11 @@ button {
 .button08:hover::before {
   transform-origin: left bottom;
   transform: skewY(-10deg) scale(1, 1);
+}
+
+#vestiGallery {
+  margin: auto;
+  padding: 3rem;
+  width: 100%;
+  height: auto;
 }
