@@ -58,7 +58,7 @@ button {
 
 @media (min-width: 280px) {
   .richtlinie {
-    width: 80%!important;
+    width: 90%!important;
     display: flex;
     margin: auto;
     background-color: white;
@@ -70,7 +70,8 @@ button {
   }
   .vesti {
     width: 90% !important;
-    background-color: rgb(241, 250, 215);
+    background-color: rgb(250, 135, 100);
+    border: 3px solid rgb(199, 69, 30);
   }
 
   .cardFront {
@@ -78,7 +79,6 @@ button {
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: nowrap;
-    padding: 1rem;
   }
 
   .frontImage {
@@ -94,11 +94,11 @@ button {
 
 .frontTextC {
 
-  max-width: 80%;
+  max-width: 90%;
   height: 33rem;
   text-align: center;
   margin:auto;
-  padding:1rem;
+  padding: 1rem;
 }
 #frontText {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -106,9 +106,9 @@ button {
 }
 
   .tab {
-    width: 80%;
+    width: 90%;
     margin: auto;
-    padding: 21px;
+    padding: 1rem;
     color: black;
     text-align: center;
   }
@@ -132,7 +132,7 @@ button {
 
 @media (min-width: 400px) {
   .tab {
-    width: 60%;
+    width: 80%;
   }
 
   .richtlinie > p {
@@ -158,7 +158,7 @@ button {
 
   .vesti {
     width: 80% !important;
-    padding: 3rem;
+    padding: 1rem;
   }
 
   .cardFront {
@@ -186,7 +186,6 @@ button {
   height: 33rem;
   text-align: center;
   margin:auto;
-  padding:1rem;
 }
 #frontText {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -208,6 +207,7 @@ button {
 }
 
 #slk {
+  width: 90%!important;
   background-color: rgb(38, 91, 184);
   font-size: 21px;
   font-weight: 600;
@@ -235,14 +235,17 @@ button {
 
 
 .button {
+
   position: relative;
   margin: 7px;
+  margin-top: -33px;
   color: rgb(0, 0, 0);
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   text-align: center;
   text-decoration: none;
+  background: rgb(255, 142, 90);
   transition: .3s;
 }
 .button::before {
