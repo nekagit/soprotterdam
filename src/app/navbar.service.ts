@@ -1,13 +1,17 @@
 import { Injectable } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class NavbarService {
+  currentLang: string = 'rs'
   visible: boolean;
   visibleS: boolean;
 
-  constructor() { this.visible = false; }
+  constructor(public translate: TranslateService,) { this.visible = false; 
+    
+  }
 
   hide() { this.visible = false; }
 
@@ -20,5 +24,9 @@ export class NavbarService {
   toggle() { this.visible = !this.visible; }
 
   doSomethingElseUseful() { }
+
+  vestiSwitchLang() { 
+    
+  }
 
 }

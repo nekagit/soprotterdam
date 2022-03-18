@@ -17,6 +17,7 @@ export class NavbarComponent implements OnInit {
     showSk : boolean;
 
     constructor(public location: Location, private router: Router, public nav: NavbarService,  public translate: TranslateService ) {
+        
         translate.addLangs(['rs', 'nl']);  
         translate.setDefaultLang('rs');  
         this.showa = false;
@@ -62,6 +63,8 @@ export class NavbarComponent implements OnInit {
       }
       switchLang(lang){
         this.translate.use(lang);
+        this.nav.currentLang = lang;
+        this.nav.vestiSwitchLang()
         console.log(this.translate.currentLang);
     }
 

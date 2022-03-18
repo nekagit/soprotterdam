@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NavbarService } from '../navbar.service';
 import vestiText from '../../assets/vesti.json';
+import { TranslateService } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-vest',
@@ -15,15 +17,12 @@ export class VestComponent implements OnInit {
   vestiJson = vestiText;  
   vestiLastIndex: number = 10;
   vestiJsonIndex: string[] = ['0','3', '7'];
+  vestiJsonIndexH: string[] = ['0H', '3H', '7H']
   vestiExtension: string[] = ['.jpeg', '.jpeg', '.jpeg']
   directoryPath: String = '../../assets/img/skola/' 
   imagePathEnding = this.getImgPathEnding()
   frontImg = document.getElementById("frontImg")
-  vestiGalleryContainer = document.getElementById("vestiGallery")
-  vestiGalleryPath = this.directoryPath
-  vestiGallerySlika = document.getElementById("vestiGallerySlika");
 
-  galleryImages : string[][] = new Array();
 
   currentVestiNumber: number = 0;
   currentVestiString: string = this.currentVestiNumber + '';
@@ -35,14 +34,23 @@ export class VestComponent implements OnInit {
     return this.directoryPath + this.getImgPathEnding()
   } 
   getFrontText() {
-    return this.vestiJson[this.vestiJsonIndex[this.currentVestiNumber]];
+    console.log(this.nav.currentLang)
+    if(this.nav.currentLang.match('rs')){
+      return this.vestiJson[this.vestiJsonIndex[this.currentVestiNumber]];
+    }else {
+      return this.vestiJson[this.vestiJsonIndexH[this.currentVestiNumber]]
+    }
   }
 
   frontText: string = this.getFrontText()
   imagePath: string = this.getImagePath()
   tmpImg: string = "";
+
   
-  constructor(public nav: NavbarService) {}
+  
+  constructor(public nav: NavbarService,  public translate: TranslateService) {
+
+  }
   ngOnInit() {
     this.nav.showS();
     let slk = document.getElementById('slk');
