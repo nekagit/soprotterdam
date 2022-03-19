@@ -12,7 +12,6 @@ import { TranslateService } from '@ngx-translate/core';
 
 ///////////////////////////////////////////////////////
 
-
 export class VestComponent implements OnInit {
   vestiJson = vestiText;  
   vestiLastIndex: number = 10;
@@ -34,7 +33,6 @@ export class VestComponent implements OnInit {
     return this.directoryPath + this.getImgPathEnding()
   } 
   getFrontText() {
-    console.log(this.nav.currentLang)
     if(this.nav.currentLang.match('rs')){
       return this.vestiJson[this.vestiJsonIndex[this.currentVestiNumber]];
     }else {
@@ -68,10 +66,6 @@ export class VestComponent implements OnInit {
   getNewVesti() {
     this.frontText = this.getFrontText();
     this.imagePath = this.getImagePath()
-    console.log(this.imagePath)
-    this.tmpImg = '<img id="frontImg" class="frontImage" [src]=' + this.imagePath +' />';
-    this.frontImg.innerHTML = this.tmpImg
-    
   }
 
 
@@ -88,6 +82,7 @@ export class VestComponent implements OnInit {
       }
   }
   getImgPathEnding() {
+    console.log(this.vestiJsonIndex[this.currentVestiNumber] + this.vestiExtension[this.currentVestiNumber])
     return this.vestiJsonIndex[this.currentVestiNumber] + this.vestiExtension[this.currentVestiNumber]
   }
 
